@@ -1,6 +1,6 @@
 # Garmin Connect Kudo All Chrome/Firefox Extension
 
-Give kudos to your elite athletes friends in one click
+Give kudos to your elite athletes friends in one click in https://connect.garmin.com/modern/newsfeed
 
 [🇨🇳](./README-zh.md)
 
@@ -13,6 +13,12 @@ This is a Chrome/Firefox Extension, with which you can give your elite athletes 
 ### Where is the one click button?
 
 On the up-right nav bar next to Upload Activities.
+
+### Valid domains and urls
+
+- https://connect.garmin.com/modern/newsfeed
+- https://connect.garmin.cn/modern/newsfeed
+- https://connectus.garmin.cn/modern/newsfeed
 
 ### What is the kudos range?
 

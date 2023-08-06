@@ -1,6 +1,6 @@
 # Garmin Connect Kudo All Chrome/Firefox Extension
 
-一键给你的精英运动员朋友们点赞
+一键给你的精英运动员朋友们点赞 https://connect.garmin.cn/modern/newsfeed
 
 [English](./README.md)
 
@@ -19,6 +19,12 @@
 ### 点击按钮在哪里?
 
 在右上角导航栏的“上传活动”旁边。
+
+### 有效的域名及链接
+
+- https://connect.garmin.com/modern/newsfeed
+- https://connect.garmin.cn/modern/newsfeed
+- https://connectus.garmin.cn/modern/newsfeed
 
 ### 点赞的范围是?
 
