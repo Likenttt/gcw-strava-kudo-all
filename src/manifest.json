@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "__MSG_AppName__",
   "version": "0.2",
-  "description": "Give kudos to your elite athletes friends in one click一键给你的精英运动员朋友们点赞",
+  "description": "__MSG_AppDescription__",
   "default_locale": "en_GB",
   "icons": {
     "16": "icons/icon16.png",
