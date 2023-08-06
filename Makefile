@@ -7,7 +7,7 @@ prepare:
 	cp -r src/* build/temp
 
 chrome:
-	sed -i 's/"manifest_version": 2/"manifest_version": 3/g' build/temp/manifest.json
+	python3 fix-manifest-version.py
 
 .PHONY: zip
 zip:
@@ -17,5 +17,9 @@ zip:
 build.chrome: prepare chrome zip
 	cp build/temp/kudoall.zip build/artefacts/kudoall-chrome.zip
 
+dev.chrome: prepare chrome
+
 build.firefox: prepare zip
 	cp build/temp/kudoall.zip build/artefacts/kudoall-firefox.zip
+
+build.all: build.firefox build.chrome
