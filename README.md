@@ -45,6 +45,7 @@ Archives output dir is `build/artefacts`.
 ## Credit
 
 - [Kudo All for Strava](https://github.com/tciles/kudo-all)
+- [Chrome Extension Icon Generator](https://alexleybourne.github.io/chrome-extension-icon-generator/)
 
 ## Notice
 
