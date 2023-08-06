@@ -1,14 +1,31 @@
-# Garmin Connect Kudo All Chrome/Firefox WebExtension
+# Garmin Connect Kudo All Chrome/Firefox Extension
 
-Give kudos to your elite athletes friends in one click 一键给你的精英运动员朋友们点赞
+Give kudos to your elite athletes friends in one click
+
+[🇨🇳](./README-zh.md)
 
 ## FAQ
 
-### Why does it show Kudo All rather than the text in my language?
+### What hell is this?
 
-Now, there are 3 languages supported, Chinese, English and French. The language is determined by the locale of your browser rather than that in your webpage.
+This is a Chrome/Firefox Extension, with which you can give your elite athletes friends kudos in just one click.
 
-##
+### Where is the one click button?
+
+On the up-right nav bar next to Upload Activities.
+
+### What is the kudos range?
+
+It merely kudos the activity cards on your screen. If you want to do more, please scroll your screen and click the button on the nav bar.
+
+### What is the points of kudos?
+
+- Spread your love.
+- Encourage your elite athletes friends.
+
+### What is the difference between this and the origianl project?
+
+In a nutshell, the original project was designed for Strava, whereas this one is for Garmin Connect Web. Strava has a more modern website compared to Garmin Connect. The DOM manipulation required for each is quite different.
 
 ## Build
 
