@@ -23,30 +23,20 @@ function getMessage(messageName, substitutions) {
 }
 function getContainer() {
   // at page https://connect.garmin.cn/modern/newsfeed
-  // about selector https://stackoverflow.com/questions/66818352/getting-element-with-queryselectorall-that-starts-with-a-certain-string-but-do
-  const container = document.querySelector(
-    'div[class*="NewsFeedPageContainer_headerWrapper"]'
-  );
+  const container = document.querySelector('div[class="header-nav"]');
+
   console.log("container is?");
   console.log(container);
   if (container) {
     const el = document.createElement("div");
-    el.classList.add("feed-header");
-    el.style.height = "40px";
-    el.style.width = "100px";
+    el.classList.add("kudo-all-nav-item");
+    el.classList.add("header-nav-item");
+    el.style.height = "60px";
+    el.style.width = "50px";
     console.log("container.children?");
     console.log(container.children);
-
-    if (container.children.length == 2) {
-      const middleElement = container.children[1];
-      container.insertBefore(el, middleElement);
-    } else {
-      container.prepend(el);
-    }
-    el.style.display = "flex";
-    el.style.justifyContent = "center";
-    el.style.alignItems = "center";
-    return document.querySelector(".feed-header");
+    container.prepend(el);
+    return document.querySelector("div[class^=kudo-all-nav-item]");
   }
   return null;
 }
@@ -56,13 +46,6 @@ function getContainer() {
  * @returns
  */
 function findKudosButtons(container) {
-  // <div class="CommentLikeSection_socialButtonWrapper__qHhrA">
-  //   <button class="CommentLikeSection_socialIconWrapper__3wFj3" aria-label="赞">
-  //     <div class="animated fadeIn CommentLikeSection_animateBox__1_tEp">
-  //       <i class="CommentLikeSection_iconBlue__2t0lF icon-heart-inverted"></i>
-  //     </div>
-  //   </button>
-  // </div>;
   const selector =
     'button[class^="CommentLikeSection_socialIconWrapper"] > div[class*="CommentLikeSection_animateBox"] > i[class*=icon-heart-inverted]';
 
@@ -77,17 +60,19 @@ function findKudosButtons(container) {
 function createButton() {
   const label = getMessage("kudo_all", "Kudo All");
 
-  const navItem = document.createElement("div");
-  navItem.innerHTML = `
-  <button class="colored">
-    <span>${label}</span>
-  </button>
-    `;
-  return navItem;
+  const link = document.createElement("a");
+  link.href = "#";
+  link.className = "header-nav-link icon-heart-inverted";
+  link.setAttribute("aria-label", label);
+
+  return link;
 }
 
 function kudoAllHandler(event) {
   event.preventDefault();
+  if (window.location.pathname !== "/modern/newsfeed") {
+    return;
+  }
 
   const icons = findKudosButtons();
   const len = icons.length;
@@ -127,9 +112,6 @@ let loaded = false;
 window.onload = function () {
   console.log("GCW Kudo All Starts running....");
 
-  if (window.location.pathname !== "/modern/newsfeed") {
-    return;
-  }
   var observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
       // console.log(mutation);
