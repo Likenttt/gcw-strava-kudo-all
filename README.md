@@ -61,3 +61,7 @@ Archives output dir is `build/artefacts`.
 An interesting notice. Artefact is not a typo from the previous author.
 
 > Artefact is the British spelling of the noun meaning, primarily, an object shaped by human workmanship, especially one of historical or archaeological interest. Artifact is the American spelling. Both spellings are etymologically justifiable, and both are hundreds of years old in English. The British preference for artefact is a new development.
+
+## Privacy Policy
+
+[Privacy Policy](./privacy-policy.md)

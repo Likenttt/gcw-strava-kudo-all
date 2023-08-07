@@ -64,3 +64,7 @@ make build.firefox
 
 > Artefact 是英语中“人造物品”这个词的英式拼写,特别指具有历史或考古价值的物品。
 > Artifact 是美式拼写。两种拼写在英语中都有数百年的历史,都在词源上合理。英国人更倾向 artefact 是新的发展。
+
+## 隐私协议
+
+[隐私协议](./privacy-policy-zh.md)
