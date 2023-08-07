@@ -64,7 +64,8 @@ function createButton() {
   link.href = "#";
   link.className = "header-nav-link icon-heart-inverted";
   link.setAttribute("aria-label", label);
-
+  link.setAttribute("data-original-title", label);
+  link.setAttribute("data-rel", "tooltip");
   return link;
 }
 
