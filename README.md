@@ -1,6 +1,6 @@
-# Garmin Connect Kudo All Chrome/Firefox Extension
+# Garmin Connect Kudo All
 
-Give kudos to your elite athletes friends in one click in https://connect.garmin.com/modern/newsfeed
+It's a Chrome/Firefox Extension to give kudos to your elite athletes friends in one click in https://connect.garmin.com/modern/newsfeed
 [![Watch the video](https://img.youtube.com/vi/Rufkav22FWQ/hqdefault.jpg)](https://www.youtube.com/embed/Rufkav22FWQ)
 
 [🇨🇳 简体中文](./README-zh.md)

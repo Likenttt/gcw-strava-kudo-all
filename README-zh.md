@@ -1,6 +1,6 @@
-# Garmin Connect Kudo All Chrome/Firefox Extension
+# Garmin Connect Kudo All
 
-一键给你的精英运动员朋友们点赞 https://connect.garmin.cn/modern/newsfeed
+在 Garmin Connect Web 中一键给你的精英运动员朋友们点赞 https://connect.garmin.cn/modern/newsfeed
 
 [English](./README.md)
 
