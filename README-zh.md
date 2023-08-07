@@ -42,7 +42,7 @@
 
 ### 与原始项目有什么不同?
 
-简单来说,原始项目是为 Strava 设计的,而这个项目是为 Garmin Connect Web 设计的。相比 Garmin Connect, Strava 拥有一个更现代化一些。两者对 DOM 的操作有很大不同。
+简单来说,原始项目是为 Strava 设计的,而这个项目是为 Garmin Connect Web 设计的。相比 Garmin Connect, Strava 更现代化一些。两者对 DOM 的操作有很大不同。
 
 ## 构建
 

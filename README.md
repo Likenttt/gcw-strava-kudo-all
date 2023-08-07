@@ -1,6 +1,6 @@
 # Garmin Connect Kudo All
 
-It's a Chrome/Firefox Extension to give kudos to your elite athletes friends in one click in https://connect.garmin.com/modern/newsfeed
+It's a Chrome/Firefox Extension to give kudos to your elite athletes friends in one click in [GCW](https://connect.garmin.com/modern/newsfeed)
 [![Watch the video](https://img.youtube.com/vi/Rufkav22FWQ/hqdefault.jpg)](https://www.youtube.com/embed/Rufkav22FWQ)
 
 [🇨🇳 简体中文](./README-zh.md)
@@ -45,7 +45,8 @@ Archives output dir is `build/artefacts`.
 
 ## Support me
 
-[Rackerd VPS](https://my.racknerd.com/aff.php?aff=8822)
+- <a href="https://www.buymeacoffee.com/lichuanyi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an energy gel&emoji=&slug=lichuanyi&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" /></a>
+- [Rackerd VPS](https://my.racknerd.com/aff.php?aff=8822)
 
 ## Credit
 
