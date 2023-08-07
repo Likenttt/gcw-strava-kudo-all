@@ -1,5 +1,7 @@
 # Garmin Connect Kudo All
 
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/likenttt/garmin-connect-web-kudo-all-browser-extension?style=for-the-badge&sort=semver)](https://github.com/likenttt/garmin-connect-web-kudo-all-browser-extension/releases/latest)
+
 在 Garmin Connect Web 中一键给你的精英运动员朋友们点赞 https://connect.garmin.cn/modern/newsfeed
 
 [English](./README.md)

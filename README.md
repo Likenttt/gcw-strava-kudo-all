@@ -1,5 +1,7 @@
 # Garmin Connect Kudo All
 
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/likenttt/garmin-connect-web-kudo-all-browser-extension?style=for-the-badge&sort=semver)](https://github.com/likenttt/garmin-connect-web-kudo-all-browser-extension/releases/latest)
+
 It's a Chrome/Firefox Extension to give kudos to your elite athletes friends in one click in [GCW](https://connect.garmin.com/modern/newsfeed)
 
 [🇨🇳 简体中文](./README-zh.md)
