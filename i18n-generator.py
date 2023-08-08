@@ -65,7 +65,7 @@ default_message = {
         "message": "Kudo All"
     },
     "AppName": {
-        "message": "Garmin Connect Web Kudo All"
+        "message": "GCW and Strava Kudo All"
     },
     "AppDescription": {
         "message": "Give kudos to your elite athletes friends in one click",
