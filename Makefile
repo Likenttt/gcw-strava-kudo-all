@@ -1,3 +1,4 @@
+version = `jq -r '.version' src/manifest.json`
 .PHONY: prepare
 prepare:
 	mkdir -p build/temp
@@ -15,11 +16,9 @@ zip:
 	zip -T build/temp/kudoall.zip
 
 build.chrome: prepare chrome zip
-	cp build/temp/kudoall.zip build/artefacts/kudoall-chrome.zip
+	cp build/temp/kudoall.zip build/artefacts/kudoall-chrome-${version}.zip
 
 dev.chrome: prepare chrome
 
 build.firefox: prepare zip
-	cp build/temp/kudoall.zip build/artefacts/kudoall-firefox.zip
-
-build.all: build.firefox build.chrome
+	cp build/temp/kudoall.zip build/artefacts/kudoall-firefox-${version}.zip

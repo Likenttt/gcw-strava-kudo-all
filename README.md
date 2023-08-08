@@ -1,10 +1,8 @@
 # GCW & Strava Kudo All
 
-GCW stands for Garmin Connect Web
-
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/likenttt/garmin-connect-web-kudo-all-browser-extension?style=for-the-badge&sort=semver)](https://github.com/likenttt/garmin-connect-web-kudo-all-browser-extension/releases/latest)
 
-It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in [GCW](https://connect.garmin.com/modern/newsfeed) or [Strava](https://www.strava.com/dashboard)
+It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in [GCW(Garmin Connect Web)](https://connect.garmin.com/modern/newsfeed) or [Strava](https://www.strava.com/dashboard)
 
 [🇨🇳 简体中文](./README-zh.md)
 
@@ -16,7 +14,7 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/garmin-connect-web-kudo-all/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/garmin-connect-web-kudo-a/folhiecfhnmdniibjjcfogpdoafdamoc)
-- [Safari](https://apple.co/).
+<!-- - [Safari](https://apple.co/). -->
 
 ## FAQ
 
@@ -43,6 +41,10 @@ It merely kudos the activity cards on your screen. If you want to do more, pleas
 
 - Spread your love.
 - Encourage your elite athletes friends.
+
+### Can you support auto kudo?
+
+Nope. Giving "kudos" to athletes one current screen in one click is already a very quick and efficient operation. Still, we need to retain some sense of ritual. If everything is automated, where is the fun in that?
 
 ## Support me
 
