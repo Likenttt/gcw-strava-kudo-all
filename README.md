@@ -12,7 +12,7 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 ## Installation
 
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/garmin-connect-web-kudo-all/)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/garmin-connect-web-kudo-a/folhiecfhnmdniibjjcfogpdoafdamoc)
 <!-- - [Safari](https://apple.co/). -->
 
