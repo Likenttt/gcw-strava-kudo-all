@@ -14,15 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
+    - uses: actions/checkout@v2
     - name: Get version
       run: |
-        version=$(jq -r '.version' ../src/manifest.json)
+        version=$(jq -r '.version' ./src/manifest.json)
         echo "Version: $version"
         echo "::set-output name=version::$version"
 
-    - uses: actions/checkout@v2
-      
     - name: Build Firefox
       run: make build.firefox
       
