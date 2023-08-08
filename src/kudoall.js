@@ -238,7 +238,7 @@ const GC = {
     }
   },
   garminConnectStandBy: function () {
-    console.log("GCW Kudo All Starts running....");
+    console.log("GCW&Strava Kudo All Starts running....");
 
     let loaded = false;
 

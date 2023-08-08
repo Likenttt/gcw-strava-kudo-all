@@ -1,6 +1,6 @@
 # Privacy Policy
 
-GCW Kudo All respects and protects the privacy of all users. This browser extension does not collect, store or transmit any personal identity information of users.
+GCW&Strava Kudo All respects and protects the privacy of all users. This browser extension does not collect, store or transmit any personal identity information of users.
 
 The only functionality of this extension is to add a "Kudo All" button on webpages when users are browsing. This button allows users to give kudos to all content on the current page. All kudo data is kept in memory only, not persisted in storage, and is not sent out of the user's device.
 
