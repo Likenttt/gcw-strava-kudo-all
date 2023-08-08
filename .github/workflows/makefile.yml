@@ -20,7 +20,7 @@ jobs:
       run: |
         version=$(jq -r '.version' ./src/manifest.json)
         echo "Version: $version"
-        echo "{version}={$version}" >> $GITHUB_OUTPUT
+        echo "version=$version" >> $GITHUB_OUTPUT
 
     - name: Build Firefox
       run: make build.firefox
