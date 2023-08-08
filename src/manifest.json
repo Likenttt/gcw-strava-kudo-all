@@ -15,7 +15,8 @@
       "matches": [
         "*://connect.garmin.com/*",
         "*://connect.garmin.cn/*",
-        "*://connectus.garmin.cn/*"
+        "*://connectus.garmin.cn/*",
+        "*://*.strava.com/*"
       ],
       "js": [
         "kudoall.js"
