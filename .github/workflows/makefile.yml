@@ -17,7 +17,7 @@ jobs:
 
     - name: Get version
       run: |
-        version=$(jq -r '.version' src/manifest.json)
+        version=$(jq -r '.version' ../src/manifest.json)
         echo "Version: $version"
         echo "::set-output name=version::$version"
 
