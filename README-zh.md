@@ -12,7 +12,8 @@
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc)
-- [Safari](https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808).
+- [Safari](https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808)
+- 或者从 crx 安装 [.crx](./crx-files.md)
 
 [![](https://img.shields.io/chrome-web-store/v/folhiecfhnmdniibjjcfogpdoafdamoc.svg?logo=google-chrome&style=flat)](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc) [![](https://img.shields.io/chrome-web-store/rating/folhiecfhnmdniibjjcfogpdoafdamoc.svg?logo=google-chrome&style=flat)](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc) [![](https://img.shields.io/chrome-web-store/users/folhiecfhnmdniibjjcfogpdoafdamoc.svg?logo=google-chrome&style=flat)](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc)
 
