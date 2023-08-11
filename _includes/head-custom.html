@@ -4,13 +4,17 @@
 {% include head-custom-google-analytics.html %}
 
 <!-- You can set your favicon here -->
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico'" />
+<link
+  rel="shortcut icon"
+  type="image/x-icon"
+  href="{{ site.baseurl }}favicon.ico'"
+/>
 <meta name="keywords" content="kudoall,garmin,connect,li2niu,newrathon" />
 <meta
   name="description"
   content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/modern/newsfeed or Strava"
 />
-<title>{{ page.title }} | GCW&Strava KudoAll</title>
+<title>{{ page.title }}</title>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +31,7 @@
 <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
 <meta
   property="og:image"
-  content="{{ site.baseurl }}/screenshots/english-kudoall.png"
+  content="{{ site.baseurl }}screenshots/english-kudoall.png"
 />
 
 <!-- 添加 Twitter 卡片标签，用于 Twitter 分享 -->
@@ -39,7 +43,7 @@
 />
 <meta
   name="twitter:image"
-  content="{{ site.baseurl }}/screenshots/english-kudoall.png"
+  content="{{ site.baseurl }}screenshots/english-kudoall.png"
 />
 
 <!-- end custom head snippets -->

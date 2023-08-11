@@ -1,8 +1,8 @@
 title: GCW and Strava Kudo All
-description: It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click
+description: It's a Chrome/Firefox/Safari/Edge Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web or Strava
 logo: /icons/icon48.png
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
-show_downloads: false
+show_downloads: true
 google_analytics: G-CVD6L6ME17
