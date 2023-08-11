@@ -1,0 +1,45 @@
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+{% include head-custom-google-analytics.html %}
+
+<!-- You can set your favicon here -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico'" />
+<meta name="keywords" content="kudoall,garmin,connect,li2niu,newrathon" />
+<meta
+  name="description"
+  content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/modern/newsfeed or Strava"
+/>
+<title>{{ page.title }} | GCW&Strava KudoAll</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="{{ asset_path }}" />
+
+<meta name="author" content="li2niu" />
+
+<!-- 添加 Open Graph 协议标签，用于社交媒体分享 -->
+<meta property="og:title" content="{{ page.title }}" />
+<meta
+  property="og:description"
+  content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/modern/newsfeed or Strava"
+/>
+<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+<meta
+  property="og:image"
+  content="{{ site.baseurl }}/screenshots/english-kudoall.png"
+/>
+
+<!-- 添加 Twitter 卡片标签，用于 Twitter 分享 -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta
+  name="twitter:description"
+  content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/modern/newsfeed or Strava"
+/>
+<meta
+  name="twitter:image"
+  content="{{ site.baseurl }}/screenshots/english-kudoall.png"
+/>
+
+<!-- end custom head snippets -->
