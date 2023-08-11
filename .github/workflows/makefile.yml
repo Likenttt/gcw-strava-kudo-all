@@ -27,19 +27,29 @@ jobs:
       
     - name: Build Chrome
       run: make build.chrome
-    
+    - uses: cardinalby/webext-buildtools-chrome-crx-action@v2
+      with:
+        # zip file made at the packExtensionDir step
+        zipFilePath: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.zip
+        crxFilePath: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.crx
+        privateKey: ${{ secrets.CHROME_CRX_PRIVATE_KEY }}
     - name: Upload a Chrome Artifact
       uses: actions/upload-artifact@v2.3.1
       with:
         name: kudoall-chrome-${{ steps.extract-version.outputs.version }}.zip
         path: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.zip
+    - name: Upload a Chrome Crx
+      uses: actions/upload-artifact@v2.3.1
+      with:
+        name: kudoall-chrome-${{ steps.extract-version.outputs.version }}.crx
+        path: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.crx
 
     - name: Upload a Firefox Artifact
       uses: actions/upload-artifact@v2.3.1
       with:
         name: kudoall-firefox-${{ steps.extract-version.outputs.version }}.zip
         path: build/artefacts/kudoall-firefox-${{ steps.extract-version.outputs.version }}.zip
-
+      
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.zip,build/artefacts/kudoall-firefox-${{ steps.extract-version.outputs.version }}.zip"
