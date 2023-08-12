@@ -63,6 +63,10 @@ Nope. Giving "kudos" to athletes one current screen in one click is already a ve
 - [Kudo All for Strava](https://github.com/tciles/kudo-all)
 - [Chrome Extension Icon Generator](https://alexleybourne.github.io/chrome-extension-icon-generator/)
 
+## More Extensions
+
+[More](https://extensions.li2niu.com)
+
 ## Privacy Policy
 
 [Privacy Policy](./privacy-policy.md)
