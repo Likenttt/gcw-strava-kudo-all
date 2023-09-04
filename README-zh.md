@@ -63,7 +63,7 @@ Strava 中，在右上角导航栏的“订阅按钮”旁边。
 - [Strava 的 Kudo All](https://github.com/tciles/kudo-all)
 - Four Times 俱乐部，因为群友我才了解到原项目的存在，并在休息日产生兴趣移植到 Garmin 平台。给四次的群友点赞，他们的努力的耕耘模样令人感动 🐶，比如蔡哥。
 
-## More Extensions
+## 我的更多插件
 
 [More](https://extensions.li2niu.com)
 
