@@ -67,6 +67,10 @@ Strava 中，在右上角导航栏的“订阅按钮”旁边。
 
 [More](https://extensions.li2niu.com)
 
+## 插件友情推荐
+
+[Strava Assistant](https://www.stravassistant.icu)
+
 ## 隐私协议
 
 [隐私协议](./privacy-policy-zh.md)

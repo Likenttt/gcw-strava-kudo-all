@@ -68,6 +68,10 @@ Nope. Giving "kudos" to athletes one current screen in one click is already a ve
 
 [More](https://extensions.li2niu.com)
 
+## Strava Plugin by my friends
+
+[Strava Assistant](https://www.stravassistant.icu)
+
 ## Privacy Policy
 
 [Privacy Policy](./privacy-policy.md)
