@@ -65,7 +65,8 @@ Strava 中，在右上角导航栏的“订阅按钮”旁边。
 
 ## 我的更多插件
 
-[More](https://extensions.li2niu.com)
+[更多插件](https://extensions.li2niu.com)
+[NewQRCode-在智能手表上展示二维码](https://q.li2niu.com)
 
 ## 插件友情推荐
 
