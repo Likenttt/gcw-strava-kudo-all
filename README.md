@@ -66,8 +66,12 @@ Nope. Giving "kudos" to athletes one current screen in one click is already a ve
 
 ## More Extensions and Apps
 
-[More Extensions](https://extensions.li2niu.com)
-[NewQRCode-Bring QRCodes to your Smart Watches](https://q.li2niu.com)
+- [More Extensions](https://extensions.li2niu.com)
+- [NewQRCode-Bring QRCodes to your Smart Watches](https://q.li2niu.com)
+
+## More About Me
+
+- [li2niu.com](https://li2niu.com)
 
 ## Strava Plugin by my friends
 
