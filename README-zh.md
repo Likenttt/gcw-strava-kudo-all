@@ -24,12 +24,9 @@
 
 ## 广告
 
-本产品无需打赏，但我们的淘宝店铺：牛拉松运动产品，需要积累更好的信誉和更强的知名度，你可以选择以下方式支持我们。
-
-- 如果你有长跑补给需求，欢迎来我们的店铺购买[ SIS 能量胶, 备注 kudoall，拍 10 支再送一支，顺丰包邮 ](https://item.taobao.com/item.htm?ft=t&id=728701145206)
-- 如果你需要购买佳明手表，也欢迎莅临咨询选购。
-
-欢迎添加我的微信：niuverse，添加请备注：衬衫的价格。
+- <a href="https://www.buymeacoffee.com/lichuanyi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an energy gel&emoji=&slug=lichuanyi&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" /></a>
+- [Rackerd VPS](https://my.racknerd.com/aff.php?aff=8822)
+- [Immersive Translate 沉浸式翻译](https://immersivetranslate.com/?via=li2niu)
 
 ## FAQ
 
@@ -65,8 +62,9 @@ Strava 中，在右上角导航栏的“订阅按钮”旁边。
 
 ## 我的更多插件
 
-[更多插件](https://extensions.li2niu.com)
-[NewQRCode-在智能手表上展示二维码](https://q.li2niu.com)
+- [GameraSnap-使用佳明手表控制手机拍照](https://gamerasnap.li2niu.com/)
+- [更多插件](https://extensions.li2niu.com)
+- [NewQRCode-在智能手表上展示二维码](https://q.li2niu.com)
 
 ## 插件友情推荐
 
