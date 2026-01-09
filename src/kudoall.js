@@ -150,7 +150,7 @@ const Strava = {
 
 const GC = {
   getContainer: function () {
-    // at page https://connect.garmin.cn/modern/newsfeed
+    // at page https://connect.garmin.cn/app/newsfeed
     const container = document.querySelector('div[class="header-nav"]');
 
     console.log("container is?");
@@ -199,7 +199,7 @@ const GC = {
 
   kudoAllHandler: function (event) {
     event.preventDefault();
-    if (window.location.pathname !== "/modern/newsfeed") {
+    if (window.location.pathname !== "/app/newsfeed") {
       return;
     }
 
@@ -224,7 +224,7 @@ const GC = {
   },
 
   execute: function () {
-    // Check if the current pathname is "/modern/newsfeed"
+    // Check if the current pathname is "/app/newsfeed"
     //container is to place the button
     const container = GC.getContainer();
 

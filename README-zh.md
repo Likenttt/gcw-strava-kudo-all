@@ -1,6 +1,6 @@
 # GCW&Strava Kudo All
 
-这是一个 Chrome/Firefox/Safari 插件，用于在 [GCW（Garmin Connect Web）](https://connect.garmin.cn/modern/newsfeed) 和 [Strava](https://www.strava.com/dashboard) 中一键给你的精英运动员朋友们点赞。
+这是一个 Chrome/Firefox/Safari 插件，用于在 [GCW（Garmin Connect Web）](https://connect.garmin.cn/app/newsfeed) 和 [Strava](https://www.strava.com/dashboard) 中一键给你的精英运动员朋友们点赞。
 
 [English](./README.md)
 
@@ -37,9 +37,9 @@ Strava 中，在右上角导航栏的“订阅按钮”旁边。
 
 ### 有效的域名及链接
 
-- https://connect.garmin.com/modern/newsfeed
-- https://connect.garmin.cn/modern/newsfeed
-- https://connectus.garmin.cn/modern/newsfeed
+- https://connect.garmin.com/app/newsfeed
+- https://connect.garmin.cn/app/newsfeed
+- https://connectus.garmin.cn/app/newsfeed
 - https://www.strava.com/dashboard
 
 ### 点赞的范围是?
