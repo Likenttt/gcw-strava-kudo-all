@@ -1,4 +1,4 @@
-let _intl;
+ï»¿let _intl;
 
 try {
     if (window.chrome !== undefined && chrome.i18n) {
@@ -315,7 +315,7 @@ const GC = (() => {
     function kudoAllHandler(event) {
         event.preventDefault();
 
-        // Don’t run outside the newsfeed
+        // Donâ€™t run outside the newsfeed
         if (!onNewsfeed()) return;
 
         const icons = findKudosIcons();
@@ -388,7 +388,7 @@ const GC = (() => {
     function init() {
         log("Garmin init");
 
-        // Initial (don’t rely on window.onload)
+        // Initial (donâ€™t rely on window.onload)
         scheduleEnsure();
 
         // Watch for Garmin re-renders (filter changes often remount parts of the page)
