@@ -26,6 +26,10 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 ## FAQ
 
+“Migrate to Manifest V3”
+“Support /app/* routes”
+“Fix button injection for filtered feed via MutationObserver + SPA navigation hook”
+
 ### Where is the one click button?
 
 - In GCW, it is on the up-right nav bar next to Upload Activities.
