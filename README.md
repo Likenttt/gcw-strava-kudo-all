@@ -2,7 +2,7 @@
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/likenttt/garmin-connect-web-kudo-all-browser-extension?style=for-the-badge&sort=semver)](https://github.com/likenttt/garmin-connect-web-kudo-all-browser-extension/releases/latest)
 
-It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in [GCW(Garmin Connect Web)](https://connect.garmin.com/modern/newsfeed) or [Strava](https://www.strava.com/dashboard)
+It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in [GCW(Garmin Connect Web)](https://connect.garmin.com/app/newsfeed) or [Strava](https://www.strava.com/dashboard)
 
 [🇨🇳 简体中文](./README-zh.md)
 
@@ -26,6 +26,10 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 ## FAQ
 
+“Migrate to Manifest V3”
+“Support /app/* routes”
+“Fix button injection for filtered feed via MutationObserver + SPA navigation hook”
+
 ### Where is the one click button?
 
 - In GCW, it is on the up-right nav bar next to Upload Activities.
@@ -35,9 +39,9 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 For GCW, these domains are valid
 
-- https://connect.garmin.com/modern/newsfeed
-- https://connect.garmin.cn/modern/newsfeed
-- https://connectus.garmin.cn/modern/newsfeed
+- https://connect.garmin.com/app/newsfeed
+- https://connect.garmin.cn/app/newsfeed
+- https://connectus.garmin.cn/app/newsfeed
 
 For Strava, only https://www.strava.com is valid.
 
