@@ -13,9 +13,9 @@
   "content_scripts": [
     {
       "matches": [
-        "*://connect.garmin.com/*",
-        "*://connect.garmin.cn/*",
-        "*://connectus.garmin.cn/*",
+        "*://connect.garmin.com/*/newsfeed*",
+        "*://connect.garmin.cn/*/newsfeed*",
+        "*://connectus.garmin.cn/*/newsfeed*",
         "*://*.strava.com/*"
       ],
       "js": [
