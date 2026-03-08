@@ -352,8 +352,8 @@ const GC = (() => {
         if (!isHostGarmin()) return;
         if (!onNewsfeed()) return;
 
-        // Already there?
-        if (document.getElementById(BTN_ID)) return;
+        const existing = document.getElementById(BTN_ID);
+        if (existing && !existing.classList.contains("gcw-floating")) return;
 
         const nav = findHeaderNav();
 
@@ -365,7 +365,6 @@ const GC = (() => {
         }
 
         // If we previously injected fallback floating button, remove it and inject into header
-        const existing = document.getElementById(BTN_ID);
         if (existing && existing.classList.contains("gcw-floating")) {
             existing.remove();
         }
