@@ -212,6 +212,7 @@ const GC = (() => {
     const TOP_HEADER_SELECTOR =
         '[class*="TopHeaderBarView_headerItems"]';
     const IMPORT_MENU_SELECTOR = '[class*="ImportDataMenu_container"]';
+    let kudoAllInProgress = false;
 
     function onNewsfeed() {
         // Garmin uses /app/newsfeed (and some setups had /modern/newsfeed)
@@ -295,8 +296,135 @@ const GC = (() => {
         height: 18px;
         width: 18px;
       }
+      .gcw-star-burst {
+        height: 0;
+        left: 0;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        width: 0;
+        z-index: 1000000;
+      }
+      .gcw-star-burst-star {
+        animation: gcw-star-burst var(--gcw-star-duration) ease-out forwards;
+        animation-delay: var(--gcw-star-delay);
+        color: var(--gcw-star-color);
+        font: 700 var(--gcw-star-size)/1 system-ui, sans-serif;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -50%) scale(.15) rotate(0deg);
+        transform-origin: center;
+        user-select: none;
+        will-change: opacity, transform;
+      }
+      @keyframes gcw-star-burst {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(.15) rotate(0deg);
+        }
+        16% {
+          opacity: 1;
+        }
+        72% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform:
+            translate(
+              calc(-50% + var(--gcw-star-x)),
+              calc(-50% + var(--gcw-star-y))
+            )
+            scale(1.45)
+            rotate(var(--gcw-star-rotation));
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .gcw-star-burst {
+          display: none;
+        }
+      }
     `;
         document.head.appendChild(style);
+    }
+
+    function launchStarBurst(origin) {
+        if (!origin || !origin.getBoundingClientRect) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            return;
+        }
+
+        ensureStyles();
+
+        const rect = origin.getBoundingClientRect();
+        if (rect.width < 1 || rect.height < 1) return;
+
+        document
+            .querySelectorAll(".gcw-star-burst")
+            .forEach((existingBurst) => existingBurst.remove());
+
+        const burst = document.createElement("div");
+        burst.className = "gcw-star-burst";
+        burst.setAttribute("aria-hidden", "true");
+        burst.style.left = `${rect.left + rect.width / 2}px`;
+        burst.style.top = `${rect.top + rect.height / 2}px`;
+
+        const colors = [
+            "#ff4d6d",
+            "#ff9f1c",
+            "#ffd60a",
+            "#2ec4b6",
+            "#38bdf8",
+            "#6366f1",
+            "#a855f7",
+            "#f472b6",
+        ];
+        const particleCount = 16;
+
+        for (let i = 0; i < particleCount; i++) {
+            const angle =
+                (Math.PI * 2 * i) / particleCount +
+                (Math.random() - 0.5) * 0.28;
+            const distance = 38 + Math.random() * 42;
+            const star = document.createElement("span");
+
+            star.className = "gcw-star-burst-star";
+            star.textContent = "★";
+            star.style.setProperty(
+                "--gcw-star-x",
+                `${Math.cos(angle) * distance}px`
+            );
+            star.style.setProperty(
+                "--gcw-star-y",
+                `${Math.sin(angle) * distance}px`
+            );
+            star.style.setProperty(
+                "--gcw-star-rotation",
+                `${Math.round((Math.random() - 0.5) * 240)}deg`
+            );
+            star.style.setProperty(
+                "--gcw-star-size",
+                `${8 + Math.round(Math.random() * 6)}px`
+            );
+            star.style.setProperty(
+                "--gcw-star-delay",
+                `${Math.round(Math.random() * 110)}ms`
+            );
+            star.style.setProperty(
+                "--gcw-star-duration",
+                `${700 + Math.round(Math.random() * 220)}ms`
+            );
+            star.style.setProperty(
+                "--gcw-star-color",
+                colors[i % colors.length]
+            );
+            burst.appendChild(star);
+        }
+
+        document.body.appendChild(burst);
+        setTimeout(() => burst.remove(), 1200);
     }
 
     function isTopHeaderContainer(container) {
@@ -456,14 +584,24 @@ const GC = (() => {
         // Don’t run outside the newsfeed
         if (!onNewsfeed()) return;
 
+        launchStarBurst(event.currentTarget);
+
+        if (kudoAllInProgress) return;
+
         const buttons = findKudosButtons();
         const len = buttons.length;
         if (len < 1) return;
+
+        kudoAllInProgress = true;
 
         for (let i = 0; i < len; i++) {
             const button = buttons[i];
             if (button) button.click();
         }
+
+        setTimeout(() => {
+            kudoAllInProgress = false;
+        }, 1200);
     }
 
     function injectFloatingFallbackIfNeeded() {
