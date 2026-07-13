@@ -209,6 +209,9 @@ const GC = (() => {
     const MOUNT_ID = "gcw-kudo-all-gc-mount";
     const BTN_ID = "gcw-kudo-all-gc-btn";
     const STYLE_ID = "gcw-kudo-all-style";
+    const TOP_HEADER_SELECTOR =
+        '[class*="TopHeaderBarView_headerItems"]';
+    const IMPORT_MENU_SELECTOR = '[class*="ImportDataMenu_container"]';
 
     function onNewsfeed() {
         // Garmin uses /app/newsfeed (and some setups had /modern/newsfeed)
@@ -243,13 +246,73 @@ const GC = (() => {
         background: #111;
         color: #fff;
       }
+      #${MOUNT_ID}.gcw-top-header-item {
+        align-items: center;
+        display: flex;
+        flex: 0 0 36px;
+        height: 60px;
+        justify-content: center;
+        width: 36px;
+      }
+      #${BTN_ID}.gcw-top-header-button {
+        align-items: center;
+        background: transparent;
+        border: 0;
+        border-radius: 4px;
+        color: var(--icon-default, #6b6b6b);
+        cursor: pointer;
+        display: flex;
+        height: 36px;
+        justify-content: center;
+        margin: 0;
+        padding: 6px;
+        width: 36px;
+      }
+      #${BTN_ID}.gcw-top-header-button:hover {
+        background: rgba(0, 0, 0, .06);
+      }
+      #${BTN_ID}.gcw-top-header-button > svg {
+        height: 24px;
+        width: 24px;
+      }
     `;
         document.head.appendChild(style);
     }
 
-    function findHeaderNav() {
+    function isTopHeaderContainer(container) {
+        return Boolean(container && container.matches(TOP_HEADER_SELECTOR));
+    }
+
+    function findImportItem(container) {
+        if (!isTopHeaderContainer(container)) return null;
+
+        const importMenu = container.querySelector(IMPORT_MENU_SELECTOR);
+        if (!importMenu) return null;
+
+        return (
+            Array.from(container.children).find((child) =>
+                child.contains(importMenu)
+            ) || null
+        );
+    }
+
+    function findHeaderContainer() {
+        // Current Garmin header. Match the stable CSS module name while
+        // ignoring its generated suffix. Require the upload component and a
+        // visible layout box so a hidden responsive header is not selected.
+        let nav = Array.from(
+            document.querySelectorAll(TOP_HEADER_SELECTOR)
+        ).find(
+            (candidate) =>
+                findImportItem(candidate) &&
+                candidate.getClientRects().length > 0
+        );
+        if (nav) return nav;
+
         // Primary: exact known class (works for many versions)
-        let nav = document.querySelector("div.header-nav") || document.querySelector(".header-nav");
+        nav =
+            document.querySelector("div.header-nav") ||
+            document.querySelector(".header-nav");
         if (nav) return nav;
 
         // Fallback: any element whose class contains "header-nav" (class order / css modules)
@@ -266,15 +329,35 @@ const GC = (() => {
         if (!container) return null;
 
         let mount = document.getElementById(MOUNT_ID);
-        if (mount && mount.isConnected) return mount;
+        if (mount && mount.parentElement !== container) {
+            mount.remove();
+            mount = null;
+        }
+
+        const isTopHeader = isTopHeaderContainer(container);
+        const importItem = isTopHeader ? findImportItem(container) : null;
+        if (isTopHeader && !importItem) return null;
+
+        if (mount && mount.isConnected) {
+            if (isTopHeader && mount.nextElementSibling !== importItem) {
+                container.insertBefore(mount, importItem);
+            }
+            return mount;
+        }
 
         mount = document.createElement("div");
         mount.id = MOUNT_ID;
         mount.classList.add("kudo-all-nav-item");
-        mount.classList.add("header-nav-item");
-        mount.style.height = "60px";
-        mount.style.width = "50px";
-        container.prepend(mount);
+
+        if (isTopHeader) {
+            mount.classList.add("gcw-top-header-item");
+            container.insertBefore(mount, importItem);
+        } else {
+            mount.classList.add("header-nav-item");
+            mount.style.height = "60px";
+            mount.style.width = "50px";
+            container.prepend(mount);
+        }
 
         return mount;
     }
@@ -315,8 +398,26 @@ const GC = (() => {
         );
     }
 
-    function createButton() {
+    function createButton(container) {
         const label = getMessage("kudo_all", "Kudo All");
+        const isTopHeader = isTopHeaderContainer(container);
+
+        if (isTopHeader) {
+            ensureStyles();
+
+            const button = document.createElement("button");
+            button.id = BTN_ID;
+            button.type = "button";
+            button.classList.add("gcw-top-header-button");
+            button.setAttribute("aria-label", label);
+            button.setAttribute("title", label);
+            button.innerHTML = `
+                <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </svg>
+            `;
+            return button;
+        }
 
         // Use <a> styled like existing header icons (your original approach)
         const link = document.createElement("a");
@@ -367,11 +468,22 @@ const GC = (() => {
         if (!onNewsfeed()) return;
 
         const existing = document.getElementById(BTN_ID);
-        if (existing && !existing.classList.contains("gcw-floating")) return;
-
-        const nav = findHeaderNav();
+        const nav = findHeaderContainer();
 
         if (!nav) {
+            if (
+                existing &&
+                !existing.classList.contains("gcw-floating") &&
+                existing.getClientRects().length < 1
+            ) {
+                const existingMount = existing.closest(`#${MOUNT_ID}`);
+                if (existingMount) {
+                    existingMount.remove();
+                } else {
+                    existing.remove();
+                }
+            }
+
             // Header not in DOM yet (common with filters / SPA render)
             // Try fallback so user always has a button
             injectFloatingFallbackIfNeeded();
@@ -386,10 +498,13 @@ const GC = (() => {
         const mount = ensureMount(nav);
         if (!mount) return;
 
-        // Might have been injected between checks
-        if (document.getElementById(BTN_ID)) return;
+        // An existing header button remains usable after ensureMount has
+        // validated and, if needed, repositioned its mount.
+        const mountedButton = document.getElementById(BTN_ID);
+        if (mountedButton && mount.contains(mountedButton)) return;
+        if (mountedButton) mountedButton.remove();
 
-        const button = createButton();
+        const button = createButton(nav);
         mount.append(button);
         button.addEventListener("click", kudoAllHandler);
 
