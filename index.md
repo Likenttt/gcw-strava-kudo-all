@@ -79,17 +79,13 @@ title: GCW & Strava Kudo All
 
 <section class="kudo-more-apps" aria-labelledby="kudo-more-apps-title">
   <header class="kudo-more-apps__header">
-    <p class="kudo-more-apps__label">
-      <span class="kudo-l10n--zh" lang="zh-CN">赞助应用</span>
-      <span class="kudo-l10n--en" lang="en">SPONSORED APPS</span>
-    </p>
     <h2 class="kudo-more-apps__title" id="kudo-more-apps-title">
       <span class="kudo-l10n--zh" lang="zh-CN">更多扩展与应用</span>
       <span class="kudo-l10n--en" lang="en">More Extensions and Apps</span>
     </h2>
   </header>
   <div class="kudo-more-apps__content">
-    {% include product-promo.html context="home" %}
+    {% include product-promo.html context="home" hide_heading=true labelledby="kudo-more-apps-title" %}
   </div>
 </section>
 

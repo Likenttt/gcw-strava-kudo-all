@@ -392,15 +392,6 @@ html[data-kudo-reason="update"] .kudo-update-success {
   padding: 22px 28px;
 }
 
-.kudo-more-apps__label {
-  color: var(--promo-blue);
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: .14em;
-  line-height: 1.2;
-  margin: 0;
-}
-
 .kudo-more-apps__title {
   background: none;
   color: var(--promo-ink);
@@ -408,7 +399,7 @@ html[data-kudo-reason="update"] .kudo-update-success {
   font-weight: 800;
   letter-spacing: -.025em;
   line-height: 1.2;
-  margin: 5px 0 0;
+  margin: 0;
   padding: 0;
 }
 

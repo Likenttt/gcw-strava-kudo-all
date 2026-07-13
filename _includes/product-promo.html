@@ -1,5 +1,7 @@
 {% assign promo_context = include.context | default: "home" %}
-<section class="garmin-app-showcase" aria-labelledby="garmin-app-showcase-title">
+{% assign promo_labelledby = include.labelledby | default: "garmin-app-showcase-title" %}
+<section class="garmin-app-showcase" aria-labelledby="{{ promo_labelledby }}">
+  {% unless include.hide_heading %}
   <div class="garmin-app-showcase__heading">
     <p class="garmin-app-showcase__eyebrow">
       {% if promo_context == "update" %}
@@ -19,6 +21,7 @@
       <span class="kudo-l10n--en" lang="en">Meet six independent apps that help keep Kudo All's free browser editions maintained and fun.</span>
     </p>
   </div>
+  {% endunless %}
 
   <div class="garmin-app-grid">
     <article class="garmin-app-card garmin-app-card--blue">
