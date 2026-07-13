@@ -119,18 +119,76 @@ html[data-kudo-reason="update"] .kudo-update-success {
 }
 
 .kudo-landing-hero__actions a {
+  align-items: center;
   background: rgba(255, 255, 255, .12);
   border: 1px solid rgba(255, 255, 255, .22);
   border-radius: 12px;
   color: #fff;
+  display: inline-flex;
   font-weight: 700;
+  gap: 9px;
   padding: 10px 15px;
   text-decoration: none;
+}
+
+.kudo-landing-hero__actions img {
+  flex: 0 0 auto;
+  height: 22px;
+  width: 22px;
 }
 
 .kudo-landing-hero__actions a:first-child {
   background: #fff;
   color: #12345a;
+}
+
+.kudo-demo {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 24px;
+  margin: 28px 0 40px;
+  overflow: hidden;
+  padding: clamp(20px, 4vw, 34px);
+}
+
+.kudo-demo__heading {
+  margin-bottom: 22px;
+  max-width: 760px;
+}
+
+.kudo-demo__eyebrow {
+  color: var(--promo-blue);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  margin: 0 0 6px;
+}
+
+.kudo-demo__heading h2 {
+  color: var(--promo-ink);
+  font-size: clamp(25px, 4vw, 36px);
+  letter-spacing: -.03em;
+  margin: 0 0 8px;
+}
+
+.kudo-demo__heading > p:last-child {
+  color: var(--promo-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.kudo-demo__video {
+  aspect-ratio: 16 / 9;
+  background: #0c1728;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.kudo-demo__video iframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .garmin-app-showcase {
@@ -297,7 +355,12 @@ html[data-kudo-reason="update"] .kudo-update-success {
 
   .kudo-landing-hero,
   .kudo-update-hero,
+  .kudo-demo,
   .garmin-app-showcase {
     border-radius: 18px;
+  }
+
+  .kudo-demo__video {
+    border-radius: 12px;
   }
 }
