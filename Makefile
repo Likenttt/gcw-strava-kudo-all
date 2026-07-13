@@ -1,5 +1,5 @@
 version := $(shell jq -r '.version' src/manifest.json)
-safari_build_number ?= 6
+safari_build_number ?= 7
 safari_project := KudoAllSafari/KudoAll.xcodeproj
 safari_pbxproj := KudoAllSafari/KudoAll.xcodeproj/project.pbxproj
 safari_scheme := Garmin Connect Web Kudo All (macOS)

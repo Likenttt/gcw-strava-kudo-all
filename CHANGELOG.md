@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.4.0] - 2026-07-13
+
+### Added
+
+- Add a colorful heart burst animation with gravity after running Kudo All.
+- Add a localized sponsored-app landing page for GameraSnap, WristAlbum, WristTale, WristPass, 2FA4G, and JiaKe.app.
+- Open the sponsored-app page after installation or update in free browser editions.
+
+### Changed
+
+- Place the Garmin Kudo All action beside the native upload action across localized page layouts.
+- Refine the action icon size and remove ripple, hover background, and shadow effects to match Garmin's native controls.
+- Add Android destinations for WristAlbum and JiaKe.app and remove the new-product badge.
+- Keep Safari from automatically opening the sponsored-app page.
+
+### Fixed
+
+- Improve localized Garmin header detection and prevent the action from falling back to the bottom-right corner.
+- Clip promotional card accents to rounded card corners.
+
 ## [1.3.0] - 2026-03-08
 
 ### Changed

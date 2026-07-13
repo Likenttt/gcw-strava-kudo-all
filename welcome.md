@@ -4,6 +4,12 @@ title: Kudo All
 permalink: /welcome/
 ---
 
+<p class="kudo-update-success">
+  <span class="kudo-update-success__icon" aria-hidden="true">🎉</span>
+  <span class="kudo-l10n--zh" lang="zh-CN">恭喜你，Kudo All 已成功更新到 <span data-kudo-version>最新版本</span>！</span>
+  <span class="kudo-l10n--en" lang="en">Congratulations! Kudo All was successfully updated to <span data-kudo-version>the latest version</span>.</span>
+</p>
+
 <section class="kudo-update-hero">
   <p class="kudo-update-hero__badge">
     <span class="kudo-l10n--zh" lang="zh-CN">安装或更新完成</span>

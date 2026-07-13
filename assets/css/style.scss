@@ -22,6 +22,29 @@ html[data-kudo-locale="zh"] .kudo-l10n--zh {
   display: initial;
 }
 
+.kudo-update-success {
+  display: none;
+}
+
+html[data-kudo-reason="update"] .kudo-update-success {
+  align-items: center;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 14px;
+  color: #065f46;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  gap: 9px;
+  margin: 8px 0 14px;
+  padding: 12px 16px;
+}
+
+.kudo-update-success__icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
 .kudo-landing-hero,
 .kudo-update-hero {
   background:
