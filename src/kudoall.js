@@ -274,7 +274,7 @@ const GC = (() => {
       }
       #${BTN_ID}.gcw-top-header-button:hover,
       #${BTN_ID}.gcw-top-header-button:active {
-        background: rgba(0, 0, 0, .06) !important;
+        background: transparent !important;
         box-shadow: none !important;
         transform: none !important;
       }
