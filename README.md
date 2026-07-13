@@ -56,12 +56,6 @@ It merely kudos the activity cards on your screen. If you want to do more, pleas
 
 Nope. Giving "kudos" to athletes one current screen in one click is already a very quick and efficient operation. Still, we need to retain some sense of ritual. If everything is automated, where is the fun in that?
 
-## Support me
-
-- <a href="https://www.buymeacoffee.com/li2niu"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an energy gel&emoji=&slug=li2niu&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" /></a>
-- [Rackerd VPS](https://my.racknerd.com/aff.php?aff=8822)
-- [Immersive Translate](https://immersivetranslate.com/?via=li2niu)
-
 ## Credit
 
 - [Kudo All for Strava](https://github.com/tciles/kudo-all)

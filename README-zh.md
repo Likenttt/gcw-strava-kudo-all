@@ -24,7 +24,6 @@
 
 ## 广告
 
-- <a href="https://www.buymeacoffee.com/lichuanyi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an energy gel&emoji=&slug=lichuanyi&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" /></a>
 - [Immersive Translate 沉浸式翻译](https://immersivetranslate.com/?via=li2niu)
 
 ## FAQ
