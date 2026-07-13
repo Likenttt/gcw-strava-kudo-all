@@ -279,22 +279,39 @@ const GC = (() => {
         return mount;
     }
 
-    function findKudosIcons(root) {
-        const selector =
-            'button[class^="CommentLikeSection_socialIconWrapper"] > div[class*="CommentLikeSection_animateBox"] > i[class*="icon-heart-inverted"]';
+    function isUnlikedKudosButton(button) {
+        if (!button) return false;
 
-        const base = root || document;
-        return Array.from(base.querySelectorAll(selector));
+        const icon = Array.from(button.children).find((child) =>
+            child.matches('svg[data-library="ui-icons"]')
+        );
+        if (!icon) return false;
+
+        const isUnlikedIcon = icon.classList.contains("fadeIn");
+        const isLikedIcon = icon.classList.contains("tada");
+        if (!isUnlikedIcon && !isLikedIcon) return false;
+
+        // Prefer the standard pressed state if Garmin adds it in the future.
+        const pressed = button.getAttribute("aria-pressed");
+        if (pressed !== null) {
+            return pressed === "false" && isUnlikedIcon;
+        }
+
+        // Garmin currently renders the heart as an SVG. The localized
+        // aria-label changes with the site language, while these icon states do
+        // not: fadeIn is the outlined (unliked) heart and tada is the filled
+        // (liked) heart. Unknown states intentionally fail closed so an
+        // existing kudo is never removed by accident.
+        return isUnlikedIcon;
     }
 
-    function getClickableFromIcon(iconEl) {
-        if (!iconEl) return null;
-        // Garmin: clicking the wrapper button is usually safest
-        return (
-            iconEl.closest("button") ||
-            iconEl.closest("a") ||
-            iconEl.parentElement ||
-            iconEl
+    function findKudosButtons(root) {
+        const base = root || document;
+        const selector =
+            '[class*="CommentLikeSection_socialButtonWrapper"] button';
+
+        return Array.from(base.querySelectorAll(selector)).filter(
+            isUnlikedKudosButton
         );
     }
 
@@ -318,16 +335,13 @@ const GC = (() => {
         // Don’t run outside the newsfeed
         if (!onNewsfeed()) return;
 
-        const icons = findKudosIcons();
-        const len = icons.length;
+        const buttons = findKudosButtons();
+        const len = buttons.length;
         if (len < 1) return;
 
         for (let i = 0; i < len; i++) {
-            const icon = icons[i];
-            if (!icon) continue;
-
-            const clickable = getClickableFromIcon(icon);
-            if (clickable) clickable.click();
+            const button = buttons[i];
+            if (button) button.click();
         }
     }
 
