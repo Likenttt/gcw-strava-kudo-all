@@ -11,5 +11,3 @@ permalink: /welcome/
 </section>
 
 {% include product-promo.html context="update" %}
-
-<p class="kudo-update-note">感谢赞助应用与每一位用户的支持。此页面只会由免费的 Chrome、Edge 与 Firefox 版本在安装或更新后打开，付费 Safari 版不会自动打开。你可以随时关闭此页面并继续使用 Kudo All。</p>
