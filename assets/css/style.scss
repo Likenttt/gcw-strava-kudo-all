@@ -10,6 +10,18 @@
   --promo-blue: #1265c2;
 }
 
+html:not([data-kudo-locale="zh"]) .kudo-l10n--zh {
+  display: none;
+}
+
+html[data-kudo-locale="zh"] .kudo-l10n--en {
+  display: none;
+}
+
+html[data-kudo-locale="zh"] .kudo-l10n--zh {
+  display: initial;
+}
+
 .kudo-landing-hero,
 .kudo-update-hero {
   background:
@@ -126,12 +138,6 @@
   margin: 0;
 }
 
-.garmin-app-showcase__heading span {
-  display: block;
-  font-size: 13px;
-  margin-top: 3px;
-}
-
 .garmin-app-grid {
   display: grid;
   gap: 14px;
@@ -165,6 +171,7 @@
 .garmin-app-card--orange { --card-accent: #9a3412; }
 .garmin-app-card--green { --card-accent: #047857; }
 .garmin-app-card--slate { --card-accent: #334155; }
+.garmin-app-card--rose { --card-accent: #be123c; }
 
 .garmin-app-card__topline {
   align-items: center;
