@@ -10,6 +10,12 @@
   --promo-blue: #1265c2;
 }
 
+// The Slate theme caps page content at 640px. Keep that compact behavior on
+// smaller screens, but let the landing and update pages use desktop space.
+#main_content {
+  max-width: 1120px;
+}
+
 html:not([data-kudo-locale="zh"]) .kudo-l10n--zh {
   display: none;
 }
@@ -276,6 +282,12 @@ html[data-kudo-reason="update"] .kudo-update-success {
 
 .kudo-readme > h1:first-child {
   display: none;
+}
+
+@media (min-width: 1000px) {
+  .garmin-app-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
