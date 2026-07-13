@@ -296,7 +296,7 @@ const GC = (() => {
         height: 18px;
         width: 18px;
       }
-      .gcw-star-burst {
+      .gcw-heart-burst {
         height: 0;
         left: 0;
         pointer-events: none;
@@ -305,11 +305,8 @@ const GC = (() => {
         width: 0;
         z-index: 1000000;
       }
-      .gcw-star-burst-star {
-        animation: gcw-star-burst var(--gcw-star-duration) ease-out forwards;
-        animation-delay: var(--gcw-star-delay);
-        color: var(--gcw-star-color);
-        font: 700 var(--gcw-star-size)/1 system-ui, sans-serif;
+      .gcw-heart-burst-particle {
+        font: 700 10px/1 system-ui, sans-serif;
         left: 0;
         opacity: 0;
         position: absolute;
@@ -319,30 +316,8 @@ const GC = (() => {
         user-select: none;
         will-change: opacity, transform;
       }
-      @keyframes gcw-star-burst {
-        0% {
-          opacity: 0;
-          transform: translate(-50%, -50%) scale(.15) rotate(0deg);
-        }
-        16% {
-          opacity: 1;
-        }
-        72% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-          transform:
-            translate(
-              calc(-50% + var(--gcw-star-x)),
-              calc(-50% + var(--gcw-star-y))
-            )
-            scale(1.45)
-            rotate(var(--gcw-star-rotation));
-        }
-      }
       @media (prefers-reduced-motion: reduce) {
-        .gcw-star-burst {
+        .gcw-heart-burst {
           display: none;
         }
       }
@@ -350,7 +325,7 @@ const GC = (() => {
         document.head.appendChild(style);
     }
 
-    function launchStarBurst(origin) {
+    function launchHeartBurst(origin) {
         if (!origin || !origin.getBoundingClientRect) return;
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             return;
@@ -362,11 +337,11 @@ const GC = (() => {
         if (rect.width < 1 || rect.height < 1) return;
 
         document
-            .querySelectorAll(".gcw-star-burst")
+            .querySelectorAll(".gcw-heart-burst")
             .forEach((existingBurst) => existingBurst.remove());
 
         const burst = document.createElement("div");
-        burst.className = "gcw-star-burst";
+        burst.className = "gcw-heart-burst";
         burst.setAttribute("aria-hidden", "true");
         burst.style.left = `${rect.left + rect.width / 2}px`;
         burst.style.top = `${rect.top + rect.height / 2}px`;
@@ -382,49 +357,95 @@ const GC = (() => {
             "#f472b6",
         ];
         const particleCount = 16;
+        const particles = [];
 
         for (let i = 0; i < particleCount; i++) {
-            const angle =
-                (Math.PI * 2 * i) / particleCount +
-                (Math.random() - 0.5) * 0.28;
-            const distance = 38 + Math.random() * 42;
-            const star = document.createElement("span");
+            const horizontalDirection =
+                (i / (particleCount - 1) - 0.5) * 2;
+            const heart = document.createElement("span");
+            const velocityY = -(155 + Math.random() * 95);
+            const gravity = 430 + Math.random() * 150;
+            const returnToOriginMs =
+                (2 * Math.abs(velocityY) * 1000) / gravity;
+            const duration = Math.max(
+                1100,
+                returnToOriginMs + 300 + Math.random() * 200
+            );
 
-            star.className = "gcw-star-burst-star";
-            star.textContent = "★";
-            star.style.setProperty(
-                "--gcw-star-x",
-                `${Math.cos(angle) * distance}px`
-            );
-            star.style.setProperty(
-                "--gcw-star-y",
-                `${Math.sin(angle) * distance}px`
-            );
-            star.style.setProperty(
-                "--gcw-star-rotation",
-                `${Math.round((Math.random() - 0.5) * 240)}deg`
-            );
-            star.style.setProperty(
-                "--gcw-star-size",
-                `${8 + Math.round(Math.random() * 6)}px`
-            );
-            star.style.setProperty(
-                "--gcw-star-delay",
-                `${Math.round(Math.random() * 110)}ms`
-            );
-            star.style.setProperty(
-                "--gcw-star-duration",
-                `${700 + Math.round(Math.random() * 220)}ms`
-            );
-            star.style.setProperty(
-                "--gcw-star-color",
-                colors[i % colors.length]
-            );
-            burst.appendChild(star);
+            heart.className = "gcw-heart-burst-particle";
+            heart.textContent = "♥";
+            heart.style.color = colors[i % colors.length];
+            heart.style.fontSize = `${8 + Math.round(Math.random() * 6)}px`;
+            burst.appendChild(heart);
+
+            particles.push({
+                element: heart,
+                delay: Math.random() * 90,
+                duration,
+                fadeStartProgress: (returnToOriginMs + 80) / duration,
+                velocityX:
+                    horizontalDirection * (80 + Math.random() * 70) +
+                    (Math.random() - 0.5) * 24,
+                velocityY,
+                gravity,
+                spin: (Math.random() - 0.5) * 420,
+            });
         }
 
         document.body.appendChild(burst);
-        setTimeout(() => burst.remove(), 1200);
+
+        const startedAt = performance.now();
+
+        function animate(now) {
+            if (!burst.isConnected) return;
+
+            let hasActiveParticle = false;
+
+            for (const particle of particles) {
+                const elapsed = now - startedAt - particle.delay;
+
+                if (elapsed < 0) {
+                    hasActiveParticle = true;
+                    continue;
+                }
+
+                const progress = elapsed / particle.duration;
+                if (progress >= 1) {
+                    particle.element.style.opacity = "0";
+                    continue;
+                }
+
+                hasActiveParticle = true;
+
+                const time = elapsed / 1000;
+                const x = particle.velocityX * time;
+                const y =
+                    particle.velocityY * time +
+                    0.5 * particle.gravity * time * time;
+                const scale =
+                    0.15 + Math.min(progress / 0.3, 1) * 1.15;
+                const opacity =
+                    progress < particle.fadeStartProgress
+                        ? Math.min(progress / 0.1, 1)
+                        : Math.max(
+                              (1 - progress) /
+                                  (1 - particle.fadeStartProgress),
+                              0
+                          );
+                const rotation = particle.spin * time;
+
+                particle.element.style.opacity = `${opacity}`;
+                particle.element.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${scale}) rotate(${rotation}deg)`;
+            }
+
+            if (hasActiveParticle) {
+                requestAnimationFrame(animate);
+            } else {
+                burst.remove();
+            }
+        }
+
+        requestAnimationFrame(animate);
     }
 
     function isTopHeaderContainer(container) {
@@ -584,7 +605,7 @@ const GC = (() => {
         // Don’t run outside the newsfeed
         if (!onNewsfeed()) return;
 
-        launchStarBurst(event.currentTarget);
+        launchHeartBurst(event.currentTarget);
 
         if (kudoAllInProgress) return;
 
