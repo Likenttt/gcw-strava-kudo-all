@@ -380,6 +380,91 @@ html[data-kudo-reason="update"] .kudo-update-success {
   text-align: right;
 }
 
+.kudo-more-apps {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 24px;
+  margin: 34px 0 40px;
+  overflow: hidden;
+}
+
+.kudo-more-apps__summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 22px 28px;
+  transition: background-color .2s ease;
+}
+
+.kudo-more-apps__summary::-webkit-details-marker {
+  display: none;
+}
+
+.kudo-more-apps__summary::marker {
+  content: "";
+}
+
+.kudo-more-apps__summary:hover {
+  background: #f8fafc;
+}
+
+.kudo-more-apps__summary:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: -3px;
+}
+
+.kudo-more-apps__summary-copy {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.kudo-more-apps__label {
+  color: var(--promo-blue);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  line-height: 1.2;
+}
+
+.kudo-more-apps__title {
+  color: var(--promo-ink);
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 800;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.kudo-more-apps__chevron {
+  fill: none;
+  flex: 0 0 auto;
+  height: 24px;
+  margin-left: 18px;
+  stroke: var(--promo-muted);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  transition: transform .2s ease;
+  width: 24px;
+}
+
+.kudo-more-apps[open] .kudo-more-apps__chevron {
+  transform: rotate(180deg);
+}
+
+.kudo-more-apps__content {
+  border-top: 1px solid var(--promo-line);
+}
+
+.kudo-more-apps .garmin-app-showcase {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
 .kudo-readme > h1:first-child {
   display: none;
 }
@@ -398,8 +483,13 @@ html[data-kudo-reason="update"] .kudo-update-success {
   .kudo-landing-hero,
   .kudo-update-hero,
   .kudo-demo,
+  .kudo-more-apps,
   .garmin-app-showcase {
     border-radius: 18px;
+  }
+
+  .kudo-more-apps__summary {
+    padding: 18px 20px;
   }
 
   .kudo-demo__video {

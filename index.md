@@ -70,5 +70,34 @@ title: GCW & Strava Kudo All
 {% assign readme_parts = readme_content | split: '<!-- kudo-home-video-preview:start -->' %}
 {% assign readme_tail = readme_parts[1] | split: '<!-- kudo-home-video-preview:end -->' %}
 {% assign readme_after_video = readme_tail[1] %}
-{{ readme_parts[0] | append: readme_after_video | markdownify }}
+{% assign readme_without_video = readme_parts[0] | append: readme_after_video %}
+{% assign more_apps_parts = readme_without_video | split: '<!-- kudo-home-more-apps:start -->' %}
+{% assign more_apps_tail = more_apps_parts[1] | split: '<!-- kudo-home-more-apps:end -->' %}
+{% assign readme_after_more_apps = more_apps_tail[1] %}
+{{ more_apps_parts[0] | markdownify }}
+</div>
+
+<details class="kudo-more-apps">
+  <summary class="kudo-more-apps__summary">
+    <span class="kudo-more-apps__summary-copy">
+      <span class="kudo-more-apps__label">
+        <span class="kudo-l10n--zh" lang="zh-CN">赞助应用</span>
+        <span class="kudo-l10n--en" lang="en">SPONSORED APPS</span>
+      </span>
+      <span class="kudo-more-apps__title">
+        <span class="kudo-l10n--zh" lang="zh-CN">更多扩展与应用</span>
+        <span class="kudo-l10n--en" lang="en">More Extensions and Apps</span>
+      </span>
+    </span>
+    <svg class="kudo-more-apps__chevron" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  </summary>
+  <div class="kudo-more-apps__content">
+    {% include product-promo.html context="home" %}
+  </div>
+</details>
+
+<div class="kudo-readme">
+{{ readme_after_more_apps | markdownify }}
 </div>

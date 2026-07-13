@@ -67,11 +67,13 @@ Nope. Giving "kudos" to athletes one current screen in one click is already a ve
 - [Kudo All for Strava](https://github.com/tciles/kudo-all)
 - [Chrome Extension Icon Generator](https://alexleybourne.github.io/chrome-extension-icon-generator/)
 
+<!-- kudo-home-more-apps:start -->
 ## More Extensions and Apps
 
 - [GameraSnap-Take photos with your Garmin watch](https://gamerasnap.li2niu.com/)
 - [More Extensions](https://extensions.li2niu.com)
 - [NewQRCode-Bring QRCodes to your Smart Watches](https://q.li2niu.com)
+<!-- kudo-home-more-apps:end -->
 
 ## Strava Plugin by my friends
 
