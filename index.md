@@ -77,26 +77,21 @@ title: GCW & Strava Kudo All
 {{ more_apps_parts[0] | markdownify }}
 </div>
 
-<details class="kudo-more-apps">
-  <summary class="kudo-more-apps__summary">
-    <span class="kudo-more-apps__summary-copy">
-      <span class="kudo-more-apps__label">
-        <span class="kudo-l10n--zh" lang="zh-CN">赞助应用</span>
-        <span class="kudo-l10n--en" lang="en">SPONSORED APPS</span>
-      </span>
-      <span class="kudo-more-apps__title">
-        <span class="kudo-l10n--zh" lang="zh-CN">更多扩展与应用</span>
-        <span class="kudo-l10n--en" lang="en">More Extensions and Apps</span>
-      </span>
-    </span>
-    <svg class="kudo-more-apps__chevron" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="m6 9 6 6 6-6" />
-    </svg>
-  </summary>
+<section class="kudo-more-apps" aria-labelledby="kudo-more-apps-title">
+  <header class="kudo-more-apps__header">
+    <p class="kudo-more-apps__label">
+      <span class="kudo-l10n--zh" lang="zh-CN">赞助应用</span>
+      <span class="kudo-l10n--en" lang="en">SPONSORED APPS</span>
+    </p>
+    <h2 class="kudo-more-apps__title" id="kudo-more-apps-title">
+      <span class="kudo-l10n--zh" lang="zh-CN">更多扩展与应用</span>
+      <span class="kudo-l10n--en" lang="en">More Extensions and Apps</span>
+    </h2>
+  </header>
   <div class="kudo-more-apps__content">
     {% include product-promo.html context="home" %}
   </div>
-</details>
+</section>
 
 <div class="kudo-readme">
 {{ readme_after_more_apps | markdownify }}
