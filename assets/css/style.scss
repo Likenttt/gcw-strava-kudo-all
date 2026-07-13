@@ -114,32 +114,74 @@ html[data-kudo-reason="update"] .kudo-update-success {
 .kudo-landing-hero__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   margin-top: 24px;
 }
 
-.kudo-landing-hero__actions a {
+.kudo-landing-hero__actions .kudo-availability-badge {
   align-items: center;
-  background: rgba(255, 255, 255, .12);
-  border: 1px solid rgba(255, 255, 255, .22);
+  background: rgba(3, 11, 24, .76);
+  border: 1px solid rgba(255, 255, 255, .34);
   border-radius: 12px;
+  box-sizing: border-box;
   color: #fff;
   display: inline-flex;
-  font-weight: 700;
-  gap: 9px;
-  padding: 10px 15px;
+  gap: 11px;
+  min-height: 58px;
+  min-width: 166px;
+  padding: 9px 14px;
+  text-decoration: none;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+.kudo-landing-hero__actions .kudo-availability-badge:hover,
+.kudo-landing-hero__actions .kudo-availability-badge:focus {
+  background: rgba(3, 11, 24, .92);
+  border-color: rgba(255, 255, 255, .58);
+  color: #fff;
   text-decoration: none;
 }
 
-.kudo-landing-hero__actions img {
-  flex: 0 0 auto;
-  height: 22px;
-  width: 22px;
+.kudo-landing-hero__actions .kudo-availability-badge:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
 }
 
-.kudo-landing-hero__actions a:first-child {
-  background: #fff;
-  color: #12345a;
+.kudo-landing-hero__actions .kudo-availability-badge img {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  flex: 0 0 auto;
+  height: 32px;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  position: static;
+  width: 32px;
+}
+
+.kudo-availability-badge__copy {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.kudo-availability-badge__label {
+  color: rgba(255, 255, 255, .68);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.kudo-availability-badge strong {
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: -.02em;
+  line-height: 1.2;
+  margin-top: 3px;
 }
 
 .kudo-demo {
@@ -362,5 +404,26 @@ html[data-kudo-reason="update"] .kudo-update-success {
 
   .kudo-demo__video {
     border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kudo-landing-hero__actions {
+    gap: 10px;
+  }
+
+  .kudo-landing-hero__actions .kudo-availability-badge {
+    flex: 0 0 calc(50% - 5px);
+    min-width: 0;
+    padding: 9px 11px;
+  }
+
+  .kudo-landing-hero__actions .kudo-availability-badge img {
+    height: 28px;
+    width: 28px;
+  }
+
+  .kudo-availability-badge strong {
+    font-size: 17px;
   }
 }

@@ -14,17 +14,26 @@ title: GCW & Strava Kudo All
     <span class="kudo-l10n--en" lang="en">Encourage friends across Garmin Connect and Strava with one click—lightweight, direct, and still a little celebratory.</span>
   </p>
   <div class="kudo-landing-hero__actions">
-    <a href="https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc">
+    <a class="kudo-availability-badge" href="https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc">
       <img src="{{ '/assets/icons/chrome.svg' | relative_url }}" alt="" aria-hidden="true" />
-      <span class="kudo-l10n--zh" lang="zh-CN">安装 Chrome 扩展</span><span class="kudo-l10n--en" lang="en">Install for Chrome</span>
+      <span class="kudo-availability-badge__copy">
+        <span class="kudo-availability-badge__label">Available on</span>
+        <strong>Chrome</strong>
+      </span>
     </a>
-    <a href="https://addons.mozilla.org/en-US/firefox/addon/kudo-all/">
+    <a class="kudo-availability-badge" href="https://addons.mozilla.org/en-US/firefox/addon/kudo-all/">
       <img src="{{ '/assets/icons/firefox.svg' | relative_url }}" alt="" aria-hidden="true" />
-      <span>Firefox</span>
+      <span class="kudo-availability-badge__copy">
+        <span class="kudo-availability-badge__label">Available on</span>
+        <strong>Firefox</strong>
+      </span>
     </a>
-    <a href="https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808">
+    <a class="kudo-availability-badge" href="https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808">
       <img src="{{ '/assets/icons/safari.svg' | relative_url }}" alt="" aria-hidden="true" />
-      <span>Safari</span>
+      <span class="kudo-availability-badge__copy">
+        <span class="kudo-availability-badge__label">Available on</span>
+        <strong>Safari</strong>
+      </span>
     </a>
   </div>
 </section>
