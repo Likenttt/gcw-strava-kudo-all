@@ -151,6 +151,7 @@ html[data-kudo-locale="zh"] .kudo-l10n--zh {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  overflow: hidden;
   padding: 18px;
   position: relative;
 }
