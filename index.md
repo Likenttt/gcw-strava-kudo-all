@@ -58,5 +58,8 @@ title: GCW & Strava Kudo All
 
 <div class="kudo-readme">
 {% capture readme_content %}{% include_relative README.md %}{% endcapture %}
-{{ readme_content | markdownify }}
+{% assign readme_parts = readme_content | split: '<!-- kudo-home-video-preview:start -->' %}
+{% assign readme_tail = readme_parts[1] | split: '<!-- kudo-home-video-preview:end -->' %}
+{% assign readme_after_video = readme_tail[1] %}
+{{ readme_parts[0] | append: readme_after_video | markdownify }}
 </div>

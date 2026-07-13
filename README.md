@@ -6,9 +6,11 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 [🇨🇳 简体中文](./README-zh.md)
 
+<!-- kudo-home-video-preview:start -->
 ## Video Preview
 
-[![Watch the video](https://img.youtube.com/vi/Rufkav22FWQ/hqdefault.jpg)](https://www.youtube.com/embed/Rufkav22FWQ)
+[Watch the Garmin Connect Web & Strava Kudo All browser extension demo on YouTube.](https://www.youtube.com/watch?v=edJNdPsyp7I)
+<!-- kudo-home-video-preview:end -->
 
 ## Installation
 
