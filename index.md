@@ -20,8 +20,6 @@ title: GCW & Strava Kudo All
   </div>
 </section>
 
-{% include product-promo.html context="home" %}
-
 <div class="kudo-readme">
 {% capture readme_content %}{% include_relative README.md %}{% endcapture %}
 {{ readme_content | markdownify }}
