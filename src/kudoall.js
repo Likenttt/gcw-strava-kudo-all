@@ -255,10 +255,13 @@ const GC = (() => {
         width: 36px;
       }
       #${BTN_ID}.gcw-top-header-button {
+        -webkit-tap-highlight-color: transparent;
         align-items: center;
-        background: transparent;
+        animation: none !important;
+        background: transparent !important;
         border: 0;
         border-radius: 4px;
+        box-shadow: none !important;
         color: var(--icon-default, #6b6b6b);
         cursor: pointer;
         display: flex;
@@ -266,14 +269,31 @@ const GC = (() => {
         justify-content: center;
         margin: 0;
         padding: 6px;
+        transition: none !important;
         width: 36px;
       }
-      #${BTN_ID}.gcw-top-header-button:hover {
-        background: rgba(0, 0, 0, .06);
+      #${BTN_ID}.gcw-top-header-button:hover,
+      #${BTN_ID}.gcw-top-header-button:active {
+        background: rgba(0, 0, 0, .06) !important;
+        box-shadow: none !important;
+        transform: none !important;
+      }
+      #${BTN_ID}.gcw-top-header-button:focus:not(:focus-visible) {
+        outline: none;
+      }
+      #${BTN_ID}.gcw-top-header-button:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
+      #${BTN_ID}.gcw-top-header-button::before,
+      #${BTN_ID}.gcw-top-header-button::after {
+        animation: none !important;
+        content: none !important;
+        display: none !important;
       }
       #${BTN_ID}.gcw-top-header-button > svg {
-        height: 24px;
-        width: 24px;
+        height: 18px;
+        width: 18px;
       }
     `;
         document.head.appendChild(style);
