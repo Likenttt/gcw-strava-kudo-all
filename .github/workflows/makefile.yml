@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7
     - name: Get version
       id: extract-version
       run: |
@@ -35,18 +35,18 @@ jobs:
         crxFilePath: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.crx
         privateKey: ${{ secrets.CHROME_CRX_PRIVATE_KEY }}
     - name: Upload a Chrome Artifact
-      uses: actions/upload-artifact@v2.3.1
+      uses: actions/upload-artifact@v7
       with:
         name: kudoall-chrome-${{ steps.extract-version.outputs.version }}.zip
         path: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.zip
     - name: Upload a Chrome Crx
-      uses: actions/upload-artifact@v2.3.1
+      uses: actions/upload-artifact@v7
       with:
         name: kudoall-chrome-${{ steps.extract-version.outputs.version }}.crx
         path: build/artefacts/kudoall-chrome-${{ steps.extract-version.outputs.version }}.crx
 
     - name: Upload a Firefox Artifact
-      uses: actions/upload-artifact@v2.3.1
+      uses: actions/upload-artifact@v7
       with:
         name: kudoall-firefox-${{ steps.extract-version.outputs.version }}.zip
         path: build/artefacts/kudoall-firefox-${{ steps.extract-version.outputs.version }}.zip

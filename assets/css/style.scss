@@ -1,0 +1,278 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --promo-ink: #18212f;
+  --promo-muted: #64748b;
+  --promo-line: #e5eaf0;
+  --promo-blue: #1265c2;
+}
+
+.kudo-landing-hero,
+.kudo-update-hero {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(56, 189, 248, .2), transparent 34%),
+    linear-gradient(145deg, #0c1728, #122d50 58%, #1265c2);
+  border-radius: 24px;
+  box-shadow: 0 22px 55px rgba(15, 35, 60, .2);
+  color: #fff;
+  margin: 8px 0 28px;
+  overflow: hidden;
+  padding: clamp(28px, 6vw, 56px);
+  position: relative;
+}
+
+.kudo-landing-hero::after,
+.kudo-update-hero::after {
+  color: rgba(255, 255, 255, .08);
+  content: "♥";
+  font-size: 220px;
+  line-height: 1;
+  position: absolute;
+  right: -24px;
+  top: -42px;
+  transform: rotate(12deg);
+}
+
+.kudo-landing-hero > *,
+.kudo-update-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.kudo-landing-hero__badge,
+.kudo-update-hero__badge {
+  color: #7dd3fc;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.kudo-landing-hero h1,
+.kudo-update-hero h1 {
+  color: #fff;
+  font-size: clamp(32px, 6vw, 52px);
+  letter-spacing: -.04em;
+  line-height: 1.02;
+  margin: 0;
+}
+
+.kudo-landing-hero__copy,
+.kudo-update-hero__copy {
+  color: rgba(255, 255, 255, .82);
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 18px 0 0;
+  max-width: 680px;
+}
+
+.kudo-landing-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.kudo-landing-hero__actions a {
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.kudo-landing-hero__actions a:first-child {
+  background: #fff;
+  color: #12345a;
+}
+
+.garmin-app-showcase {
+  background: #f8fafc;
+  border: 1px solid var(--promo-line);
+  border-radius: 24px;
+  margin: 28px 0 40px;
+  padding: clamp(20px, 4vw, 34px);
+}
+
+.garmin-app-showcase__heading {
+  margin-bottom: 22px;
+  max-width: 760px;
+}
+
+.garmin-app-showcase__eyebrow {
+  color: var(--promo-blue);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  margin: 0 0 6px;
+}
+
+.garmin-app-showcase__heading h2 {
+  color: var(--promo-ink);
+  font-size: clamp(25px, 4vw, 36px);
+  letter-spacing: -.03em;
+  margin: 0 0 8px;
+}
+
+.garmin-app-showcase__heading > p:last-child {
+  color: var(--promo-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.garmin-app-showcase__heading span {
+  display: block;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.garmin-app-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.garmin-app-card {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 18px;
+  position: relative;
+}
+
+.garmin-app-card::before {
+  background: var(--card-accent, var(--promo-blue));
+  border-radius: 18px 18px 0 0;
+  content: "";
+  height: 3px;
+  left: -1px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+
+.garmin-app-card--blue { --card-accent: #0369a1; }
+.garmin-app-card--violet { --card-accent: #6d28d9; }
+.garmin-app-card--orange { --card-accent: #9a3412; }
+.garmin-app-card--green { --card-accent: #047857; }
+.garmin-app-card--slate { --card-accent: #334155; }
+
+.garmin-app-card__topline {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.garmin-app-card__topline img {
+  background: #eef2f7;
+  border-radius: 13px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, .12);
+  height: 48px;
+  object-fit: cover;
+  width: 48px;
+}
+
+.garmin-app-card__category {
+  color: var(--promo-muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  margin: 0 0 2px;
+  text-transform: uppercase;
+}
+
+.garmin-app-card h3 {
+  color: var(--promo-ink);
+  font-size: 20px;
+  margin: 0;
+}
+
+.garmin-app-card__new {
+  background: #ede9fe;
+  border-radius: 999px;
+  color: #6d28d9;
+  font-size: 8px;
+  letter-spacing: .08em;
+  margin-left: 4px;
+  padding: 3px 6px;
+  vertical-align: middle;
+}
+
+.garmin-app-card__copy {
+  color: var(--promo-muted);
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 14px 0;
+}
+
+.garmin-app-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.garmin-app-card__actions a {
+  background: #f1f5f9;
+  border-radius: 9px;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 7px 9px;
+  text-decoration: none;
+}
+
+.garmin-app-card__actions a:hover {
+  background: #e2e8f0;
+  text-decoration: none;
+}
+
+.garmin-app-card__actions .garmin-app-card__primary {
+  background: var(--card-accent, var(--promo-blue));
+  color: #fff;
+}
+
+.garmin-app-card__actions .garmin-app-card__primary:hover {
+  background: var(--card-accent, var(--promo-blue));
+  color: #fff;
+  filter: brightness(.85);
+}
+
+.garmin-app-showcase__disclosure {
+  color: var(--promo-muted);
+  font-size: 10px;
+  margin: 18px 2px 0;
+  text-align: right;
+}
+
+.kudo-update-note {
+  color: var(--promo-muted);
+  font-size: 13px;
+  margin: -20px 0 36px;
+  text-align: center;
+}
+
+.kudo-readme > h1:first-child {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .garmin-app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kudo-landing-hero,
+  .kudo-update-hero,
+  .garmin-app-showcase {
+    border-radius: 18px;
+  }
+}

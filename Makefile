@@ -22,6 +22,12 @@ prepare:
 chrome:
 	python3 fix-manifest-version.py
 
+firefox:
+	python3 fix-firefox-manifest.py
+
+safari:
+	python3 fix-safari-manifest.py
+
 .PHONY: zip
 zip:
 	cd build/temp && zip -rv kudoall.zip .
@@ -32,7 +38,7 @@ build.chrome: prepare chrome zip
 
 dev.chrome: prepare chrome
 
-build.firefox: prepare zip
+build.firefox: prepare firefox zip
 	cp build/temp/kudoall.zip build/artefacts/kudoall-firefox-${version}.zip
 
 .PHONY: safari.sync-version
@@ -48,7 +54,7 @@ safari.clear-quarantine:
 	xattr -dr com.apple.quarantine "KudoAllSafari/macOS (Extension)" 2>/dev/null || true
 
 .PHONY: build.safari.macos
-build.safari.macos: prepare zip safari.sync-version safari.clear-quarantine
+build.safari.macos: prepare safari zip safari.sync-version safari.clear-quarantine
 	rm -rf "$(safari_derived_data)"
 	rm -rf "$(safari_app_dst)"
 	xcodebuild -project "$(safari_project)" -scheme "$(safari_scheme)" -configuration Release -derivedDataPath "$(safari_derived_data)" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
@@ -57,7 +63,7 @@ build.safari.macos: prepare zip safari.sync-version safari.clear-quarantine
 	xattr -dr com.apple.quarantine "$(safari_app_dst)" 2>/dev/null || true
 
 .PHONY: archive.safari.macos
-archive.safari.macos: prepare zip safari.sync-version safari.clear-quarantine
+archive.safari.macos: prepare safari zip safari.sync-version safari.clear-quarantine
 	rm -rf "$(safari_derived_data)"
 	rm -rf "$(safari_archive_tmp)"
 	rm -rf "$(safari_archive_dst)"

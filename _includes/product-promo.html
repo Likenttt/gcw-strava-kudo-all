@@ -1,0 +1,101 @@
+{% assign promo_context = include.context | default: "home" %}
+<section class="garmin-app-showcase" aria-labelledby="garmin-app-showcase-title">
+  <div class="garmin-app-showcase__heading">
+    <p class="garmin-app-showcase__eyebrow">
+      {% if promo_context == "update" %}SUPPORTED BY GREAT APPS · 感谢赞助{% else %}SPONSORED · 赞助应用推荐{% endif %}
+    </p>
+    <h2 id="garmin-app-showcase-title">让 Garmin 手表做得更多</h2>
+    <p>
+      这些应用赞助 Kudo All 的持续开发，让免费浏览器版本持续维护并继续炫酷。挑一款感兴趣的工具，支持我们共同成长。
+      <span>Meet five independent Garmin apps that help keep Kudo All's free browser editions maintained and fun.</span>
+    </p>
+  </div>
+
+  <div class="garmin-app-grid">
+    <article class="garmin-app-card garmin-app-card--blue">
+      <div class="garmin-app-card__topline">
+        <img src="https://gamerasnap.com/static/images/appicon.png" alt="GameraSnap app icon" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+        <div>
+          <p class="garmin-app-card__category">相机遥控 · Camera remote</p>
+          <h3>GameraSnap</h3>
+        </div>
+      </div>
+      <p class="garmin-app-card__copy">用 Garmin 手表遥控 iPhone 或 Android 拍照和录像，合影不再需要来回跑。</p>
+      <div class="garmin-app-card__actions">
+        <a class="garmin-app-card__primary" href="https://gamerasnap.com/?utm_source=kudoall&amp;utm_medium=referral&amp;utm_campaign=garmin_apps" target="_blank" rel="noopener noreferrer">了解更多</a>
+        <a href="https://apps.garmin.com/apps/4c6ff771-c148-45d7-9099-c4c38bcbdccc" target="_blank" rel="noopener noreferrer">Garmin</a>
+        <a href="https://apps.apple.com/app/apple-store/id6736568453?pt=125713495&amp;ct=kudoall&amp;mt=8" target="_blank" rel="noopener noreferrer">iPhone</a>
+        <a href="https://play.google.com/store/apps/details?id=com.niulasong.gameraMobile" target="_blank" rel="noopener noreferrer">Android</a>
+      </div>
+    </article>
+
+    <article class="garmin-app-card garmin-app-card--violet">
+      <div class="garmin-app-card__topline">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/22/e8/2b22e848-a17e-f27c-1c67-1106e26de2dd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="WristAlbum app icon" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+        <div>
+          <p class="garmin-app-card__category">腕上相册 · Photo album</p>
+          <h3>WristAlbum <span class="garmin-app-card__new">NEW</span></h3>
+        </div>
+      </div>
+      <p class="garmin-app-card__copy">裁剪并同步私人照片，在 Garmin 手表上离线保存与随时翻看。</p>
+      <div class="garmin-app-card__actions">
+        <a class="garmin-app-card__primary" href="https://wristalbum.wristtale.com/?utm_source=kudoall&amp;utm_medium=referral&amp;utm_campaign=garmin_apps" target="_blank" rel="noopener noreferrer">了解更多</a>
+        <a href="https://apps.garmin.com/apps/0b40a95b-a27d-4fa4-b1bc-e6df3b67da9a" target="_blank" rel="noopener noreferrer">Garmin</a>
+        <a href="https://apps.apple.com/us/app/wristalbum-watch-photo-album/id6787118086" target="_blank" rel="noopener noreferrer">iPhone</a>
+      </div>
+    </article>
+
+    <article class="garmin-app-card garmin-app-card--orange">
+      <div class="garmin-app-card__topline">
+        <img src="https://wristtale.com/static/favicons/apple-touch-icon.png" alt="WristTale app icon" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+        <div>
+          <p class="garmin-app-card__category">电子书阅读 · Ebook reader</p>
+          <h3>WristTale</h3>
+        </div>
+      </div>
+      <p class="garmin-app-card__copy">导入 TXT 与 Markdown，章节同步后即可在 Garmin 手表上离线阅读。</p>
+      <div class="garmin-app-card__actions">
+        <a class="garmin-app-card__primary" href="https://wristtale.com/?utm_source=kudoall&amp;utm_medium=referral&amp;utm_campaign=garmin_apps" target="_blank" rel="noopener noreferrer">了解更多</a>
+        <a href="https://apps.garmin.com/apps/46b0b8a9-15c2-49a4-83ac-51f9e694111d" target="_blank" rel="noopener noreferrer">Garmin</a>
+        <a href="https://apps.apple.com/us/app/wristtale-ereader-for-watches/id6758138941" target="_blank" rel="noopener noreferrer">iPhone</a>
+        <a href="https://play.google.com/store/apps/details?id=com.niulasong.wristtale" target="_blank" rel="noopener noreferrer">Android</a>
+      </div>
+    </article>
+
+    <article class="garmin-app-card garmin-app-card--green">
+      <div class="garmin-app-card__topline">
+        <img src="https://wristpass.li2niu.com/static/favicons/apple-touch-icon.png" alt="WristPass app icon" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+        <div>
+          <p class="garmin-app-card__category">腕上卡包 · Barcode wallet</p>
+          <h3>WristPass</h3>
+        </div>
+      </div>
+      <p class="garmin-app-card__copy">整理二维码、会员卡和票券，再同步到 Garmin，抬腕即可出示。</p>
+      <div class="garmin-app-card__actions">
+        <a class="garmin-app-card__primary" href="https://wristpass.li2niu.com/?utm_source=kudoall&amp;utm_medium=referral&amp;utm_campaign=garmin_apps" target="_blank" rel="noopener noreferrer">了解更多</a>
+        <a href="https://apps.garmin.com/apps/4aa11c10-cc2a-48bc-9bd6-af567786f28e" target="_blank" rel="noopener noreferrer">Garmin</a>
+        <a href="https://apps.apple.com/us/app/wristpass-barcode-wallet/id6758911164" target="_blank" rel="noopener noreferrer">iPhone</a>
+        <a href="https://play.google.com/store/apps/details?id=com.niulasong.wristpass" target="_blank" rel="noopener noreferrer">Android</a>
+      </div>
+    </article>
+
+    <article class="garmin-app-card garmin-app-card--slate">
+      <div class="garmin-app-card__topline">
+        <img src="https://2fa4g.li2niu.com/static/branding/app-icon.png" alt="2FA4G app icon" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+        <div>
+          <p class="garmin-app-card__category">身份验证器 · Authenticator</p>
+          <h3>2FA4G</h3>
+        </div>
+      </div>
+      <p class="garmin-app-card__copy">把 TOTP/HOTP 验证码安全同步到 Garmin，在手表上离线查看。</p>
+      <div class="garmin-app-card__actions">
+        <a class="garmin-app-card__primary" href="https://2fa4g.li2niu.com/?utm_source=kudoall&amp;utm_medium=referral&amp;utm_campaign=garmin_apps" target="_blank" rel="noopener noreferrer">了解更多</a>
+        <a href="https://apps.garmin.com/apps/784776e6-609d-4a83-8b1c-6c112da7fd6e" target="_blank" rel="noopener noreferrer">Garmin</a>
+        <a href="https://apps.apple.com/us/app/2fa4g-2fa-authenticator/id6762132896" target="_blank" rel="noopener noreferrer">iPhone</a>
+        <a href="https://play.google.com/store/apps/details?id=com.niulasong.twofa" target="_blank" rel="noopener noreferrer">Android</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="garmin-app-showcase__disclosure">赞助应用 · Sponsored apps. 下载与购买由对应应用商店或产品网站处理。</p>
+</section>
