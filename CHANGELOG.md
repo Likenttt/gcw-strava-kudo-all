@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5] - 2026-11-04
+
+### Added
+
+- Add a self-styled floating fallback when the Strava navigation is unavailable.
+- Add a toolbar panel with Strava connection status, available kudos, run results, and a reconnect action.
+
+### Fixed
+
+- Restore the Kudo All button on the redesigned Strava dashboard.
+- Make Strava startup and reconnection safe to repeat without duplicating controls or listeners.
+- Process Strava kudos sequentially and report page-confirmed and unconfirmed results.
+
 ## [1.4.0] - 2026-07-13
 
 ### Added

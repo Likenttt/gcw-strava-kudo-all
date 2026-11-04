@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GCW and Strava Kudo All</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1 data-i18n="kudo_all"></h1>
+        <p id="notice" role="status" aria-live="polite"></p>
+        <dl>
+            <div><dt data-i18n="popup_connection"></dt><dd id="connection">—</dd></div>
+            <div><dt data-i18n="popup_available"></dt><dd id="available">—</dd></div>
+            <div><dt data-i18n="popup_running"></dt><dd id="running">—</dd></div>
+            <div><dt data-i18n="popup_confirmed"></dt><dd id="confirmed">—</dd></div>
+            <div><dt data-i18n="popup_unconfirmed"></dt><dd id="unconfirmed">—</dd></div>
+        </dl>
+        <button id="run" type="button" disabled data-i18n="popup_run"></button>
+        <button id="reconnect" class="secondary" type="button" disabled data-i18n="popup_reconnect"></button>
+    </main>
+</body>
+</html>

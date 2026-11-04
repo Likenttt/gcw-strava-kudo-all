@@ -7,5 +7,83 @@
   },
   "AppDescription": {
     "message": "在 GCW(Garmin Connect Web)和 Strava 中一键给你的精英运动员朋友们点赞。"
+  },
+  "strava_running": {
+    "message": "正在点赞…"
+  },
+  "strava_ready": {
+    "message": "可为当前已加载的动态点赞。"
+  },
+  "strava_empty": {
+    "message": "当前没有可点赞的动态。"
+  },
+  "strava_unsupported": {
+    "message": "请打开 Strava 控制面板使用一键点赞。"
+  },
+  "strava_structure_unknown": {
+    "message": "无法识别 Strava 点赞按钮，页面可能已改版。"
+  },
+  "strava_run_complete": {
+    "message": "已完成。确认数量以页面显示的点赞状态为准。"
+  },
+  "strava_run_stopped": {
+    "message": "页面已切换，点赞已停止。"
+  },
+  "strava_run_error": {
+    "message": "未能完成点赞，请刷新页面后重试。"
+  },
+  "popup_connection": {
+    "message": "页面连接"
+  },
+  "popup_available": {
+    "message": "可点赞动态"
+  },
+  "popup_running": {
+    "message": "正在运行"
+  },
+  "popup_confirmed": {
+    "message": "上次：页面已确认"
+  },
+  "popup_unconfirmed": {
+    "message": "上次：未确认"
+  },
+  "popup_run": {
+    "message": "点赞当前动态"
+  },
+  "popup_reconnect": {
+    "message": "重新连接"
+  },
+  "popup_connected": {
+    "message": "已连接"
+  },
+  "popup_disconnected": {
+    "message": "未连接"
+  },
+  "popup_yes": {
+    "message": "是"
+  },
+  "popup_no": {
+    "message": "否"
+  },
+  "popup_ready": {
+    "message": "可为当前已加载的动态点赞。"
+  },
+  "popup_unsupported": {
+    "message": "请打开 Strava 控制面板使用此功能。"
+  },
+  "popup_request_failed": {
+    "message": "连接失败，请刷新控制面板后重试。"
+  },
+  "popup_not_connected": {
+    "message": "页面未连接，请点击“重新连接”加载插件。"
+  },
+  "popup_in_progress": {
+    "message": "正在点赞，可以关闭面板，稍后重新打开查看结果。"
+  },
+  "popup_no_available": {
+    "message": "当前已加载的动态中没有可点赞项目。"
+  },
+  "strava_run_unconfirmed": {
+    "message": "页面未确认此次点赞，已停止并跳过剩余动态。"
   }
 }

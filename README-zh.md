@@ -22,6 +22,12 @@
 
 [<img src="./screenshots/appstore-badge.png" width="98" height="32"/>](https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808)
 
+## 在 EGO 中本地测试
+
+先关闭商店安装版，再打开 `chrome://extensions/`，开启“开发者模式”，选择“加载已解压的扩展程序”，加载本项目的 `src` 目录。确认版本显示 **1.5**，然后刷新 Strava。修改代码后，先重新加载扩展，再刷新网页。
+
+完整步骤见 [EGO 调试与发布检查](./docs/ego-debugging.md)。
+
 ## 广告
 
 - [Immersive Translate 沉浸式翻译](https://immersivetranslate.com/?via=li2niu)
@@ -31,7 +37,8 @@
 ### 点击按钮在哪里?
 
 GCW 中，在右上角导航栏的“上传活动”旁边。
-Strava 中，在右上角导航栏的“订阅按钮”旁边。
+
+Strava dashboard 中，在右上角导航栏；导航不可用时会显示浮动按钮。浏览器扩展图标也可打开 Strava 状态面板，并提供备用点赞入口。
 
 ### 有效的域名及链接
 
@@ -42,7 +49,7 @@ Strava 中，在右上角导航栏的“订阅按钮”旁边。
 
 ### 点赞的范围是?
 
-它只会点赞你当前屏幕中的活动卡片。如果你想点更多,请滚动屏幕并点击导航栏上的按钮。
+Strava 会处理 dashboard 中当前已加载、符合条件的活动，跳过已经点赞的活动。想处理更多活动时，先滚动加载，再点击一次；插件不会自动滚动。
 
 ### 点赞的意义是?
 

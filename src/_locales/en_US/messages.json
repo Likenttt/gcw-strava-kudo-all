@@ -7,5 +7,83 @@
   },
   "AppDescription": {
     "message": "Give kudos to your elite athletes friends in one click"
+  },
+  "strava_running": {
+    "message": "Giving kudos…"
+  },
+  "strava_ready": {
+    "message": "Ready to give kudos to loaded activities."
+  },
+  "strava_empty": {
+    "message": "No eligible unliked activities found."
+  },
+  "strava_unsupported": {
+    "message": "Open the Strava dashboard to use Kudo All."
+  },
+  "strava_structure_unknown": {
+    "message": "Strava activity buttons were not recognized."
+  },
+  "strava_run_complete": {
+    "message": "Run finished. Confirmed counts reflect the page state."
+  },
+  "strava_run_stopped": {
+    "message": "Run stopped because the page changed."
+  },
+  "strava_run_error": {
+    "message": "Kudo All could not finish. Please refresh and try again."
+  },
+  "popup_connection": {
+    "message": "Page connection"
+  },
+  "popup_available": {
+    "message": "Available kudos"
+  },
+  "popup_running": {
+    "message": "Running"
+  },
+  "popup_confirmed": {
+    "message": "Last run: page confirmed"
+  },
+  "popup_unconfirmed": {
+    "message": "Last run: unconfirmed"
+  },
+  "popup_run": {
+    "message": "Give kudos to current feed"
+  },
+  "popup_reconnect": {
+    "message": "Reconnect"
+  },
+  "popup_connected": {
+    "message": "Connected"
+  },
+  "popup_disconnected": {
+    "message": "Disconnected"
+  },
+  "popup_yes": {
+    "message": "Yes"
+  },
+  "popup_no": {
+    "message": "No"
+  },
+  "popup_ready": {
+    "message": "Ready to give kudos to the currently loaded activities."
+  },
+  "popup_unsupported": {
+    "message": "Open your Strava dashboard to use this panel."
+  },
+  "popup_request_failed": {
+    "message": "Unable to connect. Reload the dashboard and try again."
+  },
+  "popup_not_connected": {
+    "message": "The page is disconnected. Select Reconnect to load Kudo All."
+  },
+  "popup_in_progress": {
+    "message": "Giving kudos. You can close this panel and check back."
+  },
+  "popup_no_available": {
+    "message": "No available kudos in the currently loaded feed."
+  },
+  "strava_run_unconfirmed": {
+    "message": "The page did not confirm this kudo. Remaining activities were skipped."
   }
 }

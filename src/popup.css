@@ -1,0 +1,35 @@
+:root {
+    color-scheme: light dark;
+    font: 13px/1.5 system-ui, sans-serif;
+    color: #202124;
+    background: #fff;
+}
+body { width: 300px; margin: 0; }
+main { padding: 18px; }
+h1 { font-size: 18px; margin: 0 0 8px; }
+p { margin: 0 0 14px; color: #555; overflow-wrap: anywhere; }
+dl { margin: 0 0 18px; }
+dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 5px 0; }
+dt { color: #555; }
+dd { margin: 0; font-weight: 600; }
+button {
+    display: block;
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: #d63e00;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+button + button { margin-top: 8px; }
+button.secondary { color: inherit; background: transparent; border-color: #bbb; }
+button:disabled { opacity: .45; cursor: default; }
+button:focus-visible { outline: 2px solid #1a73e8; outline-offset: 2px; }
+@media (prefers-color-scheme: dark) {
+    :root { color: #f1f3f4; background: #202124; }
+    p, dt { color: #c0c4c9; }
+    button.secondary { border-color: #70757a; }
+}

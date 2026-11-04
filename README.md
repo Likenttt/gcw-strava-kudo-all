@@ -26,12 +26,18 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 [<img src="./screenshots/appstore-badge.png" width="98" height="32"/>](https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808)
 
+## Local testing in EGO
+
+Disable the Web Store copy, open `chrome://extensions/`, enable Developer mode, and load this repository's `src` directory as an unpacked extension. Check that it shows version **1.5**, then refresh Strava. After editing files, reload the extension first and refresh the webpage second.
+
+[EGO debugging and release checklist](./docs/ego-debugging.md) (简体中文).
+
 ## FAQ
 
 ### Where is the one click button?
 
 - In GCW, it is on the up-right nav bar next to Upload Activities.
-- In Strava, is on the up-right nav bar next to Subscribe or button
+- On the Strava dashboard, it is in the upper-right navigation. If the navigation is unavailable, a floating button appears. The browser extension icon also opens a Strava status panel and provides a backup action.
 
 ### Valid domains and urls
 
@@ -45,7 +51,7 @@ For Strava, only https://www.strava.com is valid.
 
 ### What is the kudos range?
 
-It merely kudos the activity cards on your screen. If you want to do more, please scroll your screen and click the button on the nav bar.
+On Strava, it gives kudos to eligible activities currently loaded in the dashboard. Scroll to load more, then run it again. It skips activities already given kudos and does not scroll automatically.
 
 ### What is the points of kudos?
 
