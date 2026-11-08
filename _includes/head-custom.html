@@ -2,6 +2,7 @@
 
 <!-- Setup Google Analytics -->
 {% include head-custom-google-analytics.html %}
+{% assign kudo_description = page.description | default: site.description %}
 
 <!-- You can set your favicon here -->
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -10,13 +11,15 @@
 <meta name="keywords" content="kudoall,garmin,connect,li2niu,newrathon" />
 <meta
   name="description"
-  content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/app/newsfeed or Strava"
+  content="{{ kudo_description | escape }}"
 />
 <title>{{ page.title }}</title>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="{{ '/assets/js/kudo-localization.js' | relative_url }}"></script>
+<script id="kudo-acquisition-config" type="application/json">{"providerToken":{{ site.app_store_provider_token | default: '' | jsonify }}}</script>
+<script defer src="{{ '/assets/js/kudo-acquisition.js' | relative_url }}"></script>
 <link rel="stylesheet" href="{{ asset_path }}" />
 
 <meta name="author" content="li2niu" />
@@ -25,7 +28,7 @@
 <meta property="og:title" content="{{ page.title }}" />
 <meta
   property="og:description"
-  content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/app/newsfeed or Strava"
+  content="{{ kudo_description | escape }}"
 />
 <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
 <meta
@@ -38,7 +41,7 @@
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta
   name="twitter:description"
-  content="It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes friends in one click in Garmin Connect Web https://connect.garmin.com/app/newsfeed or Strava"
+  content="{{ kudo_description | escape }}"
 />
 <meta
   name="twitter:image"

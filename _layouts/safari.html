@@ -1,0 +1,47 @@
+{% assign translation = site.data.safari_locales[page.safari_locale] | default: site.data.safari_locales.en %}
+{% assign copy = translation.copy %}
+{% assign canonical_origin = site.url | default: 'https://kudoall.li2niu.com' %}
+<!doctype html>
+<html lang="{{ translation.locale }}" data-kudo-page-locale="{{ translation.locale }}" data-kudo-locale="{{ translation.locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ copy.meta.title | escape }}</title>
+  <meta name="description" content="{{ copy.meta.description | escape }}">
+  <link rel="canonical" href="{{ canonical_origin }}{{ translation.path | relative_url }}">
+  {% for locale_entry in site.data.safari_locales %}
+  <link rel="alternate" hreflang="{{ locale_entry[0] }}" href="{{ canonical_origin }}{{ locale_entry[1].path | relative_url }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ canonical_origin }}{{ '/safari/' | relative_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ copy.meta.title | escape }}">
+  <meta property="og:description" content="{{ copy.meta.description | escape }}">
+  <meta property="og:url" content="{{ canonical_origin }}{{ translation.path | relative_url }}">
+  <meta property="og:locale" content="{{ translation.ogLocale }}">
+  <meta property="og:image" content="{{ canonical_origin }}{{ '/screenshots/english-kudoall.png' | relative_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ copy.meta.title | escape }}">
+  <meta name="twitter:description" content="{{ copy.meta.description | escape }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="{{ '/assets/js/kudo-localization.js' | relative_url }}"></script>
+  <script id="kudo-acquisition-config" type="application/json">{"providerToken":{{ site.app_store_provider_token | default: '' | jsonify }}}</script>
+  <script id="kudo-safari-locale-config" type="application/json">
+    {"pageLocale":{{ translation.locale | jsonify }},"locales":{
+      {% for locale_entry in site.data.safari_locales %}
+      {{ locale_entry[0] | jsonify }}:{"path":{{ locale_entry[1].path | relative_url | jsonify }},"name":{{ locale_entry[1].languageName | jsonify }}}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    }}
+  </script>
+  <script defer src="{{ '/assets/js/kudo-acquisition.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/safari-language.js' | relative_url }}"></script>
+  {% include head-custom-google-analytics.html %}
+</head>
+<body class="kudo-safari-layout">
+  <div id="main_content_wrap" class="outer">
+    <main id="main_content" class="inner">
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>

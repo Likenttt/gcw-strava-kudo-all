@@ -1,0 +1,79 @@
+{% assign translation = site.data.safari_locales[page.safari_locale] | default: site.data.safari_locales.en %}
+{% assign copy = translation.copy %}
+
+{% include kudo-language-switcher.html %}
+
+<aside class="kudo-language-suggestion" id="kudo-language-suggestion" hidden>
+  <p id="kudo-language-suggestion-title" data-pattern="{{ copy.languageRecommendation.title | escape }}"></p>
+  <div>
+    <a id="kudo-language-suggestion-link" data-kudo-locale-path href="{{ '/safari/' | relative_url }}">{{ copy.languageRecommendation.action | escape }}</a>
+    <button id="kudo-language-suggestion-dismiss" type="button">{{ copy.languageRecommendation.dismiss | escape }}</button>
+  </div>
+</aside>
+
+<header class="kudo-safari-header">
+  <p class="kudo-safari-offer__eyebrow">{{ copy.eyebrow | escape }}</p>
+  <h1>{{ copy.title | escape }}</h1>
+  <p>{{ copy.intro | escape }}</p>
+</header>
+
+<section class="kudo-safari-offer" aria-labelledby="safari-offer-title">
+  <div>
+    <p class="kudo-safari-offer__eyebrow">{{ copy.offer.eyebrow | escape }}</p>
+    <h2 id="safari-offer-title">{{ copy.offer.title | escape }}</h2>
+    <p>{{ copy.offer.body | escape }}</p>
+    <p class="kudo-safari-offer__price">{{ copy.offer.price | escape }}</p>
+  </div>
+  <div class="kudo-safari-offer__actions">
+    <a class="kudo-primary-action" data-kudo-safari-store data-kudo-source="landing" href="https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&amp;ct=kudo_safari_landing&amp;mt=8">
+      <img src="{{ '/assets/icons/safari.svg' | relative_url }}" width="24" height="24" alt="" aria-hidden="true">
+      {{ copy.offer.button | escape }}
+    </a>
+    <a href="#safari-setup-title">{{ copy.offer.learnMore | escape }} →</a>
+  </div>
+</section>
+
+<figure class="kudo-product-media">
+  <h2>{{ copy.media.title | escape }}</h2>
+  <img src="{{ '/screenshots/english-kudoall.png' | relative_url }}" width="2880" height="1800" alt="{{ copy.media.alt | escape }}" loading="lazy" decoding="async">
+  <figcaption>{{ copy.media.caption | escape }} <a href="https://www.youtube.com/watch?v=edJNdPsyp7I" target="_blank" rel="noopener noreferrer">{{ copy.media.videoLink | escape }} →</a></figcaption>
+</figure>
+
+<section class="kudo-safari-features" aria-label="{{ copy.featuresLabel | escape }}">
+  {% for feature in copy.features %}
+  <article>
+    <span class="kudo-feature-number" aria-hidden="true">0{{ forloop.index }}</span>
+    <h2>{{ feature.title | escape }}</h2>
+    <p>{{ feature.body | escape }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="kudo-safari-setup" aria-labelledby="safari-setup-title">
+  <h2 id="safari-setup-title">{{ copy.setupTitle | escape }}</h2>
+  <ol>
+    {% for step in copy.steps %}
+    <li><strong>{{ step.title | escape }}</strong> {{ step.body | escape }}</li>
+    {% endfor %}
+  </ol>
+  <nav class="kudo-safari-feed-links" aria-label="{{ copy.feedLinksLabel | escape }}">
+    <a href="https://connect.garmin.com/app/newsfeed" rel="noopener">{{ copy.garminGlobalLabel | escape }}</a>
+    <a href="https://connect.garmin.cn/app/newsfeed" rel="noopener">{{ copy.garminChinaLabel | escape }}</a>
+    <a href="https://www.strava.com/dashboard" rel="noopener">Strava</a>
+  </nav>
+  <p class="kudo-safari-note">{{ copy.limitations | escape }}</p>
+</section>
+
+<section class="kudo-demo" aria-labelledby="safari-demo-title">
+  <div class="kudo-demo__heading">
+    <h2 id="safari-demo-title">{{ copy.demoTitle | escape }}</h2>
+  </div>
+  <div class="kudo-demo__video">
+    <iframe src="https://www.youtube-nocookie.com/embed/edJNdPsyp7I?rel=0" title="{{ copy.demoIframeTitle | escape }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</section>
+
+<footer class="kudo-safari-footer">
+  <p>{{ copy.otherBrowsers | escape }} <a href="{{ '/' | relative_url }}">{{ copy.otherBrowsersLink | escape }}</a></p>
+  <a href="{{ '/privacy-policy.html' | relative_url }}">{{ copy.privacyLink | escape }}</a>
+</footer>

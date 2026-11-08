@@ -16,16 +16,63 @@
   max-width: 1120px;
 }
 
-html:not([data-kudo-locale="zh"]) .kudo-l10n--zh {
+html:not([data-kudo-locale="zh-CN"]) .kudo-l10n--zh {
   display: none;
 }
 
-html[data-kudo-locale="zh"] .kudo-l10n--en {
+html[data-kudo-locale="zh-CN"] .kudo-l10n--en {
   display: none;
 }
 
-html[data-kudo-locale="zh"] .kudo-l10n--zh {
+html[data-kudo-locale="zh-CN"] .kudo-l10n--zh {
   display: initial;
+}
+
+.kudo-l10n--de {
+  display: none;
+}
+
+html[data-kudo-locale="de"] .kudo-l10n--de {
+  display: initial;
+}
+
+// Existing two-language sponsor cards retain their English fallback.
+html[data-kudo-locale="de"] .kudo-trilingual .kudo-l10n--en {
+  display: none;
+}
+
+.kudo-language-switcher {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+  margin: 0 0 14px;
+  margin-left: auto;
+  padding: 6px;
+  width: fit-content;
+}
+
+.kudo-language-switcher a {
+  border-radius: 7px;
+  color: #475569;
+  font-size: 13px;
+  padding: 5px 9px;
+  text-decoration: none;
+}
+
+.kudo-language-switcher a[aria-current="true"] {
+  background: #e0efff;
+  color: #0755a6;
+  font-weight: 700;
+}
+
+html[data-kudo-browser="safari"] .kudo-landing-hero__actions [data-kudo-safari-store] {
+  border-color: #7dd3fc;
+  box-shadow: 0 0 0 2px rgba(125, 211, 252, .18);
+  order: -1;
 }
 
 .kudo-update-success {
@@ -116,6 +163,314 @@ html[data-kudo-reason="update"] .kudo-update-success {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 24px;
+}
+
+.kudo-landing-hero__safari-note {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 18px 0 0;
+}
+
+.kudo-landing-hero__safari-note a {
+  color: #bae6fd;
+}
+
+.kudo-safari-header {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 20px;
+  margin: 20px 0 22px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.kudo-safari-layout #main_content {
+  box-sizing: border-box;
+  padding: 24px 20px;
+  width: 100%;
+}
+
+.kudo-language-suggestion {
+  align-items: center;
+  background: #eaf4ff;
+  border: 1px solid #c5def8;
+  border-radius: 14px;
+  color: #18212f;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+}
+
+.kudo-language-suggestion[hidden] {
+  display: none;
+}
+
+.kudo-language-suggestion p {
+  margin: 0;
+}
+
+.kudo-language-suggestion > div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.kudo-language-suggestion a {
+  color: #0755a6;
+  font-weight: 700;
+}
+
+.kudo-language-suggestion button {
+  background: #fff;
+  border: 1px solid #9db9d8;
+  border-radius: 7px;
+  color: #334155;
+  cursor: pointer;
+  font: inherit;
+  padding: 6px 10px;
+}
+
+.kudo-safari-footer {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 28px 0;
+}
+
+.kudo-safari-footer a {
+  color: #0755a6;
+}
+
+.kudo-product-media {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 20px;
+  margin: 28px 0;
+  overflow: hidden;
+}
+
+.kudo-product-media h2 {
+  color: var(--promo-ink);
+  font-size: clamp(23px, 3vw, 30px);
+  line-height: 1.3;
+  margin: 0;
+  padding: 24px 28px;
+}
+
+#main_content .kudo-product-media img {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 100%;
+}
+
+.kudo-product-media figcaption {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 16px 24px;
+}
+
+.kudo-product-media figcaption a {
+  color: #0755a6;
+}
+
+.kudo-safari-header h1 {
+  color: var(--promo-ink);
+  font-size: clamp(32px, 6vw, 48px);
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  margin: 6px 0 12px;
+  text-shadow: none;
+}
+
+.kudo-safari-header > p:last-child {
+  color: #475569;
+  font-size: 18px;
+}
+
+.kudo-safari-offer {
+  align-items: center;
+  background: #eaf4ff;
+  border: 1px solid #c5def8;
+  border-radius: 20px;
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  margin: 24px 0 32px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.kudo-safari-offer > div:first-child {
+  max-width: 670px;
+}
+
+.kudo-safari-offer__eyebrow {
+  color: #0755a6;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  margin: 0 0 7px;
+}
+
+.kudo-safari-offer h2,
+.kudo-safari-setup h2 {
+  color: var(--promo-ink);
+  font-size: clamp(23px, 3vw, 30px);
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.kudo-safari-offer p,
+.kudo-safari-features p {
+  color: #475569;
+  line-height: 1.65;
+  margin: 0 0 12px;
+}
+
+.kudo-safari-offer .kudo-safari-offer__eyebrow {
+  color: #0755a6;
+}
+
+.kudo-safari-offer .kudo-safari-offer__price {
+  color: #334155;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.kudo-safari-offer__actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kudo-safari-offer__actions > a:last-child {
+  color: #0755a6;
+  font-size: 13px;
+}
+
+.kudo-primary-action {
+  align-items: center;
+  background: #0755a6;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  line-height: 1.35;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.kudo-primary-action:hover,
+.kudo-primary-action:focus {
+  background: #064581;
+  color: #fff;
+  text-decoration: none;
+}
+
+.kudo-primary-action:focus-visible,
+.kudo-language-switcher a:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 3px;
+}
+
+#main_content .kudo-primary-action img {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 24px;
+}
+
+.kudo-safari-features {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 28px 0;
+}
+
+.kudo-safari-features article {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.kudo-feature-number {
+  color: #0755a6;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.kudo-safari-features h2 {
+  color: var(--promo-ink);
+  font-size: 20px;
+  letter-spacing: -.025em;
+  line-height: 1.3;
+  margin: 10px 0 12px;
+}
+
+.kudo-safari-features p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.kudo-safari-setup {
+  background: #fff;
+  border: 1px solid var(--promo-line);
+  border-radius: 20px;
+  margin: 28px 0;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.kudo-safari-setup ol {
+  color: #475569;
+  line-height: 1.7;
+  padding-left: 24px;
+}
+
+.kudo-safari-setup li {
+  padding: 5px 0 8px 5px;
+}
+
+.kudo-safari-feed-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.kudo-safari-feed-links a {
+  background: #edf4fb;
+  border-radius: 8px;
+  color: #0755a6;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.kudo-safari-note {
+  color: var(--promo-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 0;
 }
 
 .kudo-landing-hero__actions .kudo-availability-badge {
@@ -424,6 +779,21 @@ html[data-kudo-reason="update"] .kudo-update-success {
 }
 
 @media (max-width: 720px) {
+  .kudo-safari-offer {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .kudo-safari-offer__actions {
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .kudo-safari-features {
+    grid-template-columns: 1fr;
+  }
+
   .garmin-app-grid {
     grid-template-columns: 1fr;
   }

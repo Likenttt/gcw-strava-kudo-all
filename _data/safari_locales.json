@@ -1,0 +1,594 @@
+{
+  "en": {
+    "locale": "en",
+    "languageName": "English",
+    "path": "/safari/",
+    "ogLocale": "en_US",
+    "copy": {
+      "meta": {
+        "title": "Kudo All for Safari — Strava & Garmin",
+        "description": "Give kudos to loaded Garmin Connect and Strava activities with one click in Safari on Mac. See the one-time purchase, features and setup for macOS 12 or later."
+      },
+      "languageNavigationLabel": "Choose language",
+      "eyebrow": "SAFARI FOR MAC",
+      "title": "Kudo All for Safari",
+      "intro": "More encouragement for your friends. Fewer repetitive clicks.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "One click for Garmin Connect and Strava",
+        "body": "Give kudos to eligible activities already loaded in your feed. Get the Safari edition for Mac with macOS 12 or later.",
+        "price": "One-time purchase · US App Store: $2.99 · Local price shown in the App Store",
+        "button": "Get Safari edition",
+        "learnMore": "Features and setup"
+      },
+      "featuresLabel": "Features",
+      "media": {
+        "title": "See the real extension",
+        "alt": "Kudo All button on Garmin Connect from our original Chrome Web Store screenshot",
+        "caption": "Original Chrome Web Store screenshot of Kudo All on Garmin Connect.",
+        "videoLink": "Watch the original product video"
+      },
+      "features": [
+        {
+          "title": "One click, across your feed",
+          "body": "Give kudos to eligible activities already loaded in Garmin Connect Web or Strava. Activities you have already liked are skipped."
+        },
+        {
+          "title": "Available kudos, clear results",
+          "body": "Open the extension's toolbar panel on Garmin Connect or Strava to check the page connection, available kudos and last-run results. A floating button is available when the usual feed navigation is missing."
+        },
+        {
+          "title": "Your account stays yours",
+          "body": "Use the websites you already sign in to. No extra account, no developer-operated kudos server, and no subscription."
+        }
+      ],
+      "setupTitle": "From purchase to your first kudos",
+      "steps": [
+        {
+          "title": "Install and enable.",
+          "body": "Install from the Mac App Store, open Kudo All, then enable the extension in Safari → Settings → Extensions."
+        },
+        {
+          "title": "Allow website access.",
+          "body": "Allow the extension on the Garmin Connect and Strava sites you use. Sign in to your own account on those websites."
+        },
+        {
+          "title": "Open your feed and click.",
+          "body": "Refresh the Garmin Connect newsfeed or Strava dashboard, then click Kudo All. Scroll to load more activities before running it again."
+        }
+      ],
+      "feedLinksLabel": "Open your activity feed",
+      "garminGlobalLabel": "Garmin · Global",
+      "garminChinaLabel": "Garmin · China",
+      "limitations": "For Safari on Mac with macOS 12 or later. This extension does not automatically scroll or load more activities. Result counts reflect the displayed page state. Kudo All is not affiliated with Garmin or Strava.",
+      "demoTitle": "See one-click kudos in action",
+      "demoIframeTitle": "Kudo All demonstration on Garmin Connect Web and Strava",
+      "otherBrowsers": "Looking for Chrome, Firefox or Edge?",
+      "otherBrowsersLink": "See the other browser editions",
+      "privacyLink": "Privacy policy",
+      "languageRecommendation": {
+        "title": "Read this page in {language}",
+        "action": "Switch language",
+        "dismiss": "Keep English"
+      }
+    }
+  },
+  "de": {
+    "locale": "de",
+    "languageName": "Deutsch",
+    "path": "/safari/de/",
+    "ogLocale": "de_DE",
+    "copy": {
+      "meta": {
+        "title": "Kudo All für Safari — Strava & Garmin",
+        "description": "Vergib mit einem Klick Kudos für geladene Aktivitäten in Garmin Connect und Strava – in Safari auf dem Mac. Funktionen, Einmalkauf und Einrichtung ab macOS 12."
+      },
+      "languageNavigationLabel": "Sprache wählen",
+      "eyebrow": "SAFARI FÜR MAC",
+      "title": "Kudo All für Safari",
+      "intro": "Mehr Ansporn für deine Freunde. Weniger einzelne Klicks.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Ein Klick für Garmin Connect und Strava",
+        "body": "Vergib Kudos für geeignete, bereits geladene Aktivitäten in deinem Feed. Die Safari-Version benötigt einen Mac mit macOS 12 oder neuer.",
+        "price": "Einmalkauf · US-App-Store: $2.99 · Deinen lokalen Preis siehst du im App Store",
+        "button": "Safari-Version holen",
+        "learnMore": "Funktionen und Einrichtung"
+      },
+      "featuresLabel": "Funktionen",
+      "media": {
+        "title": "Die echte Erweiterung ansehen",
+        "alt": "Kudo-All-Button auf Garmin Connect aus unserem ursprünglichen Screenshot im Chrome Web Store",
+        "caption": "Original-Screenshot von Kudo All auf Garmin Connect aus dem Chrome Web Store.",
+        "videoLink": "Originalvideo ansehen"
+      },
+      "features": [
+        {
+          "title": "Ein Klick für deinen Feed",
+          "body": "Vergib Kudos für geeignete, bereits geladene Aktivitäten auf Garmin Connect Web oder Strava. Bereits vergebene Kudos werden übersprungen."
+        },
+        {
+          "title": "Verfügbare Kudos, klare Ergebnisse",
+          "body": "Öffne das Erweiterungsfenster auf Garmin Connect oder Strava: Es zeigt die Seitenverbindung, verfügbare Kudos und die Ergebnisse des letzten Durchlaufs. Fehlt die übliche Feed-Navigation, steht ein schwebender Button bereit."
+        },
+        {
+          "title": "Dein Konto bleibt bei dir",
+          "body": "Verwende die Websites, bei denen du bereits angemeldet bist. Kein zusätzliches Konto, kein Kudos-Server des Entwicklers und kein Abo."
+        }
+      ],
+      "setupTitle": "Vom Kauf zu deinen ersten Kudos",
+      "steps": [
+        {
+          "title": "Installieren und aktivieren.",
+          "body": "Installiere Kudo All aus dem Mac App Store, öffne die App und aktiviere die Erweiterung unter Safari → Einstellungen → Erweiterungen."
+        },
+        {
+          "title": "Website-Zugriff erlauben.",
+          "body": "Erlaube der Erweiterung den Zugriff auf die von dir genutzten Garmin-Connect- und Strava-Websites. Melde dich dort mit deinem eigenen Konto an."
+        },
+        {
+          "title": "Feed öffnen und klicken.",
+          "body": "Lade den Garmin-Connect-Newsfeed oder das Strava-Dashboard neu und klicke auf Kudo All. Scrolle für weitere Aktivitäten nach unten, bevor du erneut startest."
+        }
+      ],
+      "feedLinksLabel": "Deinen Aktivitätsfeed öffnen",
+      "garminGlobalLabel": "Garmin · Weltweit",
+      "garminChinaLabel": "Garmin · China",
+      "limitations": "Für Safari auf einem Mac mit macOS 12 oder neuer. Die Erweiterung scrollt nicht automatisch und lädt keine weiteren Aktivitäten. Die Ergebniszahlen spiegeln den angezeigten Seitenzustand wider. Kudo All steht in keiner Verbindung zu Garmin oder Strava.",
+      "demoTitle": "Kudos mit einem Klick im Einsatz",
+      "demoIframeTitle": "Vorführung von Kudo All auf Garmin Connect Web und Strava",
+      "otherBrowsers": "Du suchst eine Version für Chrome, Firefox oder Edge?",
+      "otherBrowsersLink": "Andere Browser-Versionen ansehen",
+      "privacyLink": "Datenschutzerklärung",
+      "languageRecommendation": {
+        "title": "Diese Seite auf {language} lesen",
+        "action": "Sprache wechseln",
+        "dismiss": "Bei Englisch bleiben"
+      }
+    }
+  },
+  "nl": {
+    "locale": "nl",
+    "languageName": "Nederlands",
+    "path": "/safari/nl/",
+    "ogLocale": "nl_NL",
+    "copy": {
+      "meta": {
+        "title": "Kudo All voor Safari — Strava & Garmin",
+        "description": "Geef met één klik kudos aan geladen Garmin Connect- en Strava-activiteiten in Safari op de Mac. Bekijk de eenmalige aankoop, functies en installatie voor macOS 12 of later."
+      },
+      "languageNavigationLabel": "Taal kiezen",
+      "eyebrow": "SAFARI VOOR MAC",
+      "title": "Kudo All voor Safari",
+      "intro": "Meer aanmoediging voor je vrienden. Minder herhaalde klikken.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Eén klik voor Garmin Connect en Strava",
+        "body": "Geef kudos aan geschikte activiteiten die al in je feed zijn geladen. Haal de Safari-editie voor de Mac met macOS 12 of later.",
+        "price": "Eenmalige aankoop · Amerikaanse App Store: $2.99 · Lokale prijs wordt getoond in de App Store",
+        "button": "Safari-editie downloaden",
+        "learnMore": "Functies en installatie"
+      },
+      "featuresLabel": "Functies",
+      "media": {
+        "title": "Bekijk de echte extensie",
+        "alt": "Kudo All-knop op Garmin Connect uit onze oorspronkelijke Chrome Web Store-screenshot",
+        "caption": "Oorspronkelijke Chrome Web Store-screenshot van Kudo All op Garmin Connect.",
+        "videoLink": "Bekijk de oorspronkelijke productvideo"
+      },
+      "features": [
+        {
+          "title": "Eén klik, door je hele feed",
+          "body": "Geef kudos aan geschikte activiteiten die al zijn geladen in Garmin Connect Web of Strava. Activiteiten waaraan je al kudos hebt gegeven, worden overgeslagen."
+        },
+        {
+          "title": "Beschikbare kudos, duidelijke resultaten",
+          "body": "Open het werkbalkpaneel van de extensie op Garmin Connect of Strava om de paginaconnectie, beschikbare kudos en resultaten van de laatste uitvoering te bekijken. Er is een zwevende knop beschikbaar wanneer de gebruikelijke feednavigatie ontbreekt."
+        },
+        {
+          "title": "Je account blijft van jou",
+          "body": "Gebruik de websites waarop je al bent ingelogd. Geen extra account, geen door de ontwikkelaar beheerde kudos-server en geen abonnement."
+        }
+      ],
+      "setupTitle": "Van aankoop tot je eerste kudos",
+      "steps": [
+        {
+          "title": "Installeren en inschakelen.",
+          "body": "Installeer via de Mac App Store, open Kudo All en schakel de extensie in via Safari → Instellingen → Extensies."
+        },
+        {
+          "title": "Toegang tot websites toestaan.",
+          "body": "Sta de extensie toe op de Garmin Connect- en Strava-sites die je gebruikt. Log op die websites in met je eigen account."
+        },
+        {
+          "title": "Open je feed en klik.",
+          "body": "Vernieuw de nieuwsfeed van Garmin Connect of het dashboard van Strava en klik vervolgens op Kudo All. Scroll om meer activiteiten te laden voordat je het opnieuw uitvoert."
+        }
+      ],
+      "feedLinksLabel": "Open je activiteitenfeed",
+      "garminGlobalLabel": "Garmin · Wereldwijd",
+      "garminChinaLabel": "Garmin · China",
+      "limitations": "Voor Safari op de Mac met macOS 12 of later. Deze extensie scrolt niet automatisch en laadt geen extra activiteiten. Resultaattellingen weerspiegelen de weergegeven paginastatus. Kudo All is niet verbonden aan Garmin of Strava.",
+      "demoTitle": "Bekijk kudos met één klik in actie",
+      "demoIframeTitle": "Demonstratie van Kudo All op Garmin Connect Web en Strava",
+      "otherBrowsers": "Op zoek naar Chrome, Firefox of Edge?",
+      "otherBrowsersLink": "Bekijk de andere browseredities",
+      "privacyLink": "Privacybeleid",
+      "languageRecommendation": {
+        "title": "Lees deze pagina in het {language}",
+        "action": "Taal wijzigen",
+        "dismiss": "Engels behouden"
+      }
+    }
+  },
+  "fr": {
+    "locale": "fr",
+    "languageName": "Français",
+    "path": "/safari/fr/",
+    "ogLocale": "fr_FR",
+    "copy": {
+      "meta": {
+        "title": "Kudo All pour Safari — Strava et Garmin",
+        "description": "Donnez des kudos aux activités Garmin Connect et Strava déjà chargées en un clic dans Safari sur Mac. Découvrez l'achat unique, les fonctionnalités et la configuration pour macOS 12 ou version ultérieure."
+      },
+      "languageNavigationLabel": "Choisir la langue",
+      "eyebrow": "SAFARI POUR MAC",
+      "title": "Kudo All pour Safari",
+      "intro": "Plus d'encouragements pour vos amis. Moins de clics répétitifs.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Un clic pour Garmin Connect et Strava",
+        "body": "Donnez des kudos aux activités éligibles déjà chargées dans votre fil. Obtenez l'édition Safari pour Mac avec macOS 12 ou version ultérieure.",
+        "price": "Achat unique · App Store américain : $2.99 · Prix local affiché dans l'App Store",
+        "button": "Obtenir l'édition Safari",
+        "learnMore": "Fonctionnalités et configuration"
+      },
+      "featuresLabel": "Fonctionnalités",
+      "media": {
+        "title": "Découvrez la véritable extension",
+        "alt": "Bouton Kudo All sur Garmin Connect, issu de notre capture d’écran originale du Chrome Web Store",
+        "caption": "Capture d’écran originale du Chrome Web Store montrant Kudo All sur Garmin Connect.",
+        "videoLink": "Voir la vidéo originale du produit"
+      },
+      "features": [
+        {
+          "title": "Un clic, sur tout votre fil",
+          "body": "Donnez des kudos aux activités éligibles déjà chargées dans Garmin Connect Web ou Strava. Les activités que vous avez déjà aimées sont ignorées."
+        },
+        {
+          "title": "Kudos disponibles, résultats clairs",
+          "body": "Ouvrez le panneau de la barre d'outils de l'extension sur Garmin Connect ou Strava pour vérifier la connexion à la page, les kudos disponibles et les résultats de la dernière exécution. Un bouton flottant est disponible lorsque la navigation habituelle du fil est absente."
+        },
+        {
+          "title": "Votre compte reste le vôtre",
+          "body": "Utilisez les sites web auxquels vous êtes déjà connecté. Aucun compte supplémentaire, aucun serveur de kudos exploité par le développeur et aucun abonnement."
+        }
+      ],
+      "setupTitle": "De l'achat à vos premiers kudos",
+      "steps": [
+        {
+          "title": "Installez et activez.",
+          "body": "Installez depuis le Mac App Store, ouvrez Kudo All, puis activez l'extension dans Safari → Réglages → Extensions."
+        },
+        {
+          "title": "Autorisez l'accès aux sites web.",
+          "body": "Autorisez l'extension sur les sites Garmin Connect et Strava que vous utilisez. Connectez-vous à votre propre compte sur ces sites web."
+        },
+        {
+          "title": "Ouvrez votre fil et cliquez.",
+          "body": "Actualisez le fil d'actualité Garmin Connect ou le tableau de bord Strava, puis cliquez sur Kudo All. Faites défiler pour charger plus d'activités avant de le relancer."
+        }
+      ],
+      "feedLinksLabel": "Ouvrir votre fil d'activités",
+      "garminGlobalLabel": "Garmin · Monde",
+      "garminChinaLabel": "Garmin · Chine",
+      "limitations": "Pour Safari sur Mac avec macOS 12 ou version ultérieure. Cette extension ne fait pas défiler la page et ne charge pas davantage d'activités automatiquement. Les compteurs reflètent l'état affiché sur la page. Kudo All n'est affilié ni à Garmin ni à Strava.",
+      "demoTitle": "Voyez les kudos en un clic en action",
+      "demoIframeTitle": "Démonstration de Kudo All sur Garmin Connect Web et Strava",
+      "otherBrowsers": "Vous cherchez Chrome, Firefox ou Edge ?",
+      "otherBrowsersLink": "Voir les autres éditions pour navigateur",
+      "privacyLink": "Politique de confidentialité",
+      "languageRecommendation": {
+        "title": "Lire cette page en {language}",
+        "action": "Changer de langue",
+        "dismiss": "Rester en anglais"
+      }
+    }
+  },
+  "es": {
+    "locale": "es",
+    "languageName": "Español",
+    "path": "/safari/es/",
+    "ogLocale": "es_ES",
+    "copy": {
+      "meta": {
+        "title": "Kudo All para Safari — Strava y Garmin",
+        "description": "Da kudos a las actividades cargadas de Garmin Connect y Strava con un solo clic en Safari para Mac. Consulta la compra única, las funciones y la configuración para macOS 12 o posterior."
+      },
+      "languageNavigationLabel": "Elegir idioma",
+      "eyebrow": "SAFARI PARA MAC",
+      "title": "Kudo All para Safari",
+      "intro": "Más ánimo para tus amigos. Menos clics repetitivos.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Un clic para Garmin Connect y Strava",
+        "body": "Da kudos a las actividades aptas que ya están cargadas en tu feed. Consigue la edición para Safari en Mac con macOS 12 o posterior.",
+        "price": "Compra única · App Store de EE. UU.: $2.99 · El precio local se muestra en la App Store",
+        "button": "Obtener la edición para Safari",
+        "learnMore": "Funciones y configuración"
+      },
+      "featuresLabel": "Funciones",
+      "media": {
+        "title": "Mira la extensión real",
+        "alt": "Botón Kudo All en Garmin Connect de nuestra captura original de Chrome Web Store",
+        "caption": "Captura original de Chrome Web Store de Kudo All en Garmin Connect.",
+        "videoLink": "Ver el vídeo original del producto"
+      },
+      "features": [
+        {
+          "title": "Un clic en todo tu feed",
+          "body": "Da kudos a las actividades aptas que ya están cargadas en Garmin Connect Web o Strava. Las actividades a las que ya has dado kudos se omiten."
+        },
+        {
+          "title": "Kudos disponibles, resultados claros",
+          "body": "Abre el panel de la barra de herramientas de la extensión en Garmin Connect o Strava para comprobar la conexión con la página, los kudos disponibles y los resultados de la última ejecución. Hay un botón flotante disponible cuando falta la navegación habitual del feed."
+        },
+        {
+          "title": "Tu cuenta sigue siendo tuya",
+          "body": "Usa los sitios web en los que ya inicias sesión. Sin cuenta adicional, sin servidor de kudos operado por el desarrollador y sin suscripción."
+        }
+      ],
+      "setupTitle": "De la compra a tus primeros kudos",
+      "steps": [
+        {
+          "title": "Instala y activa.",
+          "body": "Instálalo desde la Mac App Store, abre Kudo All y luego activa la extensión en Safari → Ajustes → Extensiones."
+        },
+        {
+          "title": "Permite el acceso a los sitios web.",
+          "body": "Permite la extensión en los sitios de Garmin Connect y Strava que uses. Inicia sesión en tu propia cuenta en esos sitios web."
+        },
+        {
+          "title": "Abre tu feed y haz clic.",
+          "body": "Actualiza el feed de noticias de Garmin Connect o el panel de Strava y luego haz clic en Kudo All. Desplázate para cargar más actividades antes de volver a ejecutarlo."
+        }
+      ],
+      "feedLinksLabel": "Abre tu feed de actividades",
+      "garminGlobalLabel": "Garmin · Global",
+      "garminChinaLabel": "Garmin · China",
+      "limitations": "Para Safari en Mac con macOS 12 o posterior. Esta extensión no se desplaza ni carga más actividades automáticamente. Los recuentos de resultados reflejan el estado mostrado de la página. Kudo All no está afiliado a Garmin ni a Strava.",
+      "demoTitle": "Mira los kudos con un clic en acción",
+      "demoIframeTitle": "Demostración de Kudo All en Garmin Connect Web y Strava",
+      "otherBrowsers": "¿Buscas Chrome, Firefox o Edge?",
+      "otherBrowsersLink": "Ver las otras ediciones para navegadores",
+      "privacyLink": "Política de privacidad",
+      "languageRecommendation": {
+        "title": "Leer esta página en {language}",
+        "action": "Cambiar idioma",
+        "dismiss": "Mantener inglés"
+      }
+    }
+  },
+  "pt-BR": {
+    "locale": "pt-BR",
+    "languageName": "Português (Brasil)",
+    "path": "/safari/pt-br/",
+    "ogLocale": "pt_BR",
+    "copy": {
+      "meta": {
+        "title": "Kudo All para Safari — Strava e Garmin",
+        "description": "Dê kudos às atividades carregadas do Garmin Connect e do Strava com um clique no Safari para Mac. Veja a compra única, os recursos e a configuração para macOS 12 ou posterior."
+      },
+      "languageNavigationLabel": "Escolher idioma",
+      "eyebrow": "SAFARI PARA MAC",
+      "title": "Kudo All para Safari",
+      "intro": "Mais incentivo para seus amigos. Menos cliques repetitivos.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Um clique para Garmin Connect e Strava",
+        "body": "Dê kudos às atividades elegíveis já carregadas no seu feed. Obtenha a edição Safari para Mac com macOS 12 ou posterior.",
+        "price": "Compra única · App Store dos EUA: $2.99 · Preço local exibido na App Store",
+        "button": "Obter edição Safari",
+        "learnMore": "Recursos e configuração"
+      },
+      "featuresLabel": "Recursos",
+      "media": {
+        "title": "Veja a extensão real",
+        "alt": "Botão Kudo All no Garmin Connect da nossa captura original da Chrome Web Store",
+        "caption": "Captura original da Chrome Web Store do Kudo All no Garmin Connect.",
+        "videoLink": "Assista ao vídeo original do produto"
+      },
+      "features": [
+        {
+          "title": "Um clique, em todo o seu feed",
+          "body": "Dê kudos às atividades elegíveis já carregadas no Garmin Connect Web ou no Strava. As atividades que você já curtiu são ignoradas."
+        },
+        {
+          "title": "Kudos disponíveis, resultados claros",
+          "body": "Abra o painel da barra de ferramentas da extensão no Garmin Connect ou no Strava para verificar a conexão da página, os kudos disponíveis e os resultados da última execução. Um botão flutuante fica disponível quando a navegação habitual do feed não está presente."
+        },
+        {
+          "title": "Sua conta continua sendo sua",
+          "body": "Use os sites nos quais você já faz login. Sem conta adicional, sem servidor de kudos operado pelo desenvolvedor e sem assinatura."
+        }
+      ],
+      "setupTitle": "Da compra aos seus primeiros kudos",
+      "steps": [
+        {
+          "title": "Instale e ative.",
+          "body": "Instale pela Mac App Store, abra o Kudo All e ative a extensão em Safari → Ajustes → Extensões."
+        },
+        {
+          "title": "Permita o acesso aos sites.",
+          "body": "Permita a extensão nos sites do Garmin Connect e do Strava que você usa. Faça login na sua própria conta nesses sites."
+        },
+        {
+          "title": "Abra seu feed e clique.",
+          "body": "Atualize o feed de notícias do Garmin Connect ou o painel do Strava e clique em Kudo All. Role a página para carregar mais atividades antes de executá-lo novamente."
+        }
+      ],
+      "feedLinksLabel": "Abra seu feed de atividades",
+      "garminGlobalLabel": "Garmin · Global",
+      "garminChinaLabel": "Garmin · China",
+      "limitations": "Para Safari no Mac com macOS 12 ou posterior. Esta extensão não rola a página nem carrega mais atividades automaticamente. As contagens de resultados refletem o estado exibido da página. O Kudo All não é afiliado à Garmin nem ao Strava.",
+      "demoTitle": "Veja os kudos com um clique em ação",
+      "demoIframeTitle": "Demonstração do Kudo All no Garmin Connect Web e no Strava",
+      "otherBrowsers": "Quer usar no Chrome, Firefox ou Edge?",
+      "otherBrowsersLink": "Veja as outras edições para navegador",
+      "privacyLink": "Política de privacidade",
+      "languageRecommendation": {
+        "title": "Leia esta página em {language}",
+        "action": "Mudar idioma",
+        "dismiss": "Manter em inglês"
+      }
+    }
+  },
+  "pl": {
+    "locale": "pl",
+    "languageName": "Polski",
+    "path": "/safari/pl/",
+    "ogLocale": "pl_PL",
+    "copy": {
+      "meta": {
+        "title": "Kudo All dla Safari — Strava i Garmin",
+        "description": "Przyznawaj kudosy za wczytane aktywności w Garmin Connect i Strava jednym kliknięciem w Safari na Macu. Sprawdź jednorazowy zakup, funkcje i konfigurację dla macOS 12 lub nowszego."
+      },
+      "languageNavigationLabel": "Wybierz język",
+      "eyebrow": "SAFARI NA MACA",
+      "title": "Kudo All dla Safari",
+      "intro": "Więcej wsparcia dla znajomych. Mniej powtarzalnych kliknięć.",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Jedno kliknięcie dla Garmin Connect i Strava",
+        "body": "Przyznawaj kudosy za odpowiednie aktywności, które są już wczytane w Twoim kanale. Pobierz edycję Safari na Maca z macOS 12 lub nowszym.",
+        "price": "Jednorazowy zakup · amerykański App Store: $2.99 · lokalna cena widoczna w App Store",
+        "button": "Pobierz edycję Safari",
+        "learnMore": "Funkcje i konfiguracja"
+      },
+      "featuresLabel": "Funkcje",
+      "media": {
+        "title": "Zobacz prawdziwe rozszerzenie",
+        "alt": "Przycisk Kudo All w Garmin Connect z naszego oryginalnego zrzutu ekranu w Chrome Web Store",
+        "caption": "Oryginalny zrzut ekranu Kudo All w Garmin Connect z Chrome Web Store.",
+        "videoLink": "Obejrzyj oryginalny film o produkcie"
+      },
+      "features": [
+        {
+          "title": "Jedno kliknięcie w całym kanale",
+          "body": "Przyznawaj kudosy za odpowiednie aktywności już wczytane w Garmin Connect Web lub Strava. Aktywności, które już polubiłeś, są pomijane."
+        },
+        {
+          "title": "Dostępne kudosy, jasne wyniki",
+          "body": "Otwórz panel rozszerzenia na pasku narzędzi w Garmin Connect lub Strava, aby sprawdzić połączenie ze stroną, dostępne kudosy i wyniki ostatniego uruchomienia. Przycisk pływający jest dostępny, gdy brakuje zwykłej nawigacji kanału."
+        },
+        {
+          "title": "Twoje konto pozostaje Twoje",
+          "body": "Korzystaj ze stron, na których już się logujesz. Bez dodatkowego konta, bez serwera kudosów obsługiwanego przez dewelopera i bez subskrypcji."
+        }
+      ],
+      "setupTitle": "Od zakupu do pierwszych kudosów",
+      "steps": [
+        {
+          "title": "Zainstaluj i włącz.",
+          "body": "Zainstaluj z Mac App Store, otwórz Kudo All, a następnie włącz rozszerzenie w Safari → Ustawienia → Rozszerzenia."
+        },
+        {
+          "title": "Zezwól na dostęp do stron.",
+          "body": "Zezwól rozszerzeniu na stronach Garmin Connect i Strava, których używasz. Zaloguj się na własne konto na tych stronach."
+        },
+        {
+          "title": "Otwórz swój kanał i kliknij.",
+          "body": "Odśwież kanał aktualności Garmin Connect lub pulpit Strava, a następnie kliknij Kudo All. Przewiń, aby wczytać więcej aktywności, zanim uruchomisz go ponownie."
+        }
+      ],
+      "feedLinksLabel": "Otwórz swój kanał aktywności",
+      "garminGlobalLabel": "Garmin · Wersja globalna",
+      "garminChinaLabel": "Garmin · Chiny",
+      "limitations": "Dla Safari na Maca z macOS 12 lub nowszym. To rozszerzenie nie przewija automatycznie ani nie wczytuje więcej aktywności. Liczniki wyników odzwierciedlają wyświetlany stan strony. Kudo All nie jest powiązane z Garmin ani Strava.",
+      "demoTitle": "Zobacz kudosy jednym kliknięciem w akcji",
+      "demoIframeTitle": "Demonstracja Kudo All w Garmin Connect Web i Strava",
+      "otherBrowsers": "Szukasz wersji dla Chrome, Firefox lub Edge?",
+      "otherBrowsersLink": "Zobacz edycje dla innych przeglądarek",
+      "privacyLink": "Polityka prywatności",
+      "languageRecommendation": {
+        "title": "Przeczytaj tę stronę w języku {language}",
+        "action": "Zmień język",
+        "dismiss": "Pozostań przy angielskim"
+      }
+    }
+  },
+  "zh-CN": {
+    "locale": "zh-CN",
+    "languageName": "简体中文",
+    "path": "/safari/zh/",
+    "ogLocale": "zh_CN",
+    "copy": {
+      "meta": {
+        "title": "Kudo All Safari 版 — Strava 与 Garmin 一键点赞",
+        "description": "在 Mac Safari 中，一次点击为 Garmin Connect 或 Strava 中已加载的活动点赞。了解一次性购买、功能与启用步骤，支持 macOS 12 或更新版本。"
+      },
+      "languageNavigationLabel": "选择语言",
+      "eyebrow": "MAC SAFARI 扩展",
+      "title": "Kudo All Safari 版",
+      "intro": "给朋友更多鼓励，把重复点击交给 Kudo All。",
+      "offer": {
+        "eyebrow": "SAFARI · MAC",
+        "title": "Garmin Connect 与 Strava，一次点击送出鼓励",
+        "body": "为动态中已加载、符合条件的活动点赞。Safari 版适用于搭载 macOS 12 或更新版本的 Mac。",
+        "price": "一次性购买 · 美国区 App Store：$2.99 · 其他地区价格以 App Store 显示为准",
+        "button": "获取 Safari 版",
+        "learnMore": "功能与启用步骤"
+      },
+      "featuresLabel": "主要功能",
+      "media": {
+        "title": "看看真实扩展如何工作",
+        "alt": "Kudo All 在 Garmin Connect 中的按钮，来自原有 Chrome 商店截图",
+        "caption": "Kudo All 在 Garmin Connect 中的原有 Chrome 商店截图。",
+        "videoLink": "观看原始产品演示视频"
+      },
+      "features": [
+        {
+          "title": "一次点击，给朋友鼓励",
+          "body": "为 Garmin Connect Web 或 Strava 中已加载、符合条件的活动点赞，跳过已点赞的活动。"
+        },
+        {
+          "title": "入口清楚，状态可见",
+          "body": "在 Garmin Connect 或 Strava 中打开扩展工具栏面板，即可查看页面连接、可点赞数量和上次执行结果。常规导航不可用时，还可使用浮动备用按钮。"
+        },
+        {
+          "title": "使用你自己的账号",
+          "body": "直接使用已登录的网站，无需额外账号，不向开发者服务器发送点赞数据，也没有订阅。"
+        }
+      ],
+      "setupTitle": "从购买到第一次成功点赞",
+      "steps": [
+        {
+          "title": "安装并启用。",
+          "body": "从 Mac App Store 安装并打开 Kudo All，在 Safari → 设置 → 扩展中启用它。"
+        },
+        {
+          "title": "允许网站访问。",
+          "body": "允许扩展访问你使用的 Garmin Connect 和 Strava 站点，然后在网站中登录你自己的账号。"
+        },
+        {
+          "title": "打开动态，点击一次。",
+          "body": "刷新 Garmin Connect 动态或 Strava dashboard，点击 Kudo All；想处理更多活动时，先滚动加载，再次点击。"
+        }
+      ],
+      "feedLinksLabel": "打开你的活动动态",
+      "garminGlobalLabel": "Garmin · 国际区",
+      "garminChinaLabel": "Garmin · 中国区",
+      "limitations": "适用于 macOS 12 或更新版本的 Mac Safari。扩展不会自动滚动或加载更多活动。结果计数反映页面显示的状态。Kudo All 与 Garmin、Strava 官方无关。",
+      "demoTitle": "看看一键点赞如何工作",
+      "demoIframeTitle": "Kudo All 在 Garmin Connect Web 与 Strava 中的操作演示",
+      "otherBrowsers": "想在 Chrome、Firefox 或 Edge 中使用？",
+      "otherBrowsersLink": "查看其他浏览器版本",
+      "privacyLink": "隐私政策",
+      "languageRecommendation": {
+        "title": "使用{language}阅读此页",
+        "action": "切换语言",
+        "dismiss": "保持英文"
+      }
+    }
+  }
+}

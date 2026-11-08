@@ -16,7 +16,7 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc)
-- [Safari](https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808)
+- [Safari for Mac — one-time purchase](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8) · [Features and setup](https://kudoall.li2niu.com/safari/?lang=en)
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/gcw-and-strava-kudo-all/lmopbhpibkfcmbgipoalokaemgnlmjdn)
 - or Install from [.crx](./crx-files.md)
 
@@ -24,7 +24,9 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 [![](https://img.shields.io/amo/v/kudo-all.svg?logo=firefox&style=flat)](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/) [![](https://img.shields.io/amo/rating/kudo-all.svg?logo=firefox&style=flat)](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/) [![](https://img.shields.io/amo/users/kudo-all.svg?logo=firefox&style=flat)](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/)
 
-[<img src="./screenshots/appstore-badge.png" width="98" height="32"/>](https://apps.apple.com/us/app/kudo-all-in-garmin-connect-web/id6458730808)
+[<img src="./screenshots/appstore-badge.png" width="98" height="32" alt="Get Kudo All for Safari on the Mac App Store"/>](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8)
+
+**Using Safari on a Mac?** The Safari edition supports Garmin Connect Web and Strava on macOS 12 or later. It is a one-time App Store purchase, with no subscription (US price: **$2.99**; other regions show their local price in the App Store). [See supported pages and the three setup steps.](https://kudoall.li2niu.com/safari/?lang=en)
 
 ## Local testing in EGO
 
@@ -37,7 +39,8 @@ Disable the Web Store copy, open `chrome://extensions/`, enable Developer mode, 
 ### Where is the one click button?
 
 - In GCW, it is on the up-right nav bar next to Upload Activities.
-- On the Strava dashboard, it is in the upper-right navigation. If the navigation is unavailable, a floating button appears. The browser extension icon also opens a Strava status panel and provides a backup action.
+- On the Strava dashboard, it is in the upper-right navigation. If the usual feed navigation is unavailable, a floating button appears.
+- On either supported Garmin Connect or Strava feed, the browser extension icon opens a panel with the page connection, available kudos and last-run results. It also provides Reconnect and a backup action.
 
 ### Valid domains and urls
 
@@ -51,7 +54,7 @@ For Strava, only https://www.strava.com is valid.
 
 ### What is the kudos range?
 
-On Strava, it gives kudos to eligible activities currently loaded in the dashboard. Scroll to load more, then run it again. It skips activities already given kudos and does not scroll automatically.
+On Garmin Connect and Strava, it gives kudos to eligible activities already loaded in the feed. Scroll to load more, then run it again. It skips activities already given kudos and does not scroll automatically. Result counts reflect the displayed page state.
 
 ### What is the points of kudos?
 
@@ -60,7 +63,7 @@ On Strava, it gives kudos to eligible activities currently loaded in the dashboa
 
 ### Can you support auto kudo?
 
-Nope. Giving "kudos" to athletes one current screen in one click is already a very quick and efficient operation. Still, we need to retain some sense of ritual. If everything is automated, where is the fun in that?
+Each run starts with your click and processes eligible activities already loaded in the feed. It does not automatically scroll, load more activities or run unlimited background kudos.
 
 ## Credit
 

@@ -6,3 +6,9 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 show_downloads: true
 google_analytics: G-CVD6L6ME17
+app_store_provider_token: "125713495"
+exclude:
+  - app-store
+  - scripts
+  - tests
+  - KudoAllSafari

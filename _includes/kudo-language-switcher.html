@@ -1,0 +1,14 @@
+{% if page.safari_locale %}
+{% assign navigation_copy = site.data.safari_locales[page.safari_locale].copy %}
+<nav class="kudo-language-switcher" aria-label="{{ navigation_copy.languageNavigationLabel | escape }}">
+  {% for locale_entry in site.data.safari_locales %}
+  <a href="{{ locale_entry[1].path | relative_url }}" data-kudo-lang="{{ locale_entry[0] }}" data-kudo-locale-path lang="{{ locale_entry[0] }}" hreflang="{{ locale_entry[0] }}"{% if locale_entry[0] == page.safari_locale %} aria-current="true"{% endif %}>{{ locale_entry[1].languageName | escape }}</a>
+  {% endfor %}
+</nav>
+{% else %}
+<nav class="kudo-language-switcher" aria-label="Language">
+  <a href="?lang=en" data-kudo-lang="en" lang="en">English</a>
+  <a href="?lang=de" data-kudo-lang="de" lang="de">Deutsch</a>
+  <a href="?lang=zh-CN" data-kudo-lang="zh-CN" lang="zh-CN">简体中文</a>
+</nav>
+{% endif %}
