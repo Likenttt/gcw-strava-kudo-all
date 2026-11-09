@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: safari-guide
 title: Kudo All Safari 版用户指南
 lang: zh-CN
 permalink: /help/safari/zh/

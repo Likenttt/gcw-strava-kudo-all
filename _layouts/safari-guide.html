@@ -1,0 +1,33 @@
+{% assign canonical_origin = site.url | default: 'https://kudoall.li2niu.com' %}
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}" data-kudo-page-locale="{{ page.lang | default: 'en' }}" data-kudo-locale="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <link rel="canonical" href="{{ canonical_origin }}{{ page.url | relative_url }}">
+  <link rel="alternate" hreflang="en" href="{{ canonical_origin }}{{ '/help/safari/' | relative_url }}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ canonical_origin }}{{ '/help/safari/zh/' | relative_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ canonical_origin }}{{ '/help/safari/' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="{{ '/assets/js/kudo-localization.js' | relative_url }}"></script>
+  <script id="kudo-acquisition-config" type="application/json">{"providerToken":{{ site.app_store_provider_token | default: '' | jsonify }}}</script>
+  <script defer src="{{ '/assets/js/kudo-acquisition.js' | relative_url }}"></script>
+  {% include head-custom-google-analytics.html %}
+</head>
+<body class="kudo-safari-layout">
+  <div id="main_content_wrap" class="outer">
+    <main id="main_content" class="inner kudo-guide">
+      <nav class="kudo-guide-breadcrumb" aria-label="Kudo All">
+        {% if page.lang == 'zh-CN' %}
+        <a href="{{ '/safari/zh/' | relative_url }}">← Kudo All Safari 版</a>
+        {% else %}
+        <a href="{{ '/safari/' | relative_url }}">← Kudo All for Safari</a>
+        {% endif %}
+      </nav>
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>

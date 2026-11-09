@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: safari-guide
 title: Kudo All for Safari — User Guide
 lang: en
 permalink: /help/safari/

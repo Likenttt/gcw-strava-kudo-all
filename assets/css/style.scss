@@ -267,6 +267,15 @@ html[data-kudo-reason="update"] .kudo-update-success {
   padding: 0 28px 20px;
 }
 
+#main_content.kudo-guide {
+  max-width: 940px;
+}
+
+.kudo-guide-breadcrumb {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
 #main_content .kudo-product-media img {
   border: 0;
   border-radius: 0;
