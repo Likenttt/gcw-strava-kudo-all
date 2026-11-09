@@ -49,6 +49,16 @@
   {% endfor %}
 </section>
 
+{% assign strava_image = site.data.safari_guide_images.strava %}
+{% if strava_image.path %}
+<figure class="kudo-product-media" id="safari-strava-demo" aria-labelledby="safari-strava-demo-title">
+  <h2 id="safari-strava-demo-title">{{ copy.stravaDemo.title | escape }}</h2>
+  <p>{{ copy.stravaDemo.body | escape }}</p>
+  <img src="{{ strava_image.path | relative_url | escape }}" alt="{{ copy.stravaDemo.alt | escape }}"{% if strava_image.width %} width="{{ strava_image.width }}"{% endif %}{% if strava_image.height %} height="{{ strava_image.height }}"{% endif %} loading="lazy" decoding="async">
+  <figcaption>{{ copy.stravaDemo.caption | escape }}</figcaption>
+</figure>
+{% endif %}
+
 <section class="kudo-safari-setup" id="safari-user-guide" aria-labelledby="safari-setup-title">
   <h2 id="safari-setup-title">{{ copy.setupTitle | escape }}</h2>
   <p class="kudo-safari-guide-intro">{{ copy.guideIntro | escape }}</p>

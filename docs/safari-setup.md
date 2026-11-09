@@ -64,6 +64,17 @@ After enabling or updating the extension, or changing website access, **refresh 
 
 Each click processes eligible, unliked activities **already loaded in the feed**, including cards outside the current viewport. It skips activities already given kudos. Scroll to load more, then click again. Kudo All does not scroll automatically, load the entire history or start unlimited background kudos.
 
+### Strava: use the page button or toolbar panel
+
+1. **Sign in to Strava in Safari**, then open the [Strava dashboard](https://www.strava.com/dashboard) and refresh it. Signing in with another browser does not sign you in to Safari.
+2. Find **Kudo All** in the page's upper-right navigation, or open the Kudo All icon in Safari's toolbar. In the panel, check **Connected** and **Available kudos**. If disconnected, choose **Reconnect** first.
+3. Click the page button or **Give kudos to current feed** in the panel. Keep the dashboard open, then check the activity kudos icons and the panel's last-run counts. This run covers eligible activities already loaded in the current feed; scroll to load more before starting another run.
+
+<figure>
+  <img src="https://kudoall.li2niu.com/assets/images/safari-guide/strava-feed.png" width="1248" height="880" style="max-width:100%;height:auto;" loading="lazy" alt="Real Strava dashboard in Chromium/EGO with the orange Kudo All button in the upper-right navigation; personal details are blurred.">
+  <figcaption>Real Chromium/EGO demonstration before a run, showing the orange Kudo All page button. Personal information is blurred. For Safari, complete the Safari website-access and sign-in steps above.</figcaption>
+</figure>
+
 ## Common questions
 
 ### The app is installed, but there is no button

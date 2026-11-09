@@ -73,6 +73,8 @@ test('all eight complete translations preserve the schema and purchase facts', (
       assert.ok(data.copy.steps[4].body.includes(route), `${locale} preserves ${route}`);
     }
     assert.ok(data.copy.steps[3].body.includes('Always Allow on This Website'), `${locale} preserves the observed current-site permission label`);
+    assert.ok(data.copy.stravaDemo.body.includes('Safari'), `${locale} explains the Safari sign-in context`);
+    assert.ok(data.copy.stravaDemo.caption.includes('EGO') && data.copy.stravaDemo.caption.includes('Chromium'), `${locale} labels the Strava screenshot browser`);
   }
 });
 

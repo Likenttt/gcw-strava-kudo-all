@@ -64,6 +64,17 @@ Garmin 旧版的 `/modern/newsfeed` 路径也受支持。账号主页、单条�
 
 每次点击只处理动态中 **已经加载、尚未点赞且符合条件的活动**，包括已加载但当前屏幕看不到的卡片，并跳过已经点赞的活动。向下滚动加载更多后，可再点击一次。插件不会自动滚动、加载全部历史，也不会在后台无限自动点赞。
 
+### Strava：使用页内按钮或工具栏面板
+
+1. **在 Safari 中登录 Strava**，打开 [Strava Dashboard](https://www.strava.com/dashboard) 并刷新。其他浏览器中的登录状态不会让 Safari 自动登录。
+2. 找到页面右上角导航栏的 **一键点赞（Kudo All）**，或打开 Safari 工具栏中的 Kudo All 扩展图标。在面板中确认 **已连接（Connected）**和 **可点赞动态（Available kudos）**；未连接时先点 **重新连接（Reconnect）**。
+3. 点击页内按钮或面板中的 **点赞当前动态（Give kudos to current feed）**。保持 Dashboard 打开，执行后查看活动的点赞图标和面板中的上次结果。本次只处理当前动态中已加载、符合条件的活动；要处理更多，先滚动加载，再执行一次。
+
+<figure>
+  <img src="https://kudoall.li2niu.com/assets/images/safari-guide/strava-feed.png" width="1248" height="880" style="max-width:100%;height:auto;" loading="lazy" alt="Chromium/EGO 中的实际 Strava Dashboard，右上角导航栏显示橙色 Kudo All 按钮，个人信息已模糊。">
+  <figcaption>Chromium/EGO 实际操作演示，展示执行前的橙色 Kudo All 页内按钮。个人信息已模糊。Safari 用户需按上文在 Safari 中完成网站授权和登录。</figcaption>
+</figure>
+
 ## 常见问题
 
 ### 已安装应用，但网页没有按钮

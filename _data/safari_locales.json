@@ -133,6 +133,12 @@
         "title": "Read this page in {language}",
         "action": "Switch language",
         "dismiss": "Keep English"
+      },
+      "stravaDemo": {
+        "title": "Using Kudo All on Strava",
+        "body": "Open your Strava Dashboard, wait for activities to load, then use Kudo All in the page navigation. For the Safari edition, sign in to Strava in Safari and allow access to the site.",
+        "caption": "Actual Strava Dashboard captured in EGO (Chromium). Personal details are blurred.",
+        "alt": "Real Strava Dashboard showing the Kudo All button in the page navigation"
       }
     }
   },
@@ -270,6 +276,12 @@
         "title": "Diese Seite auf {language} lesen",
         "action": "Sprache wechseln",
         "dismiss": "Bei Englisch bleiben"
+      },
+      "stravaDemo": {
+        "title": "Kudo All auf Strava verwenden",
+        "body": "Öffne dein Strava-Dashboard, warte, bis die Aktivitäten geladen sind, und nutze Kudo All in der Seitennavigation. Für die Safari-Version meldest du dich in Safari bei Strava an und erlaubst den Zugriff auf die Website.",
+        "caption": "Aufnahme des tatsächlichen Strava-Dashboards in EGO (Chromium). Persönliche Angaben sind unkenntlich gemacht.",
+        "alt": "Strava-Dashboard mit der Schaltfläche Kudo All in der Seitennavigation"
       }
     }
   },
@@ -407,6 +419,12 @@
         "title": "Lees deze pagina in het {language}",
         "action": "Taal wijzigen",
         "dismiss": "Engels behouden"
+      },
+      "stravaDemo": {
+        "title": "Kudo All gebruiken op Strava",
+        "body": "Open je Strava-dashboard, wacht tot de activiteiten zijn geladen en gebruik Kudo All in de navigatie van de pagina. Meld je voor de Safari-versie aan bij Strava in Safari en sta toegang tot de website toe.",
+        "caption": "Het echte Strava-dashboard, vastgelegd in EGO (Chromium). Persoonlijke gegevens zijn vervaagd.",
+        "alt": "Strava-dashboard met de knop Kudo All in de navigatie van de pagina"
       }
     }
   },
@@ -544,6 +562,12 @@
         "title": "Lire cette page en {language}",
         "action": "Changer de langue",
         "dismiss": "Rester en anglais"
+      },
+      "stravaDemo": {
+        "title": "Utiliser Kudo All sur Strava",
+        "body": "Ouvrez votre tableau de bord Strava, attendez le chargement des activités, puis utilisez Kudo All dans la navigation de la page. Pour la version Safari, connectez-vous à Strava dans Safari et autorisez l’accès au site.",
+        "caption": "Capture du véritable tableau de bord Strava dans EGO (Chromium). Les informations personnelles sont floutées.",
+        "alt": "Tableau de bord Strava avec le bouton Kudo All dans la navigation de la page"
       }
     }
   },
@@ -681,6 +705,12 @@
         "title": "Leer esta página en {language}",
         "action": "Cambiar idioma",
         "dismiss": "Mantener inglés"
+      },
+      "stravaDemo": {
+        "title": "Usar Kudo All en Strava",
+        "body": "Abre tu panel de Strava, espera a que se carguen las actividades y usa Kudo All en la navegación de la página. Para la versión de Safari, inicia sesión en Strava desde Safari y permite el acceso al sitio.",
+        "caption": "Captura del panel real de Strava en EGO (Chromium). Los datos personales están difuminados.",
+        "alt": "Panel de Strava con el botón Kudo All en la navegación de la página"
       }
     }
   },
@@ -818,6 +848,12 @@
         "title": "Leia esta página em {language}",
         "action": "Mudar idioma",
         "dismiss": "Manter em inglês"
+      },
+      "stravaDemo": {
+        "title": "Usar o Kudo All no Strava",
+        "body": "Abra seu painel do Strava, aguarde as atividades carregarem e use o Kudo All na navegação da página. Para a versão Safari, entre no Strava pelo Safari e permita o acesso ao site.",
+        "caption": "Captura do painel real do Strava no EGO (Chromium). Os dados pessoais estão desfocados.",
+        "alt": "Painel do Strava com o botão Kudo All na navegação da página"
       }
     }
   },
@@ -955,6 +991,12 @@
         "title": "Przeczytaj tę stronę w języku {language}",
         "action": "Zmień język",
         "dismiss": "Pozostań przy angielskim"
+      },
+      "stravaDemo": {
+        "title": "Korzystanie z Kudo All w Strava",
+        "body": "Otwórz swój panel Strava, zaczekaj na załadowanie aktywności i użyj Kudo All w nawigacji strony. Aby korzystać z wersji dla Safari, zaloguj się do Strava w Safari i zezwól na dostęp do witryny.",
+        "caption": "Zrzut rzeczywistego panelu Strava w EGO (Chromium). Dane osobowe są rozmyte.",
+        "alt": "Panel Strava z przyciskiem Kudo All w nawigacji strony"
       }
     }
   },
@@ -1092,6 +1134,12 @@
         "title": "使用{language}阅读此页",
         "action": "切换语言",
         "dismiss": "保持英文"
+      },
+      "stravaDemo": {
+        "title": "在 Strava 中使用 Kudo All",
+        "body": "打开 Strava Dashboard，等待活动加载后，使用页面导航中的 Kudo All。使用 Safari 版时，请在 Safari 中登录 Strava，并允许扩展访问该网站。",
+        "caption": "在 EGO（Chromium）中截取的真实 Strava Dashboard。个人信息已模糊处理。",
+        "alt": "真实 Strava Dashboard，页面导航中显示 Kudo All 按钮"
       }
     }
   }
