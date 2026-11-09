@@ -234,10 +234,22 @@ html[data-kudo-reason="update"] .kudo-update-success {
 }
 
 .kudo-safari-footer {
+  align-items: baseline;
+  border-top: 1px solid var(--promo-line);
   color: #475569;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
+  gap: 12px 28px;
+  justify-content: space-between;
   line-height: 1.7;
   margin: 28px 0;
+  padding-top: 20px;
+}
+
+.kudo-safari-footer p {
+  color: inherit;
+  margin: 0;
 }
 
 .kudo-safari-footer a {

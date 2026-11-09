@@ -67,15 +67,13 @@ test('all eight complete translations preserve the schema and purchase facts', (
     assert.ok(data.copy.offer.body.includes('macOS 12'));
     assert.ok(data.copy.languageRecommendation.title.includes('{language}'));
     assert.equal(data.copy.features.length, 3);
-    assert.equal(data.copy.steps.length, 7);
+    assert.equal(data.copy.steps.length, 3);
     assert.equal(data.copy.troubleshooting.length, 4);
-    for (const route of ['/app/newsfeed', '/modern/newsfeed', '/dashboard']) {
-      assert.ok(data.copy.steps[4].body.includes(route), `${locale} preserves ${route}`);
-    }
-    assert.ok(data.copy.steps[3].body.includes('Always Allow on This Website'), `${locale} preserves the observed current-site permission label`);
+    assert.ok(data.copy.steps[1].body.includes('Safari'), `${locale} explains where to enable the extension`);
     assert.ok(data.copy.stravaDemo.body.includes('Safari'), `${locale} explains the Safari sign-in context`);
     assert.ok(data.copy.stravaDemo.caption.includes('EGO') && data.copy.stravaDemo.caption.includes('Chromium'), `${locale} labels the Strava screenshot browser`);
   }
+  assert.ok(locales.en.copy.steps.reduce((sum, step) => sum + step.body.split(/\s+/).length, 0) <= 120);
 });
 
 test('explicit static language pages override query, memory and browser preferences', () => {
