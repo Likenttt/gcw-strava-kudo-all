@@ -452,6 +452,101 @@ html[data-kudo-reason="update"] .kudo-update-success {
   padding: 5px 0 8px 5px;
 }
 
+.kudo-safari-guide-intro {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.kudo-safari-guide-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.kudo-safari-guide-navigation a {
+  background: #edf4fb;
+  border-radius: 8px;
+  color: #0755a6;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px 11px;
+}
+
+.kudo-safari-guide-steps > li {
+  padding: 14px 0 18px 8px;
+  scroll-margin-top: 24px;
+}
+
+.kudo-safari-guide-steps h3 {
+  color: var(--promo-ink);
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.kudo-safari-guide-steps p {
+  margin: 0 0 12px;
+}
+
+.kudo-safari-guide-download {
+  color: #0755a6;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.kudo-safari-help-item {
+  border: 1px solid var(--promo-line);
+  border-radius: 10px;
+  color: #475569;
+  line-height: 1.7;
+  margin-top: 12px;
+  padding: 14px 18px;
+}
+
+.kudo-safari-help-item summary {
+  color: var(--promo-ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.kudo-safari-help-item summary:focus-visible,
+.kudo-safari-guide-navigation a:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 4px;
+}
+
+.kudo-safari-help-item ul {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.kudo-safari-help-item li:last-child {
+  padding-bottom: 0;
+}
+
+.kudo-safari-guide-image {
+  margin: 18px 0 0;
+}
+
+#main_content .kudo-safari-guide-image img {
+  border: 1px solid var(--promo-line);
+  border-radius: 10px;
+  box-shadow: none;
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 100%;
+}
+
+.kudo-safari-guide-image figcaption {
+  color: var(--promo-muted);
+  font-size: 13px;
+  margin-top: 7px;
+}
+
 .kudo-safari-feed-links {
   display: flex;
   flex-wrap: wrap;

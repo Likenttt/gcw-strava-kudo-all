@@ -42,21 +42,84 @@
           "body": "Use the websites you already sign in to. No extra account, no developer-operated kudos server, and no subscription."
         }
       ],
-      "setupTitle": "From purchase to your first kudos",
+      "setupTitle": "Install, set up and use Kudo All",
+      "guideIntro": "For Safari on a Mac with macOS 12 or later. Follow these steps once, then use Kudo All from your activity feed whenever you want to give kudos.",
+      "guideNavigationLabel": "User guide sections",
+      "guideNavigation": {
+        "install": "Download and open",
+        "permissions": "Enable and allow websites",
+        "use": "Give kudos",
+        "troubleshooting": "Troubleshooting",
+        "remove": "Disable or uninstall"
+      },
       "steps": [
         {
-          "title": "Install and enable.",
-          "body": "Install from the Mac App Store, open Kudo All, then enable the extension in Safari → Settings → Extensions."
+          "title": "Download from the Mac App Store.",
+          "body": "Use the App Store link on this page to download Kudo All for your Mac. If you already own it, use the same Apple Account to download it again; a second purchase is not required."
         },
         {
-          "title": "Allow website access.",
-          "body": "Allow the extension on the Garmin Connect and Strava sites you use. Sign in to your own account on those websites."
+          "title": "Open the installed Mac app once.",
+          "body": "When the download finishes, choose Open in the App Store, or launch the installed Kudo All app from Applications. Open this Mac app at least once so Safari can recognize its bundled extension. The app shows a Safari setup guide; sign in to Garmin Connect or Strava on their own websites."
         },
         {
-          "title": "Open your feed and click.",
-          "body": "Refresh the Garmin Connect newsfeed or Strava dashboard, then click Kudo All. Scroll to load more activities before running it again."
+          "title": "Turn on Kudo All in Safari Extensions.",
+          "body": "Open Safari on your Mac. In the menu bar, choose Safari → Settings, or Safari → Preferences on older macOS versions. Open Extensions, find Kudo All and select its checkbox to enable it. The setup app can also open these Safari extension settings for you."
+        },
+        {
+          "title": "Allow the websites you actually use.",
+          "body": "Visit your Garmin Connect or Strava website in Safari and allow Kudo All on the current website when Safari asks. You can also review website access in Kudo All's Safari extension settings. You only need to allow the supported websites you use, not every website. The Mac app's enabled status checks the extension switch; it does not confirm website access or sign-in. If Safari offers “Always Allow on This Website”, choose that option for the current site."
+        },
+        {
+          "title": "Open your feed, sign in and refresh.",
+          "body": "Use the feed links below. On Garmin Connect, open /app/newsfeed or the older /modern/newsfeed; on Strava, open /dashboard. Sign in to your own account on that website. Reload the feed after enabling the extension or changing its website permissions, then wait for activities to load. Individual activity, profile and sign-in pages are not the supported feed."
+        },
+        {
+          "title": "Give kudos and check the result.",
+          "body": "On Garmin Connect, find Kudo All near the upload control; on Strava, use Kudo All in the navigation or the floating button. You can also click Kudo All in Safari's toolbar to open its panel. Check the available-kudos count, then start a run from the panel or the page button. Keep the feed open while it runs. Review the displayed result counts and the activities' kudos icons; these reflect the page's displayed state."
+        },
+        {
+          "title": "Load more before running again.",
+          "body": "To give kudos to more activities, scroll the feed yourself and wait for additional activities to load, then click Kudo All again. Activities already given kudos are skipped. The extension does not automatically scroll, load more activities or run unlimited background kudos."
         }
       ],
+      "guideDownloadLabel": "Download Kudo All from the Mac App Store",
+      "troubleshootingTitle": "Troubleshooting",
+      "troubleshooting": [
+        {
+          "title": "Installed, but Kudo All is missing from Extensions?",
+          "checks": [
+            "Open the installed Kudo All Mac app from Applications at least once, then check Safari → Settings (or Preferences) → Extensions again.",
+            "If the list still has not updated, quit Safari, open it again and check Extensions. Make sure you installed the Mac Safari edition from the Mac App Store; a Chrome, Firefox or Edge extension does not install the Safari edition."
+          ]
+        },
+        {
+          "title": "Enabled, but no button or no page connection?",
+          "checks": [
+            "Check that you are signed in on a supported Garmin Connect newsfeed or Strava dashboard, not an individual activity, profile or sign-in page.",
+            "Check Safari's website access for the current Garmin Connect or Strava website. Enabling the extension alone does not grant website access.",
+            "After enabling access, reload the feed. Open the Safari toolbar panel and use its reconnect action if it still cannot connect to the page. Reconnecting does not start a kudos run."
+          ]
+        },
+        {
+          "title": "The available-kudos count is zero?",
+          "checks": [
+            "The loaded activities may already have kudos, or no eligible activities may have loaded yet. Check the feed and wait for it to finish loading.",
+            "Scroll to load more activities, then check the panel again. A zero count on the current feed does not mean the extension needs another purchase."
+          ]
+        },
+        {
+          "title": "A run stopped or some results were not confirmed?",
+          "checks": [
+            "Check the activities' kudos icons on the page. Result counts describe what the page displayed, rather than an independent server check.",
+            "If the page cannot confirm a click, the extension stops the remaining run. Wait for the website to respond and review the feed before trying again. If the panel is disconnected, reload the feed and use its reconnect action."
+          ]
+        }
+      ],
+      "removalTitle": "Disable or uninstall",
+      "disableInstructions": "To stop using Kudo All, open Safari → Settings (or Preferences) → Extensions and clear the Kudo All checkbox. You can turn it on again later.",
+      "uninstallInstructions": "To remove it, select Kudo All in Safari's Extensions settings and choose Uninstall. Follow Safari's instructions to remove the containing Mac app from Applications. If macOS says the app is in use, close Kudo All and Safari before trying again.",
+      "garminChinaUsLabel": "Garmin · China (connectus)",
+      "fullGuideLabel": "Open the detailed help guide",
       "feedLinksLabel": "Open your activity feed",
       "garminGlobalLabel": "Garmin · Global",
       "garminChinaLabel": "Garmin · China",
@@ -116,21 +179,84 @@
           "body": "Verwende die Websites, bei denen du bereits angemeldet bist. Kein zusätzliches Konto, kein Kudos-Server des Entwicklers und kein Abo."
         }
       ],
-      "setupTitle": "Vom Kauf zu deinen ersten Kudos",
+      "setupTitle": "Kudo All installieren, einrichten und verwenden",
+      "guideIntro": "Für Safari auf einem Mac mit macOS 12 oder neuer. Führe diese Schritte einmal aus und verwende Kudo All anschließend in deinem Aktivitäten-Feed, wann immer du Kudos vergeben möchtest.",
+      "guideNavigationLabel": "Abschnitte der Benutzeranleitung",
+      "guideNavigation": {
+        "install": "Herunterladen und öffnen",
+        "permissions": "Aktivieren und Websites erlauben",
+        "use": "Kudos vergeben",
+        "troubleshooting": "Fehlerbehebung",
+        "remove": "Deaktivieren oder deinstallieren"
+      },
       "steps": [
         {
-          "title": "Installieren und aktivieren.",
-          "body": "Installiere Kudo All aus dem Mac App Store, öffne die App und aktiviere die Erweiterung unter Safari → Einstellungen → Erweiterungen."
+          "title": "Aus dem Mac App Store herunterladen.",
+          "body": "Verwende den App Store-Link auf dieser Seite, um Kudo All für deinen Mac herunterzuladen. Wenn du es bereits besitzt, lade es mit demselben Apple Account erneut herunter; ein zweiter Kauf ist nicht erforderlich."
         },
         {
-          "title": "Website-Zugriff erlauben.",
-          "body": "Erlaube der Erweiterung den Zugriff auf die von dir genutzten Garmin-Connect- und Strava-Websites. Melde dich dort mit deinem eigenen Konto an."
+          "title": "Die installierte Mac-App einmal öffnen.",
+          "body": "Wenn der Download abgeschlossen ist, wähle im App Store Öffnen oder starte die installierte Kudo All-App aus dem Ordner „Programme“. Öffne diese Mac-App mindestens einmal, damit Safari die enthaltene Erweiterung erkennen kann. Die App zeigt eine Einrichtungsanleitung für Safari; melde dich auf den jeweiligen Websites bei Garmin Connect oder Strava an."
         },
         {
-          "title": "Feed öffnen und klicken.",
-          "body": "Lade den Garmin-Connect-Newsfeed oder das Strava-Dashboard neu und klicke auf Kudo All. Scrolle für weitere Aktivitäten nach unten, bevor du erneut startest."
+          "title": "Kudo All in den Safari-Erweiterungen aktivieren.",
+          "body": "Öffne Safari auf deinem Mac. Wähle in der Menüleiste Safari → Einstellungen (in einer englischen Safari-Oberfläche: Settings beziehungsweise Preferences auf älteren macOS-Versionen). Öffne Erweiterungen, suche Kudo All und setze das Häkchen. Die Kudo All-App kann diese Safari-Erweiterungseinstellungen auch für dich öffnen."
+        },
+        {
+          "title": "Die Websites erlauben, die du tatsächlich verwendest.",
+          "body": "Rufe deine Garmin Connect- oder Strava-Website in Safari auf und erlaube Kudo All auf der aktuellen Website, wenn Safari danach fragt. Du kannst den Website-Zugriff auch in den Safari-Erweiterungseinstellungen von Kudo All prüfen. Du musst nur die unterstützten Websites erlauben, die du verwendest, nicht jede Website. Der aktivierte Status in der Mac-App prüft den Erweiterungsschalter; er bestätigt weder den Website-Zugriff noch die Anmeldung. Wähle die Option für die aktuelle Website („Always Allow on This Website“ in einer englischen Safari-Oberfläche)."
+        },
+        {
+          "title": "Feed öffnen, anmelden und neu laden.",
+          "body": "Verwende die Feed-Links unten. Öffne bei Garmin Connect /app/newsfeed oder das ältere /modern/newsfeed; öffne bei Strava /dashboard. Melde dich auf dieser Website mit deinem eigenen Konto an. Lade den Feed neu, nachdem du die Erweiterung aktiviert oder ihre Website-Berechtigungen geändert hast, und warte, bis die Aktivitäten geladen sind. Einzelne Aktivitäts-, Profil- und Anmeldeseiten sind nicht der unterstützte Feed."
+        },
+        {
+          "title": "Kudos vergeben und das Ergebnis prüfen.",
+          "body": "Finde bei Garmin Connect Kudo All in der Nähe des Upload-Steuerelements; verwende bei Strava Kudo All in der Navigation oder die schwebende Schaltfläche. Du kannst auch in der Safari-Symbolleiste auf Kudo All klicken, um das Panel zu öffnen. Prüfe die Anzahl der verfügbaren Kudos und starte dann einen Durchlauf über das Panel oder die Seitenschaltfläche. Lass den Feed während des Durchlaufs geöffnet. Prüfe die angezeigten Ergebniszahlen und die Kudos-Symbole der Aktivitäten; diese geben den auf der Seite angezeigten Zustand wieder."
+        },
+        {
+          "title": "Vor einem weiteren Durchlauf mehr laden.",
+          "body": "Um mehr Aktivitäten Kudos zu geben, scrolle selbst im Feed und warte, bis weitere Aktivitäten geladen sind, und klicke dann erneut auf Kudo All. Aktivitäten, denen bereits Kudos gegeben wurden, werden übersprungen. Die Erweiterung scrollt nicht automatisch, lädt keine weiteren Aktivitäten und führt keine unbegrenzten Kudos im Hintergrund aus."
         }
       ],
+      "guideDownloadLabel": "Kudo All aus dem Mac App Store herunterladen",
+      "troubleshootingTitle": "Fehlerbehebung",
+      "troubleshooting": [
+        {
+          "title": "Installiert, aber Kudo All fehlt unter Erweiterungen?",
+          "checks": [
+            "Öffne die installierte Kudo All-Mac-App mindestens einmal aus Programme und prüfe dann erneut Safari → Einstellungen (oder Voreinstellungen) → Erweiterungen.",
+            "Wenn die Liste noch nicht aktualisiert wurde, beende Safari, öffne es erneut und prüfe die Erweiterungen. Stelle sicher, dass du die Mac-Safari-Edition aus dem Mac App Store installiert hast; eine Chrome-, Firefox- oder Edge-Erweiterung installiert nicht die Safari-Edition."
+          ]
+        },
+        {
+          "title": "Aktiviert, aber keine Schaltfläche oder keine Seitenverbindung?",
+          "checks": [
+            "Prüfe, ob du bei einem unterstützten Garmin Connect-Newsfeed oder Strava-Dashboard angemeldet bist, nicht auf einer einzelnen Aktivitäts-, Profil- oder Anmeldeseite.",
+            "Prüfe den Website-Zugriff von Safari für die aktuelle Garmin Connect- oder Strava-Website. Allein das Aktivieren der Erweiterung gewährt keinen Website-Zugriff.",
+            "Lade den Feed neu, nachdem du den Zugriff erlaubt hast. Öffne das Panel in der Safari-Symbolleiste und verwende dessen Aktion zum erneuten Verbinden, wenn es weiterhin keine Verbindung zur Seite herstellen kann. Das erneute Verbinden startet keinen Kudos-Durchlauf."
+          ]
+        },
+        {
+          "title": "Die Anzahl der verfügbaren Kudos ist null?",
+          "checks": [
+            "Die geladenen Aktivitäten haben möglicherweise bereits Kudos, oder es wurden noch keine geeigneten Aktivitäten geladen. Prüfe den Feed und warte, bis er vollständig geladen ist.",
+            "Scrolle, um weitere Aktivitäten zu laden, und prüfe dann erneut das Panel. Eine Anzahl von null im aktuellen Feed bedeutet nicht, dass die Erweiterung einen weiteren Kauf erfordert."
+          ]
+        },
+        {
+          "title": "Ein Durchlauf wurde beendet oder einige Ergebnisse wurden nicht bestätigt?",
+          "checks": [
+            "Prüfe die Kudos-Symbole der Aktivitäten auf der Seite. Ergebniszahlen beschreiben, was die Seite angezeigt hat, und nicht eine unabhängige Serverprüfung.",
+            "Wenn die Seite einen Klick nicht bestätigen kann, beendet die Erweiterung den restlichen Durchlauf. Warte, bis die Website antwortet, und prüfe den Feed, bevor du es erneut versuchst. Wenn das Panel getrennt ist, lade den Feed neu und verwende dessen Aktion zum erneuten Verbinden."
+          ]
+        }
+      ],
+      "removalTitle": "Deaktivieren oder deinstallieren",
+      "disableInstructions": "Um Kudo All nicht mehr zu verwenden, öffne Safari → Einstellungen (oder Voreinstellungen) → Erweiterungen und entferne das Häkchen bei Kudo All. Du kannst es später wieder aktivieren.",
+      "uninstallInstructions": "Um die Erweiterung zu entfernen, wähle Kudo All in den Erweiterungseinstellungen von Safari und wähle Deinstallieren. Folge den Anweisungen von Safari, um die zugehörige Mac-App aus dem Ordner „Programme“ zu entfernen. Wenn macOS meldet, dass die App verwendet wird, schließe Kudo All und Safari, bevor du es erneut versuchst.",
+      "garminChinaUsLabel": "Garmin · China (connectus)",
+      "fullGuideLabel": "Ausführliche Hilfe öffnen (Englisch)",
       "feedLinksLabel": "Deinen Aktivitätsfeed öffnen",
       "garminGlobalLabel": "Garmin · Weltweit",
       "garminChinaLabel": "Garmin · China",
@@ -190,21 +316,84 @@
           "body": "Gebruik de websites waarop je al bent ingelogd. Geen extra account, geen door de ontwikkelaar beheerde kudos-server en geen abonnement."
         }
       ],
-      "setupTitle": "Van aankoop tot je eerste kudos",
+      "setupTitle": "Kudo All installeren, instellen en gebruiken",
+      "guideIntro": "Voor Safari op een Mac met macOS 12 of later. Volg deze stappen één keer en gebruik Kudo All daarna vanuit je activiteitenfeed wanneer je kudos wilt geven.",
+      "guideNavigationLabel": "Secties van de gebruikershandleiding",
+      "guideNavigation": {
+        "install": "Downloaden en openen",
+        "permissions": "Inschakelen en websites toestaan",
+        "use": "Kudos geven",
+        "troubleshooting": "Problemen oplossen",
+        "remove": "Uitschakelen of verwijderen"
+      },
       "steps": [
         {
-          "title": "Installeren en inschakelen.",
-          "body": "Installeer via de Mac App Store, open Kudo All en schakel de extensie in via Safari → Instellingen → Extensies."
+          "title": "Download uit de Mac App Store.",
+          "body": "Gebruik de App Store-link op deze pagina om Kudo All voor je Mac te downloaden. Als je het al bezit, gebruik dan hetzelfde Apple Account om het opnieuw te downloaden; een tweede aankoop is niet nodig."
         },
         {
-          "title": "Toegang tot websites toestaan.",
-          "body": "Sta de extensie toe op de Garmin Connect- en Strava-sites die je gebruikt. Log op die websites in met je eigen account."
+          "title": "Open de geïnstalleerde Mac-app één keer.",
+          "body": "Kies Open in de App Store wanneer de download is voltooid, of start de geïnstalleerde Kudo All-app vanuit Programma's. Open deze Mac-app minstens één keer zodat Safari de meegeleverde extensie kan herkennen. De app toont een Safari-instelhandleiding; meld je aan bij Garmin Connect of Strava op hun eigen websites."
         },
         {
-          "title": "Open je feed en klik.",
-          "body": "Vernieuw de nieuwsfeed van Garmin Connect of het dashboard van Strava en klik vervolgens op Kudo All. Scroll om meer activiteiten te laden voordat je het opnieuw uitvoert."
+          "title": "Schakel Kudo All in bij Safari-extensies.",
+          "body": "Open Safari op je Mac. Kies in de menubalk Safari → Instellingen, of Safari → Voorkeuren op oudere macOS-versies. Open Extensies, zoek Kudo All en vink het selectievakje aan om het in te schakelen. De instelapp kan deze Safari-extensie-instellingen ook voor je openen."
+        },
+        {
+          "title": "Sta de websites toe die je daadwerkelijk gebruikt.",
+          "body": "Bezoek je Garmin Connect- of Strava-website in Safari en sta Kudo All toe op de huidige website wanneer Safari daarom vraagt. Je kunt websitetoegang ook controleren in de Safari-extensie-instellingen van Kudo All. Je hoeft alleen de ondersteunde websites toe te staan die je gebruikt, niet elke website. De ingeschakelde status in de Mac-app controleert de extensieschakelaar; het bevestigt geen websitetoegang of aanmelding. Kies de optie voor de huidige website (in een Engelstalige Safari-interface: “Always Allow on This Website”)."
+        },
+        {
+          "title": "Open je feed, meld je aan en vernieuw.",
+          "body": "Gebruik de feedlinks hieronder. Open op Garmin Connect /app/newsfeed of de oudere /modern/newsfeed; open op Strava /dashboard. Meld je aan bij je eigen account op die website. Herlaad de feed nadat je de extensie hebt ingeschakeld of de website machtigingen hebt gewijzigd en wacht tot activiteiten zijn geladen. Afzonderlijke activiteiten-, profiel- en aanmeldingspagina's zijn niet de ondersteunde feed."
+        },
+        {
+          "title": "Geef kudos en controleer het resultaat.",
+          "body": "Zoek op Garmin Connect Kudo All bij de uploadknop; gebruik op Strava Kudo All in de navigatie of de zwevende knop. Je kunt ook op Kudo All in de werkbalk van Safari klikken om het paneel te openen. Controleer het aantal beschikbare kudos en start vervolgens een run vanuit het paneel of de knop op de pagina. Houd de feed open terwijl deze loopt. Controleer de weergegeven resultaattellingen en de kudos-pictogrammen van de activiteiten; deze geven de weergegeven status van de pagina weer."
+        },
+        {
+          "title": "Laad meer voordat je opnieuw start.",
+          "body": "Om kudos aan meer activiteiten te geven, scrol je zelf door de feed en wacht je tot extra activiteiten zijn geladen, en klik je vervolgens opnieuw op Kudo All. Activiteiten waaraan al kudos zijn gegeven, worden overgeslagen. De extensie scrolt niet automatisch, laadt geen extra activiteiten en voert geen onbeperkte kudos op de achtergrond uit."
         }
       ],
+      "guideDownloadLabel": "Download Kudo All uit de Mac App Store",
+      "troubleshootingTitle": "Problemen oplossen",
+      "troubleshooting": [
+        {
+          "title": "Geïnstalleerd, maar Kudo All ontbreekt bij Extensies?",
+          "checks": [
+            "Open de geïnstalleerde Kudo All Mac-app minstens één keer vanuit Programma's en controleer daarna opnieuw Safari → Instellingen (of Voorkeuren) → Extensies.",
+            "Als de lijst nog steeds niet is bijgewerkt, sluit je Safari, open je het opnieuw en controleer je Extensies. Zorg dat je de Mac Safari-editie uit de Mac App Store hebt geïnstalleerd; een Chrome-, Firefox- of Edge-extensie installeert de Safari-editie niet."
+          ]
+        },
+        {
+          "title": "Ingeschakeld, maar geen knop of geen verbinding met de pagina?",
+          "checks": [
+            "Controleer of je bent aangemeld op een ondersteunde Garmin Connect-nieuwsfeed of een Strava-dashboard, niet op een afzonderlijke activiteiten-, profiel- of aanmeldingspagina.",
+            "Controleer de websitetoegang van Safari voor de huidige Garmin Connect- of Strava-website. Alleen de extensie inschakelen verleent geen websitetoegang.",
+            "Herlaad de feed nadat je toegang hebt ingeschakeld. Open het paneel in de werkbalk van Safari en gebruik de actie Opnieuw verbinden als er nog steeds geen verbinding met de pagina kan worden gemaakt. Opnieuw verbinden start geen kudos-run."
+          ]
+        },
+        {
+          "title": "Het aantal beschikbare kudos is nul?",
+          "checks": [
+            "De geladen activiteiten hebben mogelijk al kudos, of er zijn nog geen in aanmerking komende activiteiten geladen. Controleer de feed en wacht tot het laden is voltooid.",
+            "Scrol om meer activiteiten te laden en controleer het paneel opnieuw. Een telling van nul op de huidige feed betekent niet dat de extensie een nieuwe aankoop nodig heeft."
+          ]
+        },
+        {
+          "title": "Een run is gestopt of sommige resultaten zijn niet bevestigd?",
+          "checks": [
+            "Controleer de kudos-pictogrammen van de activiteiten op de pagina. Resultaattellingen beschrijven wat de pagina heeft weergegeven, niet een onafhankelijke servercontrole.",
+            "Als de pagina een klik niet kan bevestigen, stopt de extensie de rest van de run. Wacht tot de website reageert en controleer de feed voordat je het opnieuw probeert. Als het paneel geen verbinding heeft, herlaad je de feed en gebruik je de actie Opnieuw verbinden."
+          ]
+        }
+      ],
+      "removalTitle": "Uitschakelen of verwijderen",
+      "disableInstructions": "Om Kudo All niet meer te gebruiken, open je Safari → Instellingen (of Voorkeuren) → Extensies en vink je het selectievakje van Kudo All uit. Je kunt het later weer inschakelen.",
+      "uninstallInstructions": "Om het te verwijderen, selecteer je Kudo All in de Extensies-instellingen van Safari en kies je Verwijderen. Volg de instructies van Safari om de bijbehorende Mac-app uit Programma's te verwijderen. Als macOS meldt dat de app in gebruik is, sluit je Kudo All en Safari voordat je het opnieuw probeert.",
+      "garminChinaUsLabel": "Garmin · China (connectus)",
+      "fullGuideLabel": "Uitgebreide hulppagina openen (Engels)",
       "feedLinksLabel": "Open je activiteitenfeed",
       "garminGlobalLabel": "Garmin · Wereldwijd",
       "garminChinaLabel": "Garmin · China",
@@ -264,21 +453,84 @@
           "body": "Utilisez les sites web auxquels vous êtes déjà connecté. Aucun compte supplémentaire, aucun serveur de kudos exploité par le développeur et aucun abonnement."
         }
       ],
-      "setupTitle": "De l'achat à vos premiers kudos",
+      "setupTitle": "Installer, configurer et utiliser Kudo All",
+      "guideIntro": "Pour Safari sur un Mac sous macOS 12 ou version ultérieure. Suivez ces étapes une fois, puis utilisez Kudo All depuis votre fil d'activité chaque fois que vous souhaitez donner des kudos.",
+      "guideNavigationLabel": "Sections du guide d'utilisation",
+      "guideNavigation": {
+        "install": "Télécharger et ouvrir",
+        "permissions": "Activer et autoriser les sites web",
+        "use": "Donner des kudos",
+        "troubleshooting": "Résolution des problèmes",
+        "remove": "Désactiver ou désinstaller"
+      },
       "steps": [
         {
-          "title": "Installez et activez.",
-          "body": "Installez depuis le Mac App Store, ouvrez Kudo All, puis activez l'extension dans Safari → Réglages → Extensions."
+          "title": "Téléchargez depuis le Mac App Store.",
+          "body": "Utilisez le lien App Store sur cette page pour télécharger Kudo All pour votre Mac. Si vous le possédez déjà, utilisez le même Apple Account pour le télécharger à nouveau ; un second achat n'est pas nécessaire."
         },
         {
-          "title": "Autorisez l'accès aux sites web.",
-          "body": "Autorisez l'extension sur les sites Garmin Connect et Strava que vous utilisez. Connectez-vous à votre propre compte sur ces sites web."
+          "title": "Ouvrez une fois l'app Mac installée.",
+          "body": "Une fois le téléchargement terminé, choisissez Ouvrir dans l'App Store, ou lancez l'app Kudo All installée depuis Applications. Ouvrez cette app Mac au moins une fois pour que Safari puisse reconnaître son extension intégrée. L'app affiche un guide de configuration Safari ; connectez-vous à Garmin Connect ou Strava sur leurs propres sites web."
         },
         {
-          "title": "Ouvrez votre fil et cliquez.",
-          "body": "Actualisez le fil d'actualité Garmin Connect ou le tableau de bord Strava, puis cliquez sur Kudo All. Faites défiler pour charger plus d'activités avant de le relancer."
+          "title": "Activez Kudo All dans les extensions Safari.",
+          "body": "Ouvrez Safari sur votre Mac. Dans la barre des menus, choisissez Safari → Réglages, ou Safari → Préférences sur les versions plus anciennes de macOS. Ouvrez Extensions, trouvez Kudo All et cochez sa case pour l'activer. L'app de configuration peut aussi ouvrir ces réglages d'extensions Safari pour vous."
+        },
+        {
+          "title": "Autorisez les sites web que vous utilisez réellement.",
+          "body": "Visitez votre site web Garmin Connect ou Strava dans Safari et autorisez Kudo All sur le site web actuel lorsque Safari le demande. Vous pouvez aussi vérifier l'accès aux sites web dans les réglages de l'extension Safari de Kudo All. Vous n'avez besoin d'autoriser que les sites web pris en charge que vous utilisez, pas tous les sites web. L'état activé de l'app Mac vérifie l'interrupteur de l'extension ; il ne confirme ni l'accès aux sites web ni la connexion. Choisissez l’option pour le site actuel (« Always Allow on This Website » dans Safari en anglais)."
+        },
+        {
+          "title": "Ouvrez votre fil, connectez-vous et actualisez.",
+          "body": "Utilisez les liens de fil ci-dessous. Sur Garmin Connect, ouvrez /app/newsfeed ou l'ancien /modern/newsfeed ; sur Strava, ouvrez /dashboard. Connectez-vous à votre propre compte sur ce site web. Rechargez le fil après avoir activé l'extension ou modifié ses autorisations de sites web, puis attendez le chargement des activités. Les pages d'activité individuelle, de profil et de connexion ne sont pas le fil pris en charge."
+        },
+        {
+          "title": "Donnez des kudos et vérifiez le résultat.",
+          "body": "Sur Garmin Connect, trouvez Kudo All près du contrôle de téléversement ; sur Strava, utilisez Kudo All dans la navigation ou le bouton flottant. Vous pouvez aussi cliquer sur Kudo All dans la barre d'outils de Safari pour ouvrir son panneau. Vérifiez le nombre de kudos disponibles, puis lancez une exécution depuis le panneau ou le bouton de la page. Gardez le fil ouvert pendant l'exécution. Consultez les compteurs affichés et les icônes de kudos des activités ; ceux-ci reflètent l'état affiché de la page."
+        },
+        {
+          "title": "Chargez plus d'éléments avant de relancer.",
+          "body": "Pour donner des kudos à davantage d'activités, faites défiler le fil vous-même et attendez le chargement d'activités supplémentaires, puis cliquez à nouveau sur Kudo All. Les activités ayant déjà reçu des kudos sont ignorées. L'extension ne fait pas défiler automatiquement, ne charge pas plus d'activités et n'exécute pas de kudos en arrière-plan sans limite."
         }
       ],
+      "guideDownloadLabel": "Télécharger Kudo All depuis le Mac App Store",
+      "troubleshootingTitle": "Résolution des problèmes",
+      "troubleshooting": [
+        {
+          "title": "Installé, mais Kudo All est absent des extensions ?",
+          "checks": [
+            "Ouvrez au moins une fois l'app Mac Kudo All installée depuis Applications, puis vérifiez à nouveau Safari → Réglages (ou Préférences) → Extensions.",
+            "Si la liste ne s'est toujours pas mise à jour, quittez Safari, rouvrez-le et vérifiez les extensions. Assurez-vous d'avoir installé l'édition Mac Safari depuis le Mac App Store ; une extension Chrome, Firefox ou Edge n'installe pas l'édition Safari."
+          ]
+        },
+        {
+          "title": "Activé, mais aucun bouton ou aucune connexion à la page ?",
+          "checks": [
+            "Vérifiez que vous êtes connecté sur un fil d'actualité Garmin Connect ou un tableau de bord Strava pris en charge, et non sur une page d'activité individuelle, de profil ou de connexion.",
+            "Vérifiez l'accès aux sites web de Safari pour le site web Garmin Connect ou Strava actuel. Activer l'extension seule n'accorde pas l'accès aux sites web.",
+            "Après avoir activé l'accès, rechargez le fil. Ouvrez le panneau de la barre d'outils de Safari et utilisez son action de reconnexion s'il ne parvient toujours pas à se connecter à la page. La reconnexion ne lance pas d'exécution de kudos."
+          ]
+        },
+        {
+          "title": "Le nombre de kudos disponibles est zéro ?",
+          "checks": [
+            "Les activités chargées ont peut-être déjà des kudos, ou aucune activité éligible n'a encore été chargée. Vérifiez le fil et attendez la fin du chargement.",
+            "Faites défiler pour charger plus d'activités, puis vérifiez à nouveau le panneau. Un nombre nul sur le fil actuel ne signifie pas que l'extension nécessite un autre achat."
+          ]
+        },
+        {
+          "title": "Une exécution s'est arrêtée ou certains résultats n'ont pas été confirmés ?",
+          "checks": [
+            "Vérifiez les icônes de kudos des activités sur la page. Les nombres de résultats décrivent ce que la page a affiché, et non une vérification indépendante du serveur.",
+            "Si la page ne peut pas confirmer un clic, l'extension arrête le reste de l'exécution. Attendez que le site web réponde et vérifiez le fil avant de réessayer. Si le panneau est déconnecté, rechargez le fil et utilisez son action de reconnexion."
+          ]
+        }
+      ],
+      "removalTitle": "Désactiver ou désinstaller",
+      "disableInstructions": "Pour arrêter d'utiliser Kudo All, ouvrez Safari → Réglages (ou Préférences) → Extensions et décochez la case Kudo All. Vous pourrez le réactiver plus tard.",
+      "uninstallInstructions": "Pour le supprimer, sélectionnez Kudo All dans les réglages Extensions de Safari et choisissez Désinstaller. Suivez les instructions de Safari pour supprimer du dossier Applications l'app Kudo All pour Mac, qui contient l'extension. Si macOS indique que l'app est en cours d'utilisation, fermez Kudo All et Safari avant de réessayer.",
+      "garminChinaUsLabel": "Garmin · Chine (connectus)",
+      "fullGuideLabel": "Ouvrir l’aide détaillée (en anglais)",
       "feedLinksLabel": "Ouvrir votre fil d'activités",
       "garminGlobalLabel": "Garmin · Monde",
       "garminChinaLabel": "Garmin · Chine",
@@ -338,21 +590,84 @@
           "body": "Usa los sitios web en los que ya inicias sesión. Sin cuenta adicional, sin servidor de kudos operado por el desarrollador y sin suscripción."
         }
       ],
-      "setupTitle": "De la compra a tus primeros kudos",
+      "setupTitle": "Instalar, configurar y usar Kudo All",
+      "guideIntro": "Para Safari en un Mac con macOS 12 o posterior. Sigue estos pasos una vez y, después, usa Kudo All desde tu feed de actividad siempre que quieras dar kudos.",
+      "guideNavigationLabel": "Secciones de la guía del usuario",
+      "guideNavigation": {
+        "install": "Descargar y abrir",
+        "permissions": "Activar y permitir sitios web",
+        "use": "Dar kudos",
+        "troubleshooting": "Solución de problemas",
+        "remove": "Desactivar o desinstalar"
+      },
       "steps": [
         {
-          "title": "Instala y activa.",
-          "body": "Instálalo desde la Mac App Store, abre Kudo All y luego activa la extensión en Safari → Ajustes → Extensiones."
+          "title": "Descárgalo desde el Mac App Store.",
+          "body": "Usa el enlace al App Store de esta página para descargar Kudo All para tu Mac. Si ya lo tienes, usa la misma Apple Account para volver a descargarlo; no es necesario comprarlo dos veces."
         },
         {
-          "title": "Permite el acceso a los sitios web.",
-          "body": "Permite la extensión en los sitios de Garmin Connect y Strava que uses. Inicia sesión en tu propia cuenta en esos sitios web."
+          "title": "Abre una vez la app para Mac instalada.",
+          "body": "Cuando termine la descarga, elige Abrir en el App Store o inicia la app Kudo All instalada desde Aplicaciones. Abre esta app para Mac al menos una vez para que Safari pueda reconocer su extensión incluida. La app muestra una guía de configuración de Safari; inicia sesión en Garmin Connect o Strava en sus propios sitios web."
         },
         {
-          "title": "Abre tu feed y haz clic.",
-          "body": "Actualiza el feed de noticias de Garmin Connect o el panel de Strava y luego haz clic en Kudo All. Desplázate para cargar más actividades antes de volver a ejecutarlo."
+          "title": "Activa Kudo All en Extensiones de Safari.",
+          "body": "Abre Safari en tu Mac. En la barra de menús, elige Safari → Ajustes, o Safari → Preferencias en versiones anteriores de macOS. Abre Extensiones, busca Kudo All y marca su casilla para activarla. La app de configuración también puede abrir estos ajustes de extensiones de Safari por ti."
+        },
+        {
+          "title": "Permite los sitios web que realmente uses.",
+          "body": "Visita tu sitio web de Garmin Connect o Strava en Safari y permite Kudo All en el sitio web actual cuando Safari lo solicite. También puedes revisar el acceso a sitios web en los ajustes de la extensión de Safari de Kudo All. Solo necesitas permitir los sitios web compatibles que uses, no todos los sitios web. El estado de activación de la app para Mac comprueba el interruptor de la extensión; no confirma el acceso a sitios web ni el inicio de sesión. Elige la opción para el sitio actual («Always Allow on This Website» en Safari en inglés)."
+        },
+        {
+          "title": "Abre tu feed, inicia sesión y actualiza.",
+          "body": "Usa los enlaces al feed que aparecen a continuación. En Garmin Connect, abre /app/newsfeed o el más antiguo /modern/newsfeed; en Strava, abre /dashboard. Inicia sesión en tu propia cuenta en ese sitio web. Vuelve a cargar el feed después de activar la extensión o cambiar sus permisos de sitios web y, luego, espera a que se carguen las actividades. Las páginas de actividad individual, de perfil y de inicio de sesión no son el feed compatible."
+        },
+        {
+          "title": "Da kudos y comprueba el resultado.",
+          "body": "En Garmin Connect, busca Kudo All cerca del control de subida; en Strava, usa Kudo All en la navegación o el botón flotante. También puedes hacer clic en Kudo All en la barra de herramientas de Safari para abrir su panel. Comprueba el recuento de kudos disponibles y, luego, inicia una ejecución desde el panel o desde el botón de la página. Mantén el feed abierto mientras se ejecuta. Revisa los recuentos de resultados mostrados y los iconos de kudos de las actividades; estos reflejan el estado mostrado en la página."
+        },
+        {
+          "title": "Carga más antes de volver a ejecutar.",
+          "body": "Para dar kudos a más actividades, desplázate tú mismo por el feed y espera a que se carguen actividades adicionales; luego, haz clic de nuevo en Kudo All. Se omiten las actividades a las que ya se han dado kudos. La extensión no se desplaza automáticamente, no carga más actividades ni ejecuta kudos ilimitados en segundo plano."
         }
       ],
+      "guideDownloadLabel": "Descargar Kudo All desde el Mac App Store",
+      "troubleshootingTitle": "Solución de problemas",
+      "troubleshooting": [
+        {
+          "title": "¿Está instalado, pero Kudo All no aparece en Extensiones?",
+          "checks": [
+            "Abre al menos una vez la app Kudo All para Mac instalada desde Aplicaciones y, luego, vuelve a comprobar Safari → Ajustes (o Preferencias) → Extensiones.",
+            "Si la lista aún no se ha actualizado, cierra Safari, vuelve a abrirlo y comprueba Extensiones. Asegúrate de que instalaste la edición para Safari de Mac desde el Mac App Store; una extensión de Chrome, Firefox o Edge no instala la edición para Safari."
+          ]
+        },
+        {
+          "title": "¿Está activado, pero no hay botón o no hay conexión con la página?",
+          "checks": [
+            "Comprueba que has iniciado sesión en un feed de noticias de Garmin Connect o en un panel de Strava compatibles, no en una página de actividad individual, de perfil o de inicio de sesión.",
+            "Comprueba el acceso de Safari al sitio web actual de Garmin Connect o Strava. Activar la extensión por sí solo no concede acceso a los sitios web.",
+            "Después de activar el acceso, vuelve a cargar el feed. Abre el panel de la barra de herramientas de Safari y usa su acción de reconexión si sigue sin poder conectarse a la página. Reconectar no inicia una ejecución de kudos."
+          ]
+        },
+        {
+          "title": "¿El recuento de kudos disponibles es cero?",
+          "checks": [
+            "Es posible que las actividades cargadas ya tengan kudos o que aún no se haya cargado ninguna actividad elegible. Comprueba el feed y espera a que termine de cargarse.",
+            "Desplázate para cargar más actividades y, luego, vuelve a comprobar el panel. Un recuento de cero en el feed actual no significa que la extensión requiera otra compra."
+          ]
+        },
+        {
+          "title": "¿Se detuvo una ejecución o no se confirmaron algunos resultados?",
+          "checks": [
+            "Comprueba los iconos de kudos de las actividades en la página. Los recuentos de resultados describen lo que mostró la página, no una comprobación independiente del servidor.",
+            "Si la página no puede confirmar un clic, la extensión detiene el resto de la ejecución. Espera a que el sitio web responda y revisa el feed antes de volver a intentarlo. Si el panel está desconectado, vuelve a cargar el feed y usa su acción de reconexión."
+          ]
+        }
+      ],
+      "removalTitle": "Desactivar o desinstalar",
+      "disableInstructions": "Para dejar de usar Kudo All, abre Safari → Ajustes (o Preferencias) → Extensiones y desmarca la casilla de Kudo All. Puedes volver a activarla más adelante.",
+      "uninstallInstructions": "Para eliminarla, selecciona Kudo All en los ajustes de Extensiones de Safari y elige Desinstalar. Sigue las instrucciones de Safari para eliminar la app para Mac que contiene la extensión de la carpeta Aplicaciones. Si macOS indica que la app está en uso, cierra Kudo All y Safari antes de volver a intentarlo.",
+      "garminChinaUsLabel": "Garmin · China (connectus)",
+      "fullGuideLabel": "Abrir la ayuda detallada (en inglés)",
       "feedLinksLabel": "Abre tu feed de actividades",
       "garminGlobalLabel": "Garmin · Global",
       "garminChinaLabel": "Garmin · China",
@@ -412,21 +727,84 @@
           "body": "Use os sites nos quais você já faz login. Sem conta adicional, sem servidor de kudos operado pelo desenvolvedor e sem assinatura."
         }
       ],
-      "setupTitle": "Da compra aos seus primeiros kudos",
+      "setupTitle": "Instale, configure e use o Kudo All",
+      "guideIntro": "Para o Safari em um Mac com macOS 12 ou posterior. Siga estas etapas uma vez e depois use o Kudo All no seu feed de atividades sempre que quiser dar kudos.",
+      "guideNavigationLabel": "Seções do guia do usuário",
+      "guideNavigation": {
+        "install": "Baixar e abrir",
+        "permissions": "Ativar e permitir sites",
+        "use": "Dar kudos",
+        "troubleshooting": "Solução de problemas",
+        "remove": "Desativar ou desinstalar"
+      },
       "steps": [
         {
-          "title": "Instale e ative.",
-          "body": "Instale pela Mac App Store, abra o Kudo All e ative a extensão em Safari → Ajustes → Extensões."
+          "title": "Baixe na Mac App Store.",
+          "body": "Use o link da App Store nesta página para baixar o Kudo All para o seu Mac. Se você já o possui, use a mesma Apple Account para baixá-lo novamente; não é necessário comprar uma segunda vez."
         },
         {
-          "title": "Permita o acesso aos sites.",
-          "body": "Permita a extensão nos sites do Garmin Connect e do Strava que você usa. Faça login na sua própria conta nesses sites."
+          "title": "Abra o app Mac instalado uma vez.",
+          "body": "Quando o download terminar, escolha Abrir na App Store ou inicie o app Kudo All instalado a partir de Aplicativos. Abra este app Mac pelo menos uma vez para que o Safari reconheça a extensão incluída. O app mostra um guia de configuração do Safari; faça login no Garmin Connect ou no Strava nos sites deles."
         },
         {
-          "title": "Abra seu feed e clique.",
-          "body": "Atualize o feed de notícias do Garmin Connect ou o painel do Strava e clique em Kudo All. Role a página para carregar mais atividades antes de executá-lo novamente."
+          "title": "Ative o Kudo All nas Extensões do Safari.",
+          "body": "Abra o Safari no seu Mac. Na barra de menus, escolha Safari → Ajustes, ou Safari → Preferências em versões mais antigas do macOS. Abra Extensões, encontre o Kudo All e marque a caixa de seleção para ativá-lo. O app de configuração também pode abrir essas configurações de extensões do Safari para você."
+        },
+        {
+          "title": "Permita os sites que você realmente usa.",
+          "body": "Visite o site do Garmin Connect ou do Strava no Safari e permita o Kudo All no site atual quando o Safari solicitar. Você também pode revisar o acesso a sites nas configurações da extensão Kudo All no Safari. Você só precisa permitir os sites compatíveis que usa, não todos os sites. O status de ativação do app Mac verifica o interruptor da extensão; ele não confirma o acesso a sites nem o login. Escolha a opção para o site atual (“Always Allow on This Website” no Safari em inglês)."
+        },
+        {
+          "title": "Abra seu feed, faça login e atualize.",
+          "body": "Use os links de feed abaixo. No Garmin Connect, abra /app/newsfeed ou o mais antigo /modern/newsfeed; no Strava, abra /dashboard. Faça login na sua própria conta nesse site. Recarregue o feed após ativar a extensão ou alterar suas permissões de sites e aguarde o carregamento das atividades. Páginas individuais de atividade, perfil e login não são o feed compatível."
+        },
+        {
+          "title": "Dê kudos e verifique o resultado.",
+          "body": "No Garmin Connect, encontre o Kudo All perto do controle de upload; no Strava, use o Kudo All na navegação ou no botão flutuante. Você também pode clicar em Kudo All na barra de ferramentas do Safari para abrir seu painel. Verifique a contagem de kudos disponíveis e inicie uma execução pelo painel ou pelo botão da página. Mantenha o feed aberto durante a execução. Revise as contagens de resultados exibidas e os ícones de kudos das atividades; eles refletem o estado exibido na página."
+        },
+        {
+          "title": "Carregue mais antes de executar novamente.",
+          "body": "Para dar kudos a mais atividades, role o feed você mesmo e aguarde o carregamento de atividades adicionais, depois clique em Kudo All novamente. Atividades que já receberam kudos são ignoradas. A extensão não rola automaticamente, não carrega mais atividades nem executa kudos ilimitados em segundo plano."
         }
       ],
+      "guideDownloadLabel": "Baixar o Kudo All na Mac App Store",
+      "troubleshootingTitle": "Solução de problemas",
+      "troubleshooting": [
+        {
+          "title": "Instalado, mas o Kudo All está ausente em Extensões?",
+          "checks": [
+            "Abra o app Mac Kudo All instalado a partir de Aplicativos pelo menos uma vez e verifique novamente Safari → Ajustes (ou Preferências) → Extensões.",
+            "Se a lista ainda não tiver sido atualizada, encerre o Safari, abra-o novamente e verifique Extensões. Certifique-se de que instalou a edição Mac Safari pela Mac App Store; uma extensão para Chrome, Firefox ou Edge não instala a edição Safari."
+          ]
+        },
+        {
+          "title": "Ativado, mas sem botão ou sem conexão com a página?",
+          "checks": [
+            "Verifique se você está conectado a um feed de notícias compatível do Garmin Connect ou a um painel do Strava, e não a uma atividade individual, perfil ou página de login.",
+            "Verifique o acesso a sites do Safari para o site atual do Garmin Connect ou do Strava. Ativar a extensão sozinha não concede acesso a sites.",
+            "Após ativar o acesso, recarregue o feed. Abra o painel da barra de ferramentas do Safari e use a ação de reconectar se ele ainda não conseguir se conectar à página. Reconectar não inicia uma execução de kudos."
+          ]
+        },
+        {
+          "title": "A contagem de kudos disponíveis está zerada?",
+          "checks": [
+            "As atividades carregadas podem já ter kudos, ou nenhuma atividade elegível pode ter sido carregada ainda. Verifique o feed e aguarde o término do carregamento.",
+            "Role para carregar mais atividades e verifique o painel novamente. Uma contagem zerada no feed atual não significa que a extensão exija outra compra."
+          ]
+        },
+        {
+          "title": "Uma execução parou ou alguns resultados não foram confirmados?",
+          "checks": [
+            "Verifique os ícones de kudos das atividades na página. As contagens de resultados descrevem o que a página exibiu, e não uma verificação independente do servidor.",
+            "Se a página não conseguir confirmar um clique, a extensão interrompe o restante da execução. Aguarde a resposta do site e revise o feed antes de tentar novamente. Se o painel estiver desconectado, recarregue o feed e use a ação de reconectar."
+          ]
+        }
+      ],
+      "removalTitle": "Desativar ou desinstalar",
+      "disableInstructions": "Para parar de usar o Kudo All, abra Safari → Ajustes (ou Preferências) → Extensões e desmarque a caixa de seleção do Kudo All. Você pode ativá-lo novamente depois.",
+      "uninstallInstructions": "Para removê-lo, selecione Kudo All nas configurações de Extensões do Safari e escolha Desinstalar. Siga as instruções do Safari para remover de Aplicativos o app Kudo All para Mac, que contém a extensão. Se o macOS informar que o app está em uso, feche o Kudo All e o Safari antes de tentar novamente.",
+      "garminChinaUsLabel": "Garmin · China (connectus)",
+      "fullGuideLabel": "Abrir a ajuda detalhada (em inglês)",
       "feedLinksLabel": "Abra seu feed de atividades",
       "garminGlobalLabel": "Garmin · Global",
       "garminChinaLabel": "Garmin · China",
@@ -486,21 +864,84 @@
           "body": "Korzystaj ze stron, na których już się logujesz. Bez dodatkowego konta, bez serwera kudosów obsługiwanego przez dewelopera i bez subskrypcji."
         }
       ],
-      "setupTitle": "Od zakupu do pierwszych kudosów",
+      "setupTitle": "Zainstaluj, skonfiguruj i używaj Kudo All",
+      "guideIntro": "Dla Safari na Macu z systemem macOS 12 lub nowszym. Wykonaj te kroki raz, a następnie używaj Kudo All z kanału aktywności, gdy chcesz rozdawać kudos.",
+      "guideNavigationLabel": "Sekcje przewodnika użytkownika",
+      "guideNavigation": {
+        "install": "Pobierz i otwórz",
+        "permissions": "Włącz i zezwól witrynom",
+        "use": "Rozdawaj kudos",
+        "troubleshooting": "Rozwiązywanie problemów",
+        "remove": "Wyłącz lub odinstaluj"
+      },
       "steps": [
         {
-          "title": "Zainstaluj i włącz.",
-          "body": "Zainstaluj z Mac App Store, otwórz Kudo All, a następnie włącz rozszerzenie w Safari → Ustawienia → Rozszerzenia."
+          "title": "Pobierz z Mac App Store.",
+          "body": "Użyj linku do App Store na tej stronie, aby pobrać Kudo All na swojego Maca. Jeśli już go posiadasz, użyj tego samego Apple Account, aby pobrać go ponownie; drugi zakup nie jest wymagany."
         },
         {
-          "title": "Zezwól na dostęp do stron.",
-          "body": "Zezwól rozszerzeniu na stronach Garmin Connect i Strava, których używasz. Zaloguj się na własne konto na tych stronach."
+          "title": "Otwórz raz zainstalowaną aplikację na Maca.",
+          "body": "Po zakończeniu pobierania wybierz Otwórz w App Store lub uruchom zainstalowaną aplikację Kudo All z folderu Aplikacje. Otwórz tę aplikację na Maca co najmniej raz, aby Safari mogło rozpoznać dołączone do niej rozszerzenie. Aplikacja pokazuje przewodnik konfiguracji Safari; zaloguj się do Garmin Connect lub Strava na ich własnych stronach."
         },
         {
-          "title": "Otwórz swój kanał i kliknij.",
-          "body": "Odśwież kanał aktualności Garmin Connect lub pulpit Strava, a następnie kliknij Kudo All. Przewiń, aby wczytać więcej aktywności, zanim uruchomisz go ponownie."
+          "title": "Włącz Kudo All w rozszerzeniach Safari.",
+          "body": "Otwórz Safari na swoim Macu. W pasku menu wybierz Safari → Ustawienia lub Safari → Preferencje w starszych wersjach macOS. Otwórz Rozszerzenia, znajdź Kudo All i zaznacz jego pole wyboru, aby je włączyć. Aplikacja konfiguracyjna może również otworzyć te ustawienia rozszerzeń Safari za Ciebie."
+        },
+        {
+          "title": "Zezwól witrynom, których faktycznie używasz.",
+          "body": "Odwiedź swoją witrynę Garmin Connect lub Strava w Safari i zezwól Kudo All na bieżącej witrynie, gdy Safari o to zapyta. Dostęp do witryn możesz też sprawdzić w ustawieniach rozszerzenia Kudo All w Safari. Wystarczy zezwolić obsługiwanym witrynom, których używasz, a nie wszystkim witrynom. Status włączenia w aplikacji na Maca sprawdza przełącznik rozszerzenia; nie potwierdza dostępu do witryny ani zalogowania. Wybierz opcję dla bieżącej witryny („Always Allow on This Website” w angielskiej wersji Safari)."
+        },
+        {
+          "title": "Otwórz kanał, zaloguj się i odśwież.",
+          "body": "Użyj poniższych linków do kanału. W Garmin Connect otwórz /app/newsfeed lub starszy /modern/newsfeed; w Strava otwórz /dashboard. Zaloguj się do własnego konta na tej witrynie. Przeładuj kanał po włączeniu rozszerzenia lub zmianie jego uprawnień do witryn, a następnie poczekaj na wczytanie aktywności. Strony pojedynczych aktywności, profili i logowania nie są obsługiwanym kanałem."
+        },
+        {
+          "title": "Rozdawaj kudos i sprawdź wynik.",
+          "body": "W Garmin Connect znajdź Kudo All w pobliżu kontrolki przesyłania; w Strava użyj Kudo All w nawigacji lub przycisku pływającego. Możesz też kliknąć Kudo All na pasku narzędzi Safari, aby otworzyć jego panel. Sprawdź liczbę dostępnych kudos, a następnie uruchom przebieg z panelu lub przycisku na stronie. Podczas przebiegu pozostaw kanał otwarty. Sprawdź wyświetlane liczby wyników i ikony kudos aktywności; odzwierciedlają one stan wyświetlany na stronie."
+        },
+        {
+          "title": "Wczytaj więcej przed kolejnym uruchomieniem.",
+          "body": "Aby rozdać kudos większej liczbie aktywności, przewiń kanał samodzielnie i poczekaj na wczytanie dodatkowych aktywności, a następnie kliknij Kudo All ponownie. Aktywności, którym już przyznano kudos, są pomijane. Rozszerzenie nie przewija automatycznie, nie wczytuje więcej aktywności ani nie uruchamia nieograniczonych kudos w tle."
         }
       ],
+      "guideDownloadLabel": "Pobierz Kudo All z Mac App Store",
+      "troubleshootingTitle": "Rozwiązywanie problemów",
+      "troubleshooting": [
+        {
+          "title": "Zainstalowano, ale brak Kudo All w Rozszerzeniach?",
+          "checks": [
+            "Otwórz zainstalowaną aplikację Kudo All na Maca z folderu Aplikacje co najmniej raz, a następnie ponownie sprawdź Safari → Ustawienia (lub Preferencje) → Rozszerzenia.",
+            "Jeśli lista nadal się nie zaktualizowała, zamknij Safari, otwórz je ponownie i sprawdź Rozszerzenia. Upewnij się, że zainstalowano edycję Mac Safari z Mac App Store; rozszerzenie Chrome, Firefox lub Edge nie instaluje edycji Safari."
+          ]
+        },
+        {
+          "title": "Włączono, ale brak przycisku lub połączenia ze stroną?",
+          "checks": [
+            "Sprawdź, czy jesteś zalogowany w obsługiwanym kanale Garmin Connect lub panelu Strava, a nie na stronie pojedynczej aktywności, profilu lub logowania.",
+            "Sprawdź dostęp Safari do bieżącej witryny Garmin Connect lub Strava. Samo włączenie rozszerzenia nie przyznaje dostępu do witryny.",
+            "Po włączeniu dostępu przeładuj kanał. Otwórz panel na pasku narzędzi Safari i użyj jego akcji ponownego połączenia, jeśli nadal nie może połączyć się ze stroną. Ponowne połączenie nie uruchamia przebiegu kudos."
+          ]
+        },
+        {
+          "title": "Liczba dostępnych kudos wynosi zero?",
+          "checks": [
+            "Wczytane aktywności mogą już mieć kudos lub żadne kwalifikujące się aktywności nie zostały jeszcze wczytane. Sprawdź kanał i poczekaj na zakończenie wczytywania.",
+            "Przewiń, aby wczytać więcej aktywności, a następnie ponownie sprawdź panel. Zerowa liczba w bieżącym kanale nie oznacza, że rozszerzenie wymaga kolejnego zakupu."
+          ]
+        },
+        {
+          "title": "Przebieg został zatrzymany lub część wyników nie została potwierdzona?",
+          "checks": [
+            "Sprawdź ikony kudos aktywności na stronie. Liczby wyników opisują to, co wyświetliła strona, a nie niezależne sprawdzenie po stronie serwera.",
+            "Jeśli strona nie może potwierdzić kliknięcia, rozszerzenie zatrzymuje pozostały przebieg. Poczekaj na odpowiedź witryny i sprawdź kanał przed ponowną próbą. Jeśli panel jest rozłączony, przeładuj kanał i użyj jego akcji ponownego połączenia."
+          ]
+        }
+      ],
+      "removalTitle": "Wyłącz lub odinstaluj",
+      "disableInstructions": "Aby przestać używać Kudo All, otwórz Safari → Ustawienia (lub Preferencje) → Rozszerzenia i wyczyść pole wyboru Kudo All. Możesz je później włączyć ponownie.",
+      "uninstallInstructions": "Aby je usunąć, wybierz Kudo All w ustawieniach Rozszerzeń Safari i wybierz Odinstaluj. Postępuj zgodnie z instrukcjami Safari, aby usunąć zawierającą je aplikację na Maca z folderu Aplikacje. Jeśli macOS zgłasza, że aplikacja jest w użyciu, zamknij Kudo All i Safari przed ponowną próbą.",
+      "garminChinaUsLabel": "Garmin · Chiny (connectus)",
+      "fullGuideLabel": "Otwórz szczegółową pomoc (po angielsku)",
       "feedLinksLabel": "Otwórz swój kanał aktywności",
       "garminGlobalLabel": "Garmin · Wersja globalna",
       "garminChinaLabel": "Garmin · Chiny",
@@ -560,21 +1001,84 @@
           "body": "直接使用已登录的网站，无需额外账号，不向开发者服务器发送点赞数据，也没有订阅。"
         }
       ],
-      "setupTitle": "从购买到第一次成功点赞",
+      "setupTitle": "安装、设置并使用 Kudo All",
+      "guideIntro": "适用于 macOS 12 或更高版本 Mac 上的 Safari。按以下步骤操作一次，之后即可随时在活动信息流中使用 Kudo All 送出点赞。",
+      "guideNavigationLabel": "用户指南章节",
+      "guideNavigation": {
+        "install": "下载并打开",
+        "permissions": "启用并允许网站访问",
+        "use": "送出点赞",
+        "troubleshooting": "故障排除",
+        "remove": "停用或卸载"
+      },
       "steps": [
         {
-          "title": "安装并启用。",
-          "body": "从 Mac App Store 安装并打开 Kudo All，在 Safari → 设置 → 扩展中启用它。"
+          "title": "从 Mac App Store 下载。",
+          "body": "使用本页的 App Store 链接为你的 Mac 下载 Kudo All。如果你已拥有它，请使用同一 Apple Account 再次下载；无需重复购买。"
         },
         {
-          "title": "允许网站访问。",
-          "body": "允许扩展访问你使用的 Garmin Connect 和 Strava 站点，然后在网站中登录你自己的账号。"
+          "title": "打开已安装的 Mac 应用一次。",
+          "body": "下载完成后，在 App Store 中选择“打开”，或从“应用程序”中启动已安装的 Kudo All 应用。请至少打开此 Mac 应用一次，以便 Safari 识别其内置扩展。应用会显示 Safari 设置指南；请在 Garmin Connect 或 Strava 各自的网站上登录。"
         },
         {
-          "title": "打开动态，点击一次。",
-          "body": "刷新 Garmin Connect 动态或 Strava dashboard，点击 Kudo All；想处理更多活动时，先滚动加载，再次点击。"
+          "title": "在 Safari 扩展中开启 Kudo All。",
+          "body": "打开 Mac 上的 Safari。在菜单栏中选择 Safari → 设置，较旧版本的 macOS 上选择 Safari → 偏好设置。打开“扩展”，找到 Kudo All 并勾选它。Kudo All 的 Mac 应用也可以为你打开 Safari 的扩展设置。"
+        },
+        {
+          "title": "允许你实际使用的网站。",
+          "body": "在 Safari 中访问你的 Garmin Connect 或 Strava 网站，并在 Safari 询问时允许 Kudo All 访问当前网站。你也可以在 Kudo All 的 Safari 扩展设置中查看网站访问权限。你只需允许你使用的受支持网站，无需允许所有网站。Mac 应用的启用状态仅检查扩展开关；它不会确认网站访问权限或登录状态。 选择针对当前网站的始终允许选项（英文 Safari 中为“Always Allow on This Website”）。"
+        },
+        {
+          "title": "打开信息流、登录并刷新。",
+          "body": "使用下方链接打开动态页。Garmin Connect 的路径为 /app/newsfeed（旧版为 /modern/newsfeed），Strava 的路径为 /dashboard。在相应网站登录你自己的账号。启用扩展或更改网站权限后，刷新动态页并等待活动加载。单个活动页、个人资料页和登录页不属于支持的动态页。"
+        },
+        {
+          "title": "送出点赞并检查结果。",
+          "body": "在 Garmin Connect 中，Kudo All 通常位于上传入口附近；在 Strava 中，使用导航中的 Kudo All 或浮动按钮。也可以点击 Safari 工具栏中的 Kudo All，打开面板。先查看可点赞数量，再从面板或页内按钮开始执行。运行期间保持动态页打开；完成后查看结果计数和活动的点赞图标。计数反映页面显示的状态。"
+        },
+        {
+          "title": "再次运行前先加载更多。",
+          "body": "想处理更多活动时，先手动向下滚动，等待新活动加载，再点击一次 Kudo All。已点赞的活动会被跳过。扩展不会自动滚动、加载更多活动或在后台无限点赞。"
         }
       ],
+      "guideDownloadLabel": "从 Mac App Store 下载 Kudo All",
+      "troubleshootingTitle": "故障排除",
+      "troubleshooting": [
+        {
+          "title": "已安装，但“扩展”中缺少 Kudo All？",
+          "checks": [
+            "从“应用程序”中至少打开一次已安装的 Kudo All Mac 应用，然后再次检查 Safari → 设置（或偏好设置）→ 扩展。",
+            "如果列表仍未更新，请退出 Safari，再次打开并检查“扩展”。确保你从 Mac App Store 安装了 Mac Safari 版；Chrome、Firefox 或 Edge 扩展不会安装 Safari 版。"
+          ]
+        },
+        {
+          "title": "已启用，但没有按钮或无法连接页面？",
+          "checks": [
+            "确认你已在受支持的 Garmin Connect 动态页或 Strava dashboard 中登录，而不是单个活动页、个人资料页或登录页。",
+            "检查 Safari 是否允许 Kudo All 访问地址栏中的当前 Garmin Connect 或 Strava 网站。仅启用扩展并不会授予网站访问权限。",
+            "授予权限后刷新动态页。若仍未连接，打开 Safari 工具栏面板并使用“重新连接”。重新连接本身不会开始点赞。"
+          ]
+        },
+        {
+          "title": "可用点赞数为零？",
+          "checks": [
+            "当前已加载的活动可能都已点赞，或暂时没有符合条件的活动。查看动态页并等待加载完成。",
+            "向下滚动加载更多活动，再查看面板。当前可点赞数量为零，不代表需要再次购买扩展。"
+          ]
+        },
+        {
+          "title": "运行停止或部分结果未确认？",
+          "checks": [
+            "查看活动的点赞图标。结果计数只描述页面显示的状态，并非独立的服务器确认。",
+            "页面无法确认某次点击时，扩展会停止处理剩余活动。请等待网站响应并检查动态页，再决定是否重新运行。若面板未连接，刷新动态页并使用重新连接操作。"
+          ]
+        }
+      ],
+      "removalTitle": "停用或卸载",
+      "disableInstructions": "要停止使用 Kudo All，请打开 Safari → 设置（或偏好设置）→ 扩展，并取消勾选 Kudo All。你之后可以再次开启。",
+      "uninstallInstructions": "要移除它，请在 Safari 的“扩展”设置中选择 Kudo All 并选择“卸载”。按照 Safari 的说明从“应用程序”中移除包含它的 Mac 应用。如果 macOS 提示该应用正在使用中，请先关闭 Kudo All 和 Safari，然后重试。",
+      "garminChinaUsLabel": "Garmin · 中国（connectus）",
+      "fullGuideLabel": "打开详细使用指南",
       "feedLinksLabel": "打开你的活动动态",
       "garminGlobalLabel": "Garmin · 国际区",
       "garminChinaLabel": "Garmin · 中国区",

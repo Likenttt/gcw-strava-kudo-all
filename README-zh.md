@@ -12,7 +12,7 @@
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc)
-- [Mac Safari 版 · 一次性购买](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8) · [功能与启用步骤](https://kudoall.li2niu.com/safari/?lang=zh)
+- [Mac Safari 版 · 一次性购买](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8) · [功能与启用步骤](https://kudoall.li2niu.com/safari/zh/)
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/gcw-and-strava-kudo-all/lmopbhpibkfcmbgipoalokaemgnlmjdn)
 - 或者从 crx 安装 [.crx](./crx-files.md)
 
@@ -22,13 +22,15 @@
 
 [<img src="./screenshots/appstore-badge.png" width="98" height="32" alt="在 Mac App Store 获取 Kudo All Safari 版"/>](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8)
 
-**也在 Mac Safari 中使用？** Safari 版支持 macOS 12 或更新版本，可在 Garmin Connect Web 与 Strava 中一键点赞。App Store 一次性购买，无订阅；美国区 **$2.99**，其他地区价格以商店显示为准。[查看支持范围与三步启用说明。](https://kudoall.li2niu.com/safari/?lang=zh)
+### Mac Safari 使用入门
 
-## 在 EGO 中本地测试
+Safari 版需要 **macOS 12 或更新版本的 Mac**，在 Mac App Store 一次性购买，无订阅，价格以你所在地区商店显示为准。本版本用于 Mac Safari，不适用于 iPhone 或 iPad。
 
-先关闭商店安装版，再打开 `chrome://extensions/`，开启“开发者模式”，选择“加载已解压的扩展程序”，加载本项目的 `src` 目录。确认版本显示 **1.5**，然后刷新 Strava。修改代码后，先重新加载扩展，再刷新网页。
+1. [从 Mac App Store 下载 Kudo All](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8)，安装后先打开 Mac 应用一次。
+2. 在 Safari 菜单中打开 **Safari 浏览器 → 设置 → 扩展**（旧版为 **偏好设置 → 扩展**），勾选 **Kudo All：佳明与 Strava 一键点赞**（英文界面显示 **Kudo All: Strava & Garmin**）。允许你使用的 Garmin Connect 或 Strava 站点；Safari 弹出网站授权时，选择仅始终允许当前网站的选项，英文为 **Always Allow on This Website**，无需授权全部网站。
+3. 登录并打开 [Garmin 国际区动态](https://connect.garmin.com/app/newsfeed)、[Garmin 中国区动态](https://connect.garmin.cn/app/newsfeed)、[Garmin 中国区 connectus 动态](https://connectus.garmin.cn/app/newsfeed)或 [Strava Dashboard](https://www.strava.com/dashboard)，然后刷新网页。点击页内的“一键点赞”，或打开 Safari 工具栏中的扩展面板查看可点赞数量并执行。页面未连接时可点“重新连接”；重新连接本身不会开始点赞。
 
-完整步骤见 [EGO 调试与发布检查](./docs/ego-debugging.md)。
+网站授权、结果说明、常见问题与卸载步骤见 [Safari 完整用户指南](./docs/safari-setup-zh.md)（[官网在线版](https://kudoall.li2niu.com/help/safari/zh/)）。[Safari 版功能与演示](https://kudoall.li2niu.com/safari/zh/)。
 
 ## 广告
 
@@ -38,7 +40,7 @@
 
 ### 点击按钮在哪里?
 
-GCW 中，在右上角导航栏的“上传活动”旁边。
+GCW 中，在右上角导航栏的“上传活动”旁边，显示为心形的“一键点赞”图标。
 
 Strava dashboard 中，在右上角导航栏；常规动态导航不可用时会显示浮动按钮。
 
@@ -50,6 +52,8 @@ Strava dashboard 中，在右上角导航栏；常规动态导航不可用时会
 - https://connect.garmin.cn/app/newsfeed
 - https://connectus.garmin.cn/app/newsfeed
 - https://www.strava.com/dashboard
+
+Garmin 旧版 `/modern/newsfeed` 路径也受支持；Strava 也支持 https://strava.com/dashboard。个人主页和单条活动详情页都不是支持的动态页。
 
 ### 点赞的范围是?
 
@@ -82,3 +86,9 @@ Garmin Connect 和 Strava 都会处理动态中已加载、符合条件的活动
 ## 隐私协议
 
 [隐私协议](./privacy-policy-zh.md)
+
+## 开发者文档
+
+在 EGO 本地测试时，先关闭商店安装版，再将本仓库的 `src` 目录加载为已解压的扩展，确认显示版本与 [src/manifest.json](./src/manifest.json) 的 `version` 字段一致。修改源码后，先重新加载扩展，再刷新动态页。具体操作见 [EGO 调试与发布检查](./docs/ego-debugging.md)，版本以 manifest 为准。
+
+EGO 加载已解压扩展、Safari MCP 和 **Allow Unsigned Extensions（允许未签名的扩展）**属于开发者调试工具。Mac App Store 用户的安装步骤见上方 Safari 用户指南。

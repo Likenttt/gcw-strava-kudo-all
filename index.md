@@ -83,6 +83,9 @@ title: GCW & Strava Kudo All
 
 <div class="kudo-readme">
 {% capture readme_content %}{% include_relative README.md %}{% endcapture %}
+{% assign safari_guide_url = '/help/safari/' | relative_url %}
+{% assign safari_guide_zh_url = '/help/safari/zh/' | relative_url %}
+{% assign readme_content = readme_content | replace: './docs/safari-setup.md', safari_guide_url | replace: './docs/safari-setup-zh.md', safari_guide_zh_url | split: '## Developer documentation' | first %}
 {% assign readme_parts = readme_content | split: '<!-- kudo-home-video-preview:start -->' %}
 {% assign readme_tail = readme_parts[1] | split: '<!-- kudo-home-video-preview:end -->' %}
 {% assign readme_after_video = readme_tail[1] %}

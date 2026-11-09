@@ -16,7 +16,7 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kudo-all/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/gcw-and-strava-kudo-all/folhiecfhnmdniibjjcfogpdoafdamoc)
-- [Safari for Mac — one-time purchase](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8) · [Features and setup](https://kudoall.li2niu.com/safari/?lang=en)
+- [Safari for Mac — one-time purchase](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8) · [Features and setup](https://kudoall.li2niu.com/safari/)
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/gcw-and-strava-kudo-all/lmopbhpibkfcmbgipoalokaemgnlmjdn)
 - or Install from [.crx](./crx-files.md)
 
@@ -26,19 +26,21 @@ It's a Chrome/Firefox/Safari Extension to give kudos to your elite athletes frie
 
 [<img src="./screenshots/appstore-badge.png" width="98" height="32" alt="Get Kudo All for Safari on the Mac App Store"/>](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8)
 
-**Using Safari on a Mac?** The Safari edition supports Garmin Connect Web and Strava on macOS 12 or later. It is a one-time App Store purchase, with no subscription (US price: **$2.99**; other regions show their local price in the App Store). [See supported pages and the three setup steps.](https://kudoall.li2niu.com/safari/?lang=en)
+### Get started with Safari on Mac
 
-## Local testing in EGO
+The Safari edition requires a **Mac with macOS 12 or later**. It is a one-time Mac App Store purchase with no subscription; the price shown in your local store applies. This edition is for Mac Safari, not iPhone or iPad.
 
-Disable the Web Store copy, open `chrome://extensions/`, enable Developer mode, and load this repository's `src` directory as an unpacked extension. Check that it shows version **1.5**, then refresh Strava. After editing files, reload the extension first and refresh the webpage second.
+1. [Download Kudo All from the Mac App Store](https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&ct=kudo_safari_readme&mt=8), then open the installed Mac app once.
+2. In Safari, choose **Safari → Settings → Extensions** (or **Preferences → Extensions** on older versions), then enable **Kudo All: Strava & Garmin**. Allow the Garmin Connect or Strava site you use; when Safari prompts, choose **Always Allow on This Website**. Access to every website is unnecessary.
+3. Sign in to [Garmin Connect](https://connect.garmin.com/app/newsfeed), [Garmin China](https://connect.garmin.cn/app/newsfeed), [Garmin China connectus](https://connectus.garmin.cn/app/newsfeed), or the [Strava dashboard](https://www.strava.com/dashboard), then refresh the page. Click the page's **Kudo All** button, or open its Safari toolbar panel to check available kudos and run it there. Use **Reconnect** if the page is disconnected; reconnecting alone does not start a run.
 
-[EGO debugging and release checklist](./docs/ego-debugging.md) (简体中文).
+Read the [complete Safari user guide](./docs/safari-setup.md) ([online version](https://kudoall.li2niu.com/help/safari/)) for website permissions, result counts, troubleshooting and removal. [Safari features and demo](https://kudoall.li2niu.com/safari/).
 
 ## FAQ
 
 ### Where is the one click button?
 
-- In GCW, it is on the up-right nav bar next to Upload Activities.
+- In GCW, look for the heart-shaped Kudo All action in the upper-right navigation next to Upload Activities.
 - On the Strava dashboard, it is in the upper-right navigation. If the usual feed navigation is unavailable, a floating button appears.
 - On either supported Garmin Connect or Strava feed, the browser extension icon opens a panel with the page connection, available kudos and last-run results. It also provides Reconnect and a backup action.
 
@@ -50,7 +52,7 @@ For GCW, these domains are valid
 - https://connect.garmin.cn/app/newsfeed
 - https://connectus.garmin.cn/app/newsfeed
 
-For Strava, only https://www.strava.com is valid.
+For Strava, use https://www.strava.com/dashboard (https://strava.com/dashboard is also supported). Garmin's older `/modern/newsfeed` routes are also supported. Profile and individual activity pages are not supported feeds.
 
 ### What is the kudos range?
 
@@ -85,3 +87,9 @@ Each run starts with your click and processes eligible activities already loaded
 ## Privacy Policy
 
 [Privacy Policy](./privacy-policy.md)
+
+## Developer documentation
+
+For local EGO testing, disable the store copy, load the repository's `src` directory as an unpacked extension, and check that its displayed version matches the `version` field in [src/manifest.json](./src/manifest.json). Reload the extension after source changes, then refresh the feed. See the [EGO debugging and release checklist](./docs/ego-debugging.md) (简体中文); use the manifest as the version reference.
+
+EGO unpacked loading, Safari MCP and **Allow Unsigned Extensions** are developer debugging tools. The Mac App Store user setup is described in the Safari guide above.

@@ -49,19 +49,69 @@
   {% endfor %}
 </section>
 
-<section class="kudo-safari-setup" aria-labelledby="safari-setup-title">
+<section class="kudo-safari-setup" id="safari-user-guide" aria-labelledby="safari-setup-title">
   <h2 id="safari-setup-title">{{ copy.setupTitle | escape }}</h2>
-  <ol>
+  <p class="kudo-safari-guide-intro">{{ copy.guideIntro | escape }}</p>
+  {% if translation.locale == 'zh-CN' %}
+  <p><a href="{{ '/help/safari/zh/' | relative_url }}">{{ copy.fullGuideLabel | escape }} →</a></p>
+  {% else %}
+  <p><a href="{{ '/help/safari/' | relative_url }}">{{ copy.fullGuideLabel | escape }} →</a></p>
+  {% endif %}
+  <nav class="kudo-safari-guide-navigation" aria-label="{{ copy.guideNavigationLabel | escape }}">
+    <a href="#safari-step-1">{{ copy.guideNavigation.install | escape }}</a>
+    <a href="#safari-step-3">{{ copy.guideNavigation.permissions | escape }}</a>
+    <a href="#safari-step-5">{{ copy.guideNavigation.use | escape }}</a>
+    <a href="#safari-troubleshooting">{{ copy.guideNavigation.troubleshooting | escape }}</a>
+    <a href="#safari-disable-remove">{{ copy.guideNavigation.remove | escape }}</a>
+  </nav>
+  <ol class="kudo-safari-guide-steps">
     {% for step in copy.steps %}
-    <li><strong>{{ step.title | escape }}</strong> {{ step.body | escape }}</li>
+    <li id="safari-step-{{ forloop.index }}">
+      <h3>{{ step.title | escape }}</h3>
+      <p>{{ step.body | escape }}</p>
+      {% if forloop.index == 1 %}
+      <a class="kudo-safari-guide-download" data-kudo-safari-store data-kudo-source="landing" href="https://apps.apple.com/app/apple-store/id6458730808?pt=125713495&amp;ct=kudo_safari_landing&amp;mt=8">{{ copy.guideDownloadLabel | escape }} →</a>
+      {% endif %}
+      {% if forloop.index == 5 %}
+      <nav class="kudo-safari-feed-links" aria-label="{{ copy.feedLinksLabel | escape }}">
+        <a href="https://connect.garmin.com/app/newsfeed" rel="noopener">{{ copy.garminGlobalLabel | escape }}</a>
+        <a href="https://connect.garmin.cn/app/newsfeed" rel="noopener">{{ copy.garminChinaLabel | escape }}</a>
+        <a href="https://connectus.garmin.cn/app/newsfeed" rel="noopener">{{ copy.garminChinaUsLabel | escape }}</a>
+        <a href="https://www.strava.com/dashboard" rel="noopener">Strava</a>
+      </nav>
+      {% endif %}
+      {% assign guide_step_key = forloop.index | append: '' %}
+      {% assign guide_image = site.data.safari_guide_images[guide_step_key] %}
+      {% if guide_image.path %}
+      <figure class="kudo-safari-guide-image">
+        <img src="{{ guide_image.path | relative_url | escape }}" alt="{{ step.title | escape }}"{% if guide_image.width %} width="{{ guide_image.width }}"{% endif %}{% if guide_image.height %} height="{{ guide_image.height }}"{% endif %} loading="lazy" decoding="async">
+        <figcaption>{{ step.title | escape }}</figcaption>
+      </figure>
+      {% endif %}
+    </li>
     {% endfor %}
   </ol>
-  <nav class="kudo-safari-feed-links" aria-label="{{ copy.feedLinksLabel | escape }}">
-    <a href="https://connect.garmin.com/app/newsfeed" rel="noopener">{{ copy.garminGlobalLabel | escape }}</a>
-    <a href="https://connect.garmin.cn/app/newsfeed" rel="noopener">{{ copy.garminChinaLabel | escape }}</a>
-    <a href="https://www.strava.com/dashboard" rel="noopener">Strava</a>
-  </nav>
   <p class="kudo-safari-note">{{ copy.limitations | escape }}</p>
+</section>
+
+<section class="kudo-safari-setup" id="safari-troubleshooting" aria-labelledby="safari-troubleshooting-title">
+  <h2 id="safari-troubleshooting-title">{{ copy.troubleshootingTitle | escape }}</h2>
+  {% for topic in copy.troubleshooting %}
+  <details class="kudo-safari-help-item">
+    <summary>{{ topic.title | escape }}</summary>
+    <ul>
+      {% for check in topic.checks %}
+      <li>{{ check | escape }}</li>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endfor %}
+</section>
+
+<section class="kudo-safari-setup" id="safari-disable-remove" aria-labelledby="safari-disable-remove-title">
+  <h2 id="safari-disable-remove-title">{{ copy.removalTitle | escape }}</h2>
+  <p>{{ copy.disableInstructions | escape }}</p>
+  <p>{{ copy.uninstallInstructions | escape }}</p>
 </section>
 
 <section class="kudo-demo" aria-labelledby="safari-demo-title">
